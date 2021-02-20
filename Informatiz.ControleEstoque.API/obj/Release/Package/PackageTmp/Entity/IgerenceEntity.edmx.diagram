@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="edca505ba99f4e3aa872ad569e0a8346" Name="Diagram1">
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ACAO" Width="1.5" PointX="29.25" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ACRESCIMOPRODUTO" Width="1.5" PointX="33.75" PointY="106.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ADMINISTRADORA" Width="1.5" PointX="26.25" PointY="69.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_BAIRRO" Width="1.5" PointX="5.25" PointY="98.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_CAIXA" Width="1.5" PointX="15" PointY="99.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_CIDADE" Width="1.5" PointX="3" PointY="98.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_CODIGOBARRASPESSOA" Width="1.5" PointX="15" PointY="95.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_CODIGOBARRASPRODSERV" Width="1.5" PointX="26.25" PointY="97.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_COMPRA" Width="1.5" PointX="18" PointY="96.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_COR" Width="1.5" PointX="26.25" PointY="77.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_CRM" Width="1.5" PointX="21" PointY="104.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_DATOSCOMPRAPROD" Width="1.5" PointX="28.5" PointY="114.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_DIASEMANAPROMOCAO" Width="1.5" PointX="20.25" PointY="109.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_DOCUMENTO" Width="1.5" PointX="21" PointY="96.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_EMPRESA" Width="1.5" PointX="24" PointY="94" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ENDERECO" Width="1.5" PointX="7.5" PointY="98.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ESTADO" Width="1.5" PointX="0.75" PointY="98.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_FILIAL" Width="1.5" PointX="9.75" PointY="95.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_FILIALBAIRRO" Width="1.5" PointX="15" PointY="103.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_FILIALPESSOA" Width="1.5" PointX="15" PointY="92.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_FORMAPAGAMENTO" Width="1.5" PointX="26.25" PointY="80.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_GRUPOCOMPROMISSO" Width="1.5" PointX="26.25" PointY="86.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_GRUPOCOMPROMISSOSUBGRUPO" Width="1.5" PointX="28.5" PointY="84.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_GRUPOPARAMETRO" Width="1.5" PointX="13.5" PointY="85.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_GRUPOPERMISSAO" Width="1.5" PointX="26.25" PointY="91.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_GRUPOPERMISSAOACAO" Width="1.5" PointX="31.5" PointY="91.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_GRUPOPRODUTO" Width="1.5" PointX="26.25" PointY="94.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_GRUPOPRODUTOSUBGRUPO" Width="1.5" PointX="28.5" PointY="94.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_HORATRABALHO" Width="1.5" PointX="15" PointY="164.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_IMAGEM" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_INTEGRACAOAPI" Width="1.5" PointX="29.25" PointY="105.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ITEMVENDA" Width="1.5" PointX="42.5" PointY="97.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ITEMVENDA_NUMSERIE" Width="1.5" PointX="44.75" PointY="103.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ITEMVENDAACRESCIMO" Width="1.5" PointX="44.75" PointY="100" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ITEMVENDAOBSERVACAO" Width="1.5" PointX="44.75" PointY="97" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_LICENCA" Width="1.5" PointX="21.75" PointY="84.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_LOCALDOCUMENTO" Width="1.5" PointX="18.75" PointY="86.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_LOGERROR" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_MESA" Width="1.5" PointX="12" PointY="119.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_MESAAGRUPAR" Width="1.5" PointX="14.25" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_MESAVENDA" Width="1.5" PointX="39.5" PointY="107.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_OBSERVACAO" Width="1.5" PointX="26.25" PointY="100.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_OBSERVACAOPRODUTO" Width="1.5" PointX="36.75" PointY="103.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PAGAMENTO" Width="1.5" PointX="39.5" PointY="90.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PARAMETROOPCAO" Width="1.5" PointX="18" PointY="83.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PARAMETROS" Width="1.5" PointX="15.75" PointY="85.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PARAMETROVALOR" Width="1.5" PointX="18" PointY="92.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PARCELAMENTO" Width="1.5" PointX="23.25" PointY="106.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PERGUNTAOPCAO" Width="1.5" PointX="30.75" PointY="88.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PERGUNTAS" Width="1.5" PointX="28.5" PointY="87.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PERMISSAO" Width="1.5" PointX="29.25" PointY="77.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PERMISSAOACAO" Width="1.5" PointX="31.5" PointY="79.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PESSOA" Width="1.5" PointX="12.75" PointY="91.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PESSOACRM" Width="1.5" PointX="34.5" PointY="96" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PESSOACRMPESSOA" Width="1.5" PointX="39.75" PointY="98.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PESSOAMESA" Width="1.5" PointX="15" PointY="167.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PESSOAMESAXMESA" Width="1.5" PointX="17.25" PointY="143.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODCATEGORIA" Width="1.5" PointX="26.25" PointY="103.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOCFOP" Width="1.5" PointX="26.25" PointY="106.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOCOMISSAO" Width="1.5" PointX="12" PointY="126.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOCST" Width="1.5" PointX="26.25" PointY="109.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTODERIVACAO" Width="1.5" PointX="26.25" PointY="113.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOFILIAL" Width="1.5" PointX="14.25" PointY="109.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOMARCA" Width="1.5" PointX="26.25" PointY="116" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTONCM" Width="1.5" PointX="26.25" PointY="118.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTONUMEROSERIE" Width="1.5" PointX="30.75" PointY="109.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOOPCAO" Width="1.5" PointX="33.75" PointY="110.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOPROMOCAO" Width="1.5" PointX="18" PointY="104.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOPROMOCAOPRODF" Width="1.5" PointX="36.75" PointY="108.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOSERVICO" Width="1.5" PointX="31.5" PointY="97.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PRODUTOVALORDINAMICO" Width="1.5" PointX="16.5" PointY="111.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PROPOSTA" Width="1.5" PointX="34.25" PointY="100.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PUBLICIDADE" Width="1.5" PointX="21.75" PointY="112.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_RESPONSAVELCAIXA" Width="1.5" PointX="23.25" PointY="89.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_RESPOSTAPERGUNTA" Width="1.5" PointX="36.75" PointY="92.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_SALDOFILIAL" Width="1.5" PointX="12" PointY="143" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_SALDOPESSOA" Width="1.5" PointX="29.25" PointY="97.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_SANGRIA" Width="1.5" PointX="34.5" PointY="92.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_SEGMENTOCOMERCIAL" Width="1.5" PointX="26.25" PointY="122.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_SESSAO" Width="1.5" PointX="21" PointY="92.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_SETOREMPRESA" Width="1.5" PointX="15" PointY="89.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_SITUACAO_PESSOA" Width="1.5" PointX="10.5" PointY="92.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_STATUS_CRM" Width="1.5" PointX="28.5" PointY="110.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_STATUSCRMAGRUP" Width="1.5" PointX="26.25" PointY="128.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_SUPRIMENTO" Width="1.5" PointX="34.5" PointY="88.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TIPOCRM" Width="1.5" PointX="30.75" PointY="112.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TIPOCRMCONFIG" Width="1.5" PointX="33" PointY="122.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TIPOCRMCONFIGPESSOA" Width="1.5" PointX="39.25" PointY="111.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TIPODOCUMENTO" Width="1.5" PointX="18.75" PointY="113" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TIPOEMPREGADO" Width="1.5" PointX="26.25" PointY="131.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TIPOPESSOA" Width="1.5" PointX="15.75" PointY="81.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TIPOPESSOA_PESSOA" Width="1.5" PointX="18" PointY="89.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TIPOPRODUTO" Width="1.5" PointX="29.25" PointY="91.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_TRANSACOES" Width="1.5" PointX="28.5" PointY="101.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_UNIDADEMEDIDA" Width="1.5" PointX="26.25" PointY="135.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_UNIDADEMEDPRODUTO" Width="1.5" PointX="33.75" PointY="117.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_USUPERMISSAOACAO" Width="1.5" PointX="31.5" PointY="94.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_VENDA" Width="1.5" PointX="37.25" PointY="95.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_VERSAO" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFMA_EMPRESA" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFMA_LICENCA" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRU_REFERENCE_INFM_ACA" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PER_REFERENCE_INFM_ACA" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_USU_REFERENCE_INFM_ACA" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ACREPROD_INFM_PRODS1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ACREPROD_INFM_PRODS2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ADM_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DOC_REFERENCE_INFM_ADM" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_BAI_REFERENCE_INFM_CID" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_END_REFERENCE_INFM_BAI" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_FIL_REFERENCE_INFM_BAI" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CAIXA_INFM_EMP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CAIXA_INFM_EMPRESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CAIXA_INFM_FIL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CAIXA_INFM_FILIAL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_RESPCAIX_INFM_CAIXA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CID_REFERENCE_INFM_EST" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CODIBA_INFM_PES1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CODBAPS_INFM_EMPRESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CODBAPS_INFM_PRODSERV1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_COMPRA_INFM_EMPRESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_COMPRA_INFM_FILIAL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_COMPRA_INFM_PESSOA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DATOSCOMPRA_INFM_COM1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_COR_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_COR" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CRM_REF_INFM_PES2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CRM_REF_INFM_TIPOCRM" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CRM_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CRM_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_CRM_REFERENCE_INFM_STA" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_REF_INFM_CRM3" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_CRM" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DAT_REFERENCE_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DAT_REFERENCE_INFM_UNI" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DATC_INFM_UNIDMED3" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_DAT" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODNUMSE_INFM_DATCOMP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DIA_REF_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DOC_REFERENCE_INFM_DOC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DOC_REFERENCE_INFM_FIL" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DOC_REFERENCE_INFM_FOR" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DOC_REFERENCE_INFM_LOC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DOC_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_DOC_REFERENCE_INFM_TIP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAR_REFERENCE_INFM_DOC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SAL_REFERENCE_INFM_DOC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TRA_REFERENCE_INFM_DOC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_EMPRESA_GRUPOPERM" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_EMPRESA_GRUPPROD" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_EMPRESA_PRDMARC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_EMPRESA_PRODCAT" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_EMPRESA_PRODDER" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_EMPRESA_PRODEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_EMP_REFERENCE_INFM_LIC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_EMP_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_EMP_REFERENCE_INFM_PUB" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_FIL_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_FORMAPAG_INFM_EMP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRU_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_INTAPI_INFM_EMPRESA" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_OBS_INFM_EMPRESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAR_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REF_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_EMP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODNUMSE_INFM_EMPRESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SEG_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SETORE_INFM_EMP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_STA_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_STAUSCRM_INFM_EMP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIP_REF_INFM_EMPRESA" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIP_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_UNI_REFERENCE_INFM_EMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VENDA_INFM_EMPRESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKEMPESAPRODCST" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKEMPRESAPRODCFOP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_FIL_REFERENCE_INFM_END" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_PK_ENDERE_INFM_END" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_REFERENCE_INFM_END" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VENDA_INFM_ENDERECO1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_FILIAL_PRDFIL" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_FILIAL_PRODCOMIS" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_FIL_FK_FILIAL_INFM_FIL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_FIL_FK_FILIAL_INFM_FIL2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_FIL_FK_PESSOA_INFM_PES1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_MESA_INFM_FILIAL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAR_REFERENCE_INFM_FIL" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REF_INFM_FIL" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SAL_REFERENCE_INFM_FIL" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SES_REFERENCE_INFM_FIL" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SETOREMP_INFM_FIL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VENDA_INFM_FILIAL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_FIL_FK_PESSOA_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAGAMENTO_INFM_FORMA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRU_REF_INFM_GRU_1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRU_REFERENCE_INFM_GRU" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRUPOC_INFM_GRU_CAS" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PER_REFERENCE_INFM_GRU" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_CRM_INFM_GRU" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAR_REFERENCE_INFM_GRU" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRUPOPER_GRUPOPA" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_USU_REFERENCE_INFM_GRU" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRU_REFERENCE_INFM_PER" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRUPROD_GRUPRODPROD" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_GRUPROD_PROD2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_GRU" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_HOR_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TPCRM_REF_INFM_CRM" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEM_VEN_INFM_PRODSER1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEM_VEND_INFM_PESSOA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVE_INFM_ITEVA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVENDA_INFM_PAG" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVENDA_INFM_PESCANC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVENDA_INFM_VENDA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVNUMS_INFM_ITEMV1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVO_INFM_ITEMV1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVNUMS_INFM_PRDNS1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVEDA_INFM_PRODS1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMVOB_INFM_OBS1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_MESAAGRUP_INFM_MESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_MESAAGRUP_INFM_MESA2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_MESAVENDA_INFM_MESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PESSOAM_INFM_MESA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_MESA_INFM_VENDA2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_OBSERV_INFM_OBSPROD1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_OBS_INFM_PRODSERV1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAGAMENTO_INFM_VENDA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAR_REF_INFM_PAR_OP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAR_REFERENCE_INFM_PAR" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TRA_REFERENCE_INFM_PAR" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PERGOP_REF_INFM_PERG" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_RES_REFERENCE_INFM_PER" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PER_REFERENCE_INFM_PER" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_USU_REFERENCE_INFM_PER" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_INFM_PESCRMPES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_REF_INFM_TIPEMP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_REFERENCE_INFM_SEG" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PES_REFERENCE_INFM_SIT" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PESSOA_INFM_PESSOAMES1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_PES1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_RESPCAI_INFM_PESSOA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SAL_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SANGRIA_INFM_PESSOA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SES_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SUP_REF_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIP_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIPOCONFIGPES_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_USU_REFERENCE_INFM_PES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VENDA_INFM_PESSOA1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VENDA_INFM_PESSOA2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VENDA_INFM_PESSOACANC" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PESCRM_INFM_PESCRMPES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_RES_INFM_PESSSOACRM" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PESSOAMESXM_INFM_PESM1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_FK_PRODCA_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKPRODUTOCFOPPRODSERV" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_FK_PRODCO_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKPRODCSTPRODSERVICO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_FK_PRODDE_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_FK_PRODSE_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODD_INFM_PRODFIL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODDIN_INFM_PRODFIL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODFIL_INFM_PRODOP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODUTOFIL_INFM_UNM" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKPRODFILIALPRODPROMPROD" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKUNIDADEMEDPRODFIL1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKUNIDADEMEDPRODFIL2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_FK_PRODMA_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_FKPRODNCM_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODSERV_INFM_PROOP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKPRODPROMOCAOPROD" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRO_REFERENCE_INFM_TIP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_UNI_REFERENCE_INFM_PRO" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SANGRIA_INFM_RESP1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_SUP_REF_INFM_RES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VENDA_INFM_RESPO1" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_STATUSCRM_INFM_STAAG" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIPO_INFM_STATUS" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIPOCRM_INFM_STAAGR" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIPCCONF_REF_TIP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIP_REF_INFM_TIP_2" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIPCRMCON_INFM_TIPCPES" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_TIP_REFERENCE_INFM_TIP" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_UNI_FKUNIDADE_INFM_UNI" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FKUNIDADMEDPROD" ManuallyRouted="false" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFMA_EM_REFERENCE_INFMA_LI" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_VALORFECHAMENTO" Width="1.5" PointX="33.5" PointY="85.125" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VALORFEC_INFM_FORMAPG" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VALORFEC_INFM_PESSOA" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VALORFECH_INFM_RESPC" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODSERV_INFM_SETOR" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PRODFIL_INFM_SETOR" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_VENDA_INFM_PESSOA3" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PAGAMENTO_INFM_RESCA1" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ITEMPROCESSO" Width="1.5" PointX="28.5" PointY="65.875" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_ITEMPROCESSOERRO" Width="1.5" PointX="30.75" PointY="66.25" />
+        <EntityTypeShape EntityType="IGERENCEModel.INFM_PROCESSO" Width="1.5" PointX="26.25" PointY="65.875" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_PROCESSO_INFM_EMPRESA" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMPROCESSO_INFM_ITEMPROCESSOERRO" />
+        <AssociationConnector Association="IGERENCEModel.FK_INFM_ITEMPROCESSO_INFM_PROCESSO" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

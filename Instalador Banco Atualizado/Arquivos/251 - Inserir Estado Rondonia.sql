@@ -1,0 +1,10 @@
+QUERYVALIDACAO select 1 FROM INFM_ESTADO WHERE CODESTADO = 'RO'
+BANCODEDADOS IGERENCE
+INSERT INTO INFM_ESTADO
+			(IDESTADO,
+             CODESTADO,
+             DESESTADO)
+VALUES
+            ('23',
+             'RO',
+             'RONDONIA')

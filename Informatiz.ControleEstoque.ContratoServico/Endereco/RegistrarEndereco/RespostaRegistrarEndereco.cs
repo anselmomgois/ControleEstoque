@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Xml.Serialization;
+
+namespace Informatiz.ControleEstoque.ContratoServico.Endereco.RegistrarEndereco
+{
+
+   public class RespostaRegistrarEndereco : RespostaGenerica
+    {
+       
+        public Comum.Clases.Estado Estado { get; set; }
+    }
+}

@@ -1,0 +1,9 @@
+QUERYVALIDACAO select 1 from  sysobjects where  id = object_id('INFM_SUPRIMENTO') and   type = 'U'
+BANCODEDADOS IGERENCE
+create table INFM_SUPRIMENTO (
+   IDSUPRIMENTO     	OBJETOID       not null,
+   IDRESPONSAVELCAIXA   OBJETOID       null,
+   IDPESSOASUPERVISOR   OBJETOID	   null,
+   NUMVALORSUPRIMENTO	NUMERO_DECIMAL not null,
+   OBSSUPRIMENTO	    OBSERVACAOMIN  null,
+   constraint PK_INFM_SUPRIMENTO primary key (IDSUPRIMENTO))

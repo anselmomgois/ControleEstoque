@@ -1,0 +1,8 @@
+﻿INSERT INTO INFM_GRUPOPERMISSAO
+           (IDGRUPOPERMISSAO
+		    ,IDEMPRESA
+           ,DESGRUPO)
+     VALUES
+           (@IDGRUPOPERMISSAO
+		   ,@IDEMPRESA
+           ,@DESGRUPO)

@@ -1,0 +1,17 @@
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\Informatiz.ControleEstoque.AcessoDados.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\Informatiz.ControleEstoque.AcessoDados.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\AmgSistemas.Framework.AcessoDados.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\AmgSistemas.Framework.Criptografia.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\AmgSistemas.Framework.Utilitarios.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\Informatiz.ControleEstoque.Comum.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\Informatiz.ControleEstoque.Execao.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\CsQuery.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\Informatiz.ControleEstoque.Comum.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\bin\Release\Informatiz.ControleEstoque.Execao.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\obj\Release\Informatiz.ControleEstoque.AcessoDados.csprojAssemblyReference.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\obj\Release\Informatiz.ControleEstoque.AcessoDados.Properties.Resources.resources
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\obj\Release\Informatiz.ControleEstoque.AcessoDados.csproj.GenerateResource.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\obj\Release\Informatiz.ControleEstoque.AcessoDados.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\obj\Release\Informatiz.ControleEstoque.AcessoDados.csproj.CopyComplete
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\obj\Release\Informatiz.ControleEstoque.AcessoDados.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.AcessoDados\obj\Release\Informatiz.ControleEstoque.AcessoDados.pdb

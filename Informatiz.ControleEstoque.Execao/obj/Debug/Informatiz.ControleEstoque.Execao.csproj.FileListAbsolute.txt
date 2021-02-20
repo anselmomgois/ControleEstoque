@@ -1,0 +1,6 @@
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Execao\bin\Debug\Informatiz.ControleEstoque.Execao.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Execao\bin\Debug\Informatiz.ControleEstoque.Execao.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Execao\obj\Debug\Informatiz.ControleEstoque.Execao.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Execao\obj\Debug\Informatiz.ControleEstoque.Execao.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Execao\obj\Debug\Informatiz.ControleEstoque.Execao.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Execao\obj\Debug\Informatiz.ControleEstoque.Execao.csprojAssemblyReference.cache

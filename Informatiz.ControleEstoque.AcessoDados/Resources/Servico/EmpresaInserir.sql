@@ -1,0 +1,18 @@
+﻿INSERT INTO INFM_EMPRESA
+           (IDEMPRESA
+		   ,CODEMPRESA
+           ,DESEMPRESA
+           ,CODACESSO
+		   ,IDPUBLICIDADE
+		   ,DESAMIGO
+		   ,BOLEMPRESAMESTE
+		   ,IDPESSOA)
+     VALUES
+           (@IDEMPRESA
+		   ,@CODEMPRESA
+           ,@DESEMPRESA
+           ,@CODACESSO
+		   ,@IDPUBLICIDADE
+		   ,@DESAMIGO
+		   ,@BOLEMPRESAMESTE
+		   ,@IDPESSOA)

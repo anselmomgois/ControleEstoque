@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtChaves" targetNamespace="http://tempuri.org/dtChaves.xsd" xmlns:mstns="http://tempuri.org/dtChaves.xsd" xmlns="http://tempuri.org/dtChaves.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtChaves" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtChaves" msprop:Generator_UserDSName="dtChaves">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Chave" msprop:Generator_TableClassName="ChaveDataTable" msprop:Generator_TableVarName="tableChave" msprop:Generator_TablePropName="Chave" msprop:Generator_RowDeletingName="ChaveRowDeleting" msprop:Generator_RowChangingName="ChaveRowChanging" msprop:Generator_RowEvHandlerName="ChaveRowChangeEventHandler" msprop:Generator_RowDeletedName="ChaveRowDeleted" msprop:Generator_UserTableName="Chave" msprop:Generator_RowChangedName="ChaveRowChanged" msprop:Generator_RowEvArgName="ChaveRowChangeEvent" msprop:Generator_RowClassName="ChaveRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ChaveAcesso" msprop:Generator_ColumnVarNameInTable="columnChaveAcesso" msprop:Generator_ColumnPropNameInRow="ChaveAcesso" msprop:Generator_ColumnPropNameInTable="ChaveAcessoColumn" msprop:Generator_UserColumnName="ChaveAcesso" type="xs:string" minOccurs="0" />
+              <xs:element name="QuantidadeSessoes" msprop:Generator_ColumnVarNameInTable="columnQuantidadeSessoes" msprop:Generator_ColumnPropNameInRow="QuantidadeSessoes" msprop:Generator_ColumnPropNameInTable="QuantidadeSessoesColumn" msprop:Generator_UserColumnName="QuantidadeSessoes" type="xs:int" minOccurs="0" />
+              <xs:element name="Validade" msprop:Generator_ColumnVarNameInTable="columnValidade" msprop:Generator_ColumnPropNameInRow="Validade" msprop:Generator_ColumnPropNameInTable="ValidadeColumn" msprop:Generator_UserColumnName="Validade" type="xs:string" minOccurs="0" />
+              <xs:element name="SessoesInfinitas" msprop:Generator_ColumnVarNameInTable="columnSessoesInfinitas" msprop:Generator_ColumnPropNameInRow="SessoesInfinitas" msprop:Generator_ColumnPropNameInTable="SessoesInfinitasColumn" msprop:Generator_UserColumnName="SessoesInfinitas" type="xs:string" minOccurs="0" />
+              <xs:element name="ValidadeInfinita" msprop:Generator_ColumnVarNameInTable="columnValidadeInfinita" msprop:Generator_ColumnPropNameInRow="ValidadeInfinita" msprop:Generator_ColumnPropNameInTable="ValidadeInfinitaColumn" msprop:Generator_UserColumnName="ValidadeInfinita" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

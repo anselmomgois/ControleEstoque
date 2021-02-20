@@ -1,0 +1,17 @@
+QUERYVALIDACAO select 1 from  sysobjects where  id = object_id('INFM_PRODUTOFILIAL') and   type = 'U'
+BANCODEDADOS IGERENCE
+create table INFM_PRODUTOFILIAL (
+   IDPRODUTOFILIAL      OBJETOID             not null,
+   IDPRODUTOSERVICO     OBJETOID             not null,
+   IDFILIAL             OBJETOID             not null,
+   IDPRODUTOCOMISSAO    OBJETOID             null,
+   IDUNIDADEMEDIDAESTOQUE OBJETOID           null,
+   IDUNIDADEMEDIDAVENDA OBJETOID             null,
+   DESPRATELEIRA        DESCRICAO50          null,
+   NUMESTOQUEMINIMO     NUMERO_DECIMAL_10_3  null,
+   NUMMINIMOVENDA       NUMERO_DECIMAL_10_3  null,
+   NUMIPIPER            NUMERO_DECIMAL       null,
+   NUMEMBALAGEMPER      NUMERO_DECIMAL       null,
+   NUMFRETEPER          NUMERO_DECIMAL       null,
+   NUMOUTDESPPER        NUMERO_DECIMAL       null,
+   constraint PK_INFM_PRODUTOFILIAL primary key (IDPRODUTOFILIAL))

@@ -1,0 +1,749 @@
+1 - Gerar Banco de Dados.sql
+2 - Gerar Tipo Boleano.sql
+3 - Gerar Tipo Codigo 20.sql
+4 - Gerar Tipo Data e Hora.sql
+5 - Gerar Tipo Decimal1.sql
+6 - Gerar Tipo Descricao 100.sql
+7 - Gerar Tipo Descricao 200.sql
+8 - Gerar Tipo Descricao 50.sql
+9 - Gerar Tipo Descricao Curta.sql
+10 - Gerar Tipo Inteiro.sql
+11 - Gerar Tipo Inteiro Sequencial.sql
+12 - Gerar Tipo Logico.sql
+13 - Gerar Tipo Numero Decimal.sql
+14 - Gerar Tipo ObjetoID.sql
+15 - Gerar Tipo ObjetoID 2.sql
+16 - Gerar Tipo Imagem.sql
+17 - Gerar Tipo Observacao Longa.sql
+18 - 1 - Gerar Tipo NUMERO_DECIMAL_10_3.sql
+18 - Gerar Tipo Observacao Minima.sql
+19 - Gerar Tabela INFM_ACAO.sql
+20 - Gerar Tabela INFM_BAIRRO.sql
+21 - Gerar Tabela INFM_CIDADE.sql
+22 - Gerar Tabela INFM_COR.sql
+23 - Gerar Tabela INFM_DATOSCOMPRAPROD.sql
+24 - Gerar Tabela INFM_EMPRESA.sql
+25 - Gerar Tabela INFM_ENDERECO.sql
+26 - Gerar Tabela INFM_ESTADO.sql
+27 - Gerar Tabela INFM_FILIAL.sql
+28 - Gerar Tabela INFM_FILIALBAIRRO.sql
+29 - Gerar Tabela INFM_FILIALPESSOA.sql
+30 - Gerar Tabela INFM_GRUPOPERMISSAO.sql
+31 - Gerar Tabela INFM_GRUPOPERMISSAOACAO.sql
+32 - Gerar Tabela INFM_GRUPOPRODUTO.sql
+33 - Gerar Tabela INFM_GRUPOPRODUTOSUBGRUPO.sql
+34 - Gerar Tabela INFM_HORATRABALHO.sql
+35 - Gerar Tabela INFM_LOGERROR.sql
+36 - Gerar Tabela INFM_PARAMETROS.sql
+37 - Gerar Tabela INFM_PARAMETROVALOR.sql
+38 - Gerar Tabela INFM_PERMISSAO.sql
+39 - Gerar Tabela INFM_PERMISSAOACAO.sql
+40 - Gerar Tabela INFM_PESSOA.sql
+41 - Gerar Tabela INFM_PRODCATEGORIA.sql
+42 - Gerar Tabela INFM_PRODUTOCFOP.sql
+43 - Gerar Tabela INFM_PRODUTOCOMISSAO.sql
+44 - Gerar Tabela INFM_PRODUTOCST.sql
+45 - Gerar Tabela INFM_PRODUTODERIVACAO.sql
+46 - Gerar Tabela INFM_PRODUTOFILIAL.sql
+47 - Gerar Tabela INFM_PRODUTOMARCA.sql
+48 - Gerar Tabela INFM_PRODUTONCM.sql
+49 - Gerar Tabela INFM_PRODUTOPROMOCAO.sql
+50 - Gerar Tabela INFM_PRODUTOPROMOCAOPRODF.sql
+51 - Gerar Tabela INFM_PRODUTOSERVICO.sql
+52 - Gerar Tabela INFM_SEGMENTOCOMERCIAL.sql
+53 - Gerar Tabela INFM_SESSAO.sql
+54 - Gerar Tabela INFM_SITUACAO_PESSOA.sql
+55 - Gerar Tabela INFM_TIPOPESSOA.sql
+56 - Gerar Tabela INFM_TIPOPESSOA_PESSOA.sql
+57 - Gerar Tabela INFM_TIPOPRODUTO.sql
+58 - Gerar Tabela INFM_UNIDADEMEDIDA.sql
+59 - Gerar Tabela INFM_UNIDADEMEDPRODUTO.sql
+60 - Gerar Tabela INFM_USUPERMISSAOACAO.sql
+61 - Gerar FK FK_INFM_BAI_REFERENCE_INFM_CID.sql
+62 - Gerar FK FK_INFM_CID_REFERENCE_INFM_EST.sql
+63 - Gerar FK FK_INFM_COR_REFERENCE_INFM_EMP.sql
+65 - Gerar FK FK_INFM_DAT_REFERENCE_INFM_UNI.sql
+66 - Gerar FK FK_INFM_DAT_REFERENCE_INFM_PRO.sql
+67 - Gerar FK FK_INFM_END_REFERENCE_INFM_BAI.sql
+68 - Gerar FK FK_INFM_FIL_FK_PESSOA_INFM_PES1.sql
+69 - Gerar FK FK_INFM_FIL_REFERENCE_INFM_EMP.sql
+70 - Gerar FK FK_INFM_FIL_REFERENCE_INFM_END.sql
+71 - Gerar FK FK_INFM_FIL_FK_FILIAL_INFM_FIL1.sql
+72 - Gerar FK FK_INFM_FIL_REFERENCE_INFM_BAI.sql
+73 - Gerar FK FK_INFM_FIL_FK_FILIAL_INFM_FIL2.sql
+74 - Gerar FK FK_INFM_FIL_FK_PESSOA_INFM_PES.sql
+75 - Gerar FKFK_EMPRESA_GRUPOPERM.sql
+76 - Gerar FK FK_INFM_GRUPOPER_GRUPOPA.sql
+77 - Gerar FK FK_INFM_GRU_REFERENCE_INFM_PER.sql
+78 - Gerar FK FK_INFM_GRU_REFERENCE_INFM_ACA.sql
+79 - Gerar FK FK_EMPRESA_GRUPPROD.sql
+80 - Gerar FK FK_INFM_GRUPROD_GRUPRODPROD.sql
+81 - Gerar FK FK_INFM_GRUPROD_PROD2.sql
+82 - Gerar FK FK_INFM_HOR_REFERENCE_INFM_PES.sql
+83 - Gerar FK FK_INFM_PAR_REFERENCE_INFM_PAR.sql
+84 - Gerar FK FK_INFM_PAR_REFERENCE_INFM_FIL.sql
+85 - Gerar FK FK_INFM_PER_REFERENCE_INFM_PER.sql
+86 - Gerar FK FK_INFM_PER_REFERENCE_INFM_ACA.sql
+87 - Gerar FK FK_INFM_PES_PK_ENDERE_INFM_END.sql
+88 - Gerar FK FK_INFM_PES_REFERENCE_INFM_SIT.sql
+89 - Gerar FK FK_INFM_PES_REFERENCE_INFM_PES.sql
+90 - Gerar FK FK_INFM_PES_REFERENCE_INFM_SEG.sql
+91 - Gerar FK FK_INFM_PES_REFERENCE_INFM_END.sql
+92 - Gerar FK FK_INFM_PES_REFERENCE_INFM_EMP.sql
+93 - Gerar FK FK_EMPRESA_PRODCAT.sql
+94 - Gerar FK FKEMPRESAPRODCFOP.sql
+95 - Gerar FK FK_FILIAL_PRODCOMIS.sql
+96 - Gerar FK FKEMPESAPRODCST.sql
+97 - Gerar FK FK_EMPRESA_PRODDER.sql
+98 - Gerar FK FKUNIDADEMEDPRODFIL1.sql
+99 - Gerar FK FKUNIDADEMEDPRODFIL2.sql
+100 - Gerar FK FK_FILIAL_PRDFIL.sql
+101 - Gerar FK FK_INFM_PRO_FK_PRODCO_INFM_PRO.sql
+102 - Gerar FK FK_INFM_PRO_FK_PRODSE_INFM_PRO.sql
+103 - Gerar FK FK_EMPRESA_PRDMARC.sql
+104 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_EMP.sql
+105 - Gerar FK FKPRODFILIALPRODPROMPROD.sql
+106 - Gerar FK FKPRODPROMOCAOPROD.sql
+107 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_DAT.sql
+108 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_PRO.sql
+109 - Gerar FK FKPRODCSTPRODSERVICO.sql
+110 - Gerar FK FK_INFM_PRO_FKPRODNCM_INFM_PRO.sql
+111 - Gerar FK FK_EMPRESA_PRODEMP.sql
+112 - Gerar FK FK_INFM_PRO_FK_PRODCA_INFM_PRO.sql
+113 - Gerar FK FK_INFM_PRO_FK_PRODDE_INFM_PRO.sql
+114 - Gerar FK FK_INFM_PRO_FK_PRODMA_INFM_PRO.sql
+115 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_TIP.sql
+116 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_GRU.sql
+117 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_COR.sql
+118 - Gerar FK FKPRODUTOCFOPPRODSERV.sql
+119 - Gerar FK FK_INFM_SES_REFERENCE_INFM_PES.sql
+120 - Gerar FK FK_INFM_SES_REFERENCE_INFM_FIL.sql
+121 - Gerar FK FK_INFM_TIP_REFERENCE_INFM_TIP.sql
+122 - Gerar FK FK_INFM_TIP_REFERENCE_INFM_PES.sql
+123 - Gerar FK FKUNIDADMEDPROD.sql
+124 - Gerar FK FK_INFM_UNI_REFERENCE_INFM_EMP.sql
+125 - Gerar FK FK_INFM_UNI_FKUNIDADE_INFM_UNI.sql
+126 - Gerar FK FK_INFM_UNI_REFERENCE_INFM_PRO.sql
+127 - Gerar FK FK_INFM_USU_REFERENCE_INFM_PER.sql
+128 - Gerar FK FK_INFM_USU_REFERENCE_INFM_ACA.sql
+129 - Gerar FK FK_INFM_USU_REFERENCE_INFM_PES.sql
+130 - Gerar FK FK_INFM_USU_REFERENCE_INFM_GRU.sql
+131 - Gerar Tabela INFMA_EMPRESA.sql
+132 - Gerar Tabela INFMA_LICENCA.sql
+133 - Gerar FK FK_INFMA_EM_REFERENCE_INFMA_LI.sql
+134 - Inserir Tipo Pessoa Funcionario.sql
+135 - Inserir Tipo Pessoa Cliente.sql
+136 - Inserir Tipo Pessoa Fornecedor.sql
+137 - Inserir Empresa Default.sql
+138 - Inserir Filial Matriz.sql
+139 - Inserir Administrador.sql
+140 - Inserir Filial Pessoa.sql
+141 - Inserir Relacionamento Tipo Pessoa.sql
+142 - Inserir Acao Inserir.sql
+143 - Inserir Acao Modificar.sql
+143 - Inserir Acao Consultar.sql
+144 - Inserir Acao Excluir.sql
+145 - Inserir Permissao Principal.sql
+146 - Inserir Permissao Acao Principal Consultar.sql
+147 - Inserir Permissao Funcionario.sql
+149 - Inserir Permissao Acao Funcionario Inserir.sql
+150 - Inserir Permissao Acao Funcionario 2.sql
+151 - Inserir Permissao Acao Funcionario 3.sql
+152 - Inserir Permissao Acao Funcionario 4.sql
+153 - Inserir Permissao Cliente.sql
+154 - Inserir Permissao Acao Cliente 1.sql
+155 - Inserir Permissao Acao Cliente 2.sql
+156 - Inserir Permissao Acao Cliente 3.sql
+157 - Inserir Permissao Fornecedor.sql
+158 - Inserir Permissao Grupo Permissao.sql
+159 - Inserir Permissao Usuario.sql
+160 - Inserir Permissao Endereco.sql
+161 - Inserir Permissao Cor.sql
+162 - Inserir Permissao Unidade Medida.sql
+163 - Inserir Permissao Produto Categoria.sql
+164 - Inserir Permissao Produto Marca.sql
+165 - Inserir Permissao Produto Derivacao.sql
+166 - Inserir Permissao Grupo Produto.sql
+167 - Inserir Permissao Produto Servico.sql
+168 - Inserir Permissao Produto Comissao.sql
+169 - Inserir Permissao Produto CST.sql
+170 - Inserir Permissao Produto CFOP.sql
+171 - Inserir Permissao Produto NCM.sql
+172 - Inserir Permissao Produto Promocao.sql
+173 - Inserir Permissao Relatorio Estoque.sql
+174 - Inserir Permissao Empresa.sql
+175 - Inserir Permissao Relatorio Pessoas.sql
+176 - Inserir Permissao Acao Fornecedor 1.sql
+177 - Inserir Permissao Acao Fornecedor 2.sql
+178 - Inserir Permissao Acao Fornecedor 3.sql
+179 - Inserir Permissao Acao Fornecedor 4.sql
+180 - Inserir Permissao Acao Grupo Permissao 1.sql
+181 - Inserir Permissao Acao Grupo Permissao 2.sql
+182 - Inserir Permissao Acao Grupo Permissao 4.sql
+183 - Inserir Permissao Acao Permissao Usuario 2.sql
+184 - Inserir Permissao Acao Endereco 2.sql
+185 - Inserir Permissao Acao Cor 1.sql
+186 - Inserir Permissao Acao Cor 2.sql
+187 - Inserir Permissao Acao Cor 4.sql
+187 - Inserir Permissao Acao Unidade Medida 1.sql
+188 - Inserir Permissao Acao Unidade Medida 2.sql
+189 - Inserir Permissao Acao Unidade Medida 4.sql
+190 - Inserir Permissao Acao Produto Categoria 1.sql
+191 - Inserir Permissao Acao Produto Categoria 2.sql
+192 - Inserir Permissao Acao Produto Categoria 4.sql
+193 - Inserir Permissao Acao Produto Marca 1.sql
+194 - Inserir Permissao Acao Produto Marca 2.sql
+195 - Inserir Permissao Acao Produto Marca 4.sql
+196 - Inserir Permissao Acao Produto Derivacao 1.sql
+197 - Inserir Permissao Acao Produto Derivacao 2.sql
+198 - Inserir Permissao Acao Produto Derivacao 4.sql
+199 - Inserir Permissao Acao Grupo Produto 1.sql
+200 - Inserir Permissao Acao Grupo Produto 2.sql
+201 - Inserir Permissao Acao Grupo Produto 4.sql
+202 - Inserir Permissao Acao Produto Servico 1.sql
+203 - Inserir Permissao Acao Produto Servico 2.sql
+204 - Inserir Permissao Acao Produto Servico 3.sql
+205 - Inserir Permissao Acao Produto Servico 4.sql
+206 - Inserir Permissao Acao Produto Comissao 1.sql
+207 - Inserir Permissao Acao Produto Comissao 2.sql
+208 - Inserir Permissao Acao Produto Comissao 4.sql
+209 - Inserir Permissao Acao Produto CST 1.sql
+210 - Inserir Permissao Acao Produto CST 2.sql
+211 - Inserir Permissao Acao Produto CST 4.sql
+212 - Inserir Permissao Acao Produto CFOP 1.sql
+213 - Inserir Permissao Acao Produto CFOP 2.sql
+214 - Inserir Permissao Acao Produto CFOP 4.sql
+215 - Inserir Permissao Acao Produto NCM 1.sql
+216 - Inserir Permissao Acao Produto NCM 2.sql
+217 - Inserir Permissao Acao Produto NCM 4.sql
+218 - Inserir Permissao Acao Produto Promocao 1.sql
+219 - Inserir Permissao Acao Produto Promocao 2.sql
+220 - Inserir Permissao Acao Produto Promocao 3.sql
+221 - Inserir Permissao Acao Produto Promocao 4.sql
+222 - Inserir Permissao Acao Relatorio Estoque 3.sql
+223 - Inserir Permissao Acao Empresa 1.sql
+224 - Inserir Permissao Acao Empresa 2.sql
+225 - Inserir Permissao Acao Empresa 3.sql
+226 - Inserir Permissao Acao Empresa 4.sql
+227 - Inserir Permissao Acao Relatorio Pessoas 3.sql
+228 - Inserir Permissao Usuario Permissao Acao 1.sql
+229 - Inserir Permissao Usuario Permissao Acao 2.sql
+230 - Inserir Estado Acre.sql
+231 - Inserir Estado Alagoas.sql
+232 - Inserir Estado Amapa.sql
+233 - Inserir Estado Amazonas.sql
+234 - Inserir Estado Bahia.sql
+235 - Inserir Estado Ceara.sql
+236 - Inserir Estado Distrito Federal.sql
+237 - Inserir Estado Espirito Santo.sql
+238 - Inserir Estado Goias.sql
+239 - Inserir Estado Maranhao.sql
+240 - Inserir Estado Mato Grosso.sql
+241 - Inserir Estado Mato Grosso do Sul.sql
+242 - Inserir Estado Minas Gerais.sql
+243 - Inserir Estado Parana.sql
+244 - Inserir Estado Paraiba.sql
+245 - Inserir Estado Para.sql
+246 - Inserir Estado Pernambuco.sql
+247 - Inserir Estado Piaui.sql
+248 - Inserir Estado Rio de Janeiro.sql
+249 - Inserir Estado Rio Grande do Norte.sql
+250 - Inserir Estado Rio Grande do Sul.sql
+251 - Inserir Estado Rondonia.sql
+252 - Inserir Estado Roraima.sql
+253 - Inserir Estado Santa Catarina.sql
+254 - Inserir Estado Sergipe.sql
+255 - Inserir Estado Sao Paulo.sql
+256 - Inserir Estado Tocantins.sql
+257 - Inserir Tipo Produto Servico.sql
+258 - Inserir Tipo Produto Produto.sql
+259 - Inserir Situacao Pessoa Em Dia.sql
+260 - Inserir Situacao Pessoa Em Atraso.sql
+261 - Inserir Situacao Pessoa Em Devolucao.sql
+262 - Inserir Situacao Pessoa Cheque Devolvido.sql
+263 - Inserir Situacao Pessoa Pagando.sql
+264 - Inserir Situacao Pessoa SPC Bloqueado.sql
+265 - Adicionar Coluna Empresa.sql
+266 - Gerar FK FK_INFM_SEG_REFERENCE_INFM_EMP.sql
+267 - Inserir Permissao Segmento Comercial.sql
+268 - Inserir Permissao Acao Segmento Comercial 1.sql
+269 - Inserir Permissao Acao Segmento Comercial 2.sql
+270 - Inserir Permissao Acao Segmento Comercial 3.sql
+271 - Gerar Tabela INFM_FORMAPAGAMENTO.sql
+272 - Gerar Tabela INFM_TIPODOCUMENTO.sql
+273 - Gerar Tabela INFM_LOCALDOCUMENTO.sql
+274 - Gerar Tabela INFM_ADMINISTRADORA.sql
+275 - Gerar FK FK_INFM_ADM_REFERENCE_INFM_EMP.sql
+276 - Gerar Tabela INFM_SALDOFILIAL.sql
+277 - Gerar FK FK_INFM_SAL_REFERENCE_INFM_FIL.sql
+278 - Gerar Tabela INFM_DOCUMENTO.sql
+279 - Gerar FK FK_INFM_DOC_REFERENCE_INFM_FIL.sql
+280 - Gerar FK FK_INFM_DOC_REFERENCE_INFM_PES.sql
+281 - Gerar FK FK_INFM_DOC_REFERENCE_INFM_TIP.sql
+282 - Gerar FK FK_INFM_DOC_REFERENCE_INFM_LOC.sql
+283 - Gerar FK FK_INFM_DOC_REFERENCE_INFM_FOR.sql
+284 - Gerar FK FK_INFM_DOC_REFERENCE_INFM_ADM.sql
+285 - Gerar FK FK_INFM_DOC_REFERENCE_INFM_DOC.sql
+286 - Gerar Tabela INFM_PARCELAMENTO.sql
+287 - Gerar FK FK_INFM_PAR_REFERENCE_INFM_DOC.sql
+288 - Gerar Tabela INFM_TRANSACOES.sql
+289 - Gerar FK FK_INFM_TRA_REFERENCE_INFM_DOC.sql
+290 - Gerar FK FK_INFM_TRA_REFERENCE_INFM_PAR.sql
+291 - Gerar Tabela INFM_SALDOPESSOA.sql
+292 - Gerar FK FK_INFM_SAL_REFERENCE_INFM_DOC.sql
+293 - Gerar FK FK_INFM_SAL_REFERENCE_INFM_PES.sql
+294 - Inserir Tipo Documento Avulso.sql
+295 - Inserir Tipo Documento Nota.sql
+296 - Inserir Tipo Documento Duplicata.sql
+297 - Inserir Tipo Documento Credito.sql
+298 - Inserir Local Documento Empresa.sql
+299 - Inserir Local Documento Vendedor.sql
+300 - Inserir Local Documento Protestado.sql
+307 - Gerar Tipo Imagem.sql
+308 - Adicionar Coluna Imagem Administradora.sql
+309 - Adicionar Coluna Empresa Mestre.sql
+310 - Adicionar Coluna Pessoa Consultor.sql
+311 - Gerar Tabela INFMS_PUBLICIDADE .sql
+312 - Gerar Tabela INFMA_LICENCA .sql
+313 - Adicionar Coluna Empresa Licenca.sql
+314 - Adicionar Coluna Empresa Publicidade.sql
+315 - Gerar FK FK_INFM_EMP_REFERENCE_INFM_LIC.sql
+316 - Gerar FK FK_INFM_EMP_REFERENCE_INFM_PUB.sql
+317 - Adicionar Coluna Empresa Amigo.sql
+318 - Adicionar Coluna Empresa Consultor.sql
+319 - Gerar FK FK_INFM_EMP_REFERENCE_INFM_PES.sql
+320 - Inserir Publicidade Amigo.sql
+321 - Inserir Publicidade Consultor.sql
+322 - Gerar Tabela Grupo Compromisso.sql
+323 - Gerar FK FK_INFM_GRU_REFERENCE_INFM_EMP.sql
+324 - Gerar Tabela Grupo Compromisso Sub Grupo.sql
+325 - Gerar FK FK_INFM_GRU_REFERNCE_INFM_GRU.sql
+326 - Gerar FK FK_INFM_GRU_REF_INFM_GRU_1.sql
+327 - Gerar Tabela CRM.sql
+328 - Gerar FK FK_INFM_CRM_REFERENCE_INFM_EMP.sql
+330 - Gerar FK FK_INFM_CRM_REF_INFM_PES2.sql
+331 - Gerar FK FK_INFM_CRM_REFERENCE_INFM_PES.sql
+332 - Gerar Tabela Pessoa CRM.sql
+333 - Gerar FK FK_INFM_PES_REFERENCE_INFM_CRM.sql
+335 - Inserindo Permissao Grupo Compromissos.sql
+336 - Inserindo Permissao Acao Grupo Compromissos 1.sql
+337 - Inserindo Permissao Acao Grupo Compromissos 2.sql
+338 - Inserindo Permissao Acao Grupo Compromissos 4.sql
+339 - Gerar Tabela INFM_PROPOSTA.sql
+340 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_CRM.sql
+341 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_EMP.sql
+342 - Adicionar Coluna Codigo Proposta.sql
+343 - Adicionar Coluna Identificador Pessoa.sql
+344 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_PES.sql
+345 - Adicionar Coluna Identificador Cliente.sql
+346 - Gerar FK FK_INFM_PRO_REFERENCE_INFM_PES1.sql
+347 - Inserindo Permicao Proposta.sql
+348 - Inserindo Permicao Acao Proposta 1.sql
+349 - Inserindo Permicao Acao Proposta 2.sql
+350 - Inserindo Permicao Acao Proposta 3.sql
+351 - Inserindo Permicao Acao Proposta 4.sql
+352 - Adicionar Coluna Descricao CRM.sql
+353 - Adicionar Coluna Vigente.sql
+354 - Inserir Permissao Compromissos.sql
+355 - Inserir Permissao Acao Compromissos 1.sql
+356 - Inserir Permissao Acao Compromissos 2.sql
+357 - Inserir Permissao Acao Compromissos 3.sql
+358 - Inserir Permissao Acao Compromissos 4.sql
+359 - Inserir Permissao Agenda Funcionarios.sql
+360 - Inserir Permissao Acao Agenda Funcionarios 3.sql
+361 - Gerar Tabela INFM_IMAGEM.sql
+362 - Gerar Tabela INFM_VERSAO.sql
+363 - Inserindo Permissao Administradora.sql
+364 - Inserindo Permissao Acao  Administradora 1.sql
+365 - Inserindo Permissao Acao  Administradora 2.sql
+366 - Inserindo Permissao Acao  Administradora 4.sql
+367 - Gerar Tabela INFM_PERGUNTAS.sql
+368 - Gerar FK FK_INFM_PER_REFERENCE_INFM_GRU.sql
+369 - Gerar Tabela INFM_RESPOSTAPERGUNTAS.sql
+370 - Gerar FK FK_INFM_RES_REFERENCE_INFM_PES.sql
+372 - Gerar Tabela INFM_PERGUNTAOPCAO.sql
+373 - Gerar FK FK_INFM_PER_REFERENCE_INFM_PER.sql
+374 - Apagar Dados Tabela INFM_RESPOSTAPERGUNTA.sql
+375 - Apagar FK FK_INFM_RES_REFERENCE_INFM_CRM.sql
+376 - Adicionar Coluna IDPESSOACRM.sql
+377 - Gerar FK FK_INFM_RES_INFM_PESSSOACRM.sql
+378 - Adicionar Coluna DTHPROXAGENDAMENTOFIN.sql
+379 - Apagar Coluna IDCRM.sql
+329 - Gerar FK FK_INFM_CRM_REFERENCE_INFM_GRU.sql
+383 - Apagar FK FK_INFM_CRM_REFERENCE_INFM_GRU.sql
+384 - Adicionar Coluna IDGRUPOCOMPROMISSO.sql
+385 - Adicionar Coluna DESAGENDAMENTO.sql
+386 - Gerar FK FK_INFM_PES_CRM_INFM_GRU.sql
+389 - Apagar FK FK_INFM_PES_REF_INFM_PES2.sql
+390 - Apagar Coluna IDPESSOA.sql
+391 - Gerar Tabela INFM_PESSOACRMPESSOA.sql
+392 - Gerar FK FK_INFM_PESCRM_INFM_PESCRMPES.sql
+393 - Gerar FK FK_INFM_PES_INFM_PESCRMPES.sql
+394 - Alterar Coluna OBSCOMPROMISSO Para Nulo.sql
+395 - 1 - DROP Procedure SP_RECUPERAR_GRUPOCOMPROMISSO.sql
+396 - 1 - DROP Procedure SP_RECUPERAR_AGENDAMENTO.sql
+397 - 1 - DROP Procedure SP_RECUPERAR_AGEND_SIMPLES.sql
+395 - Criar Procedure SP_RECUPERAR_GRUPOCOMPROMISSO.sql
+396 - Criar Procedure SP_RECUPERAR_AGENDAMENTO.sql
+397 - Criar Procedure SP_RECUPERAR_AGEND_SIMPLES.sql
+398 - Gerar Tabela INFM_STATUS_CRM.sql
+399 - Adicionar Coluna IDSTATUSCRM.sql
+400 - Gerar FK FK_INFM_CRM_REFERENCE_INFM_STA.sql
+401 - Inserir Permissao StatusCRM.sql
+402 - Inserir Permissao Acao StatusCRM 1.sql
+403 - Inserir Permissao Acao StatusCRM 2.sql
+404 - Inserir Permissao Acao StatusCRM 4.sql
+405 - Adicionar Coluna IDEMPRESA Tabela INFM_STATUS_CRM.sql
+406 - Gerar FK FK_INFM_STA_REFERENCE_INFM_EMP.sql
+407 - DROP Procedure SP_RECUPERAR_AGENDAMENTO_DET.sql
+408 - Criar Procedure SP_RECUPERAR_AGENDAMENTO_DET.sql
+409 - DROP Procedure SP_PESQUISAR_GRUPO_COMPROMISSO.sql
+410 - Criar Procedure SP_PESQUISAR_GRUPO_COMPROMISSO.sql
+411 - Gerar Tabela INFM_TIPOEMPREGADO.sql
+412 - Gerar FK FK_INFM_TIP_REFERENCE_INFM_EMP.sql
+413 - 1 - Adicionar Coluna IDTIPOEMPREGADO Tabela INFM_PESSOA.sql
+413 - Gerar FK FK_INFM_PES_REFERENCE_INFM_TIP.sql
+414 - Gerar Tabela INFM_TIPOCRM.sql
+415 - Gerar FK FK_INFM_TIP_REFERENCE_INFM_EMP.sql
+416 - 1 - Adicionar Coluna IDTIPOCRM Tabela INFM_CRM.sql
+416 - Gerar FK FK_INFM_TIP_REFERENCE_INFM_TIP.sql
+417 - Gerar Tabela INFM_TIPOCRMCONFIG.sql
+418 - Gerar FK FK_INFM_TIP_REFERENCE_INFM_TIP.sql
+419 - Gerar FK FK_INFM_TIP_REF_INFM_TIP_2.sql
+421 - Inserir Permissao Tipo Empregado.sql
+422 - Inserir Permissao Acao TipoEmpregado 1.sql
+423 - Inserir Permissao Acao TipoEmpregado 2.sql
+424 - Inserir Permissao Acao TipoEmpregado 4.sql
+425 - Gerar Tabela INFM_TIPOCRMCONFIGPESSOA.sql
+426 - Gerar FK FK_INFM_TIPCRMCON_INFM_TIPCPES.sql
+427 - Gerar FK FK_INFM_TIPOCONFIGPES_INFM_PES.sql
+428 - Inserir Permissao Tipo CRM.sql
+429 - Inserir Permissao Acao CRM 1.sql
+430 - Inserir Permissao Acao CRM 2.sql
+431 - Inserir Permissao Acao CRM 4.sql
+433 - Adicionar Coluna BOLCONCLUIDO Tabela INFM_PESSOACRM.sql
+434 - Inserir Parametro ServidorBD.sql
+435 - Inserir Parametro NumeroPorta.sql
+436 - Inserir Parametro NomeBD.sql
+437 - Inserir Parametro USUARIOBD.sql
+438 - Inserir Parametro SENHABD.sql
+439 - Inserir Parametro AUTENTICACAOINTEGRADA.sql
+440 - Adicionar Coluna NUMVALORDESCONTO.sql
+441 - Adicionar Coluna NUMPERCENTDESCONTO.sql
+442 - Adicionar Coluna NUMVALORACRESCIMO.sql
+443 - Adicionar Coluna NUMPERCENTACRESCIMO.sql
+444 - Adicionar Coluna BOLCARTAO.sql
+445 - Adicionar Coluna BOLCREDITO.sql
+446 - Adicionar Coluna BOLCREDITO.sql
+447 - Adicionar Coluna IDTRANSACAO.sql
+448 - Adicionar Coluna IDTRANSACAO.sql
+449 - Gerar Tabela INFM_PAGAMENTO.sql
+450 - Gerar Tabela INFM_CAIXA.sql
+451 - Gerar FK FK_INFM_CAIXA_INFM_EMP1.sql
+452 - Gerar FK FK_INFM_CAIXA_INFM_FIL1.sql
+453 - Gerar Tabela INFM_VENDA.sql
+454 - Gerar FK FK_INFM_VENDA_INFM_FILIAL1.sql
+455 - Gerar FK FK_INFM_VENDA_INFM_PESSOA1.sql
+457 - Gerar FK FK_INFM_VENDA_INFM_PESSOA2.sql
+458 - Gerar FK FK_INFM_VENDA_INFM_ENDERECO1.sql
+459 - Gerar FK FK_INFM_VENDA_INFM_EMPRESA1.sql
+460 - Gerar FK FK_INFM_PAGAMENTO_INFM_VENDA1.sql
+461 - Gerar FK FK_INFM_PAGAMENTO_INFM_FORMA1.sql
+462 - Adicionar Coluna BOLSUPERVISOR.sql
+463 - Adicionar Coluna BOLRECEBEREMAILVENDA.sql
+464 - Adicionar Coluna BOLENTREGADOR.sql
+465 - Adicionar Coluna BOLPERMITEVENDAPRAZO.sql
+466 - Gerar Tabela INFM_ITEM_VENDA.sql
+467 - Gerar FK FK_INFM_ITEMVENDA_INFM_VENDA1.sql
+468 - Gerar FK FK_INFM_ITEM_VEND_INFM_PESSOA1.sql
+469 - Gerar FK FK_INFM_ITEM_VEN_INFM_PRODSER1.sql
+470 - Gerar Tabela INFM_CAIXA.sql
+471 - Gerar FK FK_INFM_CAIXA_INFM_EMPRESA1.sql
+472 - Gerar FK FK_INFM_CAIXA_INFM_FILIAL1.sql
+473 - Gerar Tabela INFM_RESPONSAVELCAIXA.sql
+473-1 - Gerar FK FK_INFM_VENDA_INFM_RESP1.sql
+474 - Gerar FK FK_INFM_RESPCAIX_INFM_CAIXA1.sql
+475 - Gerar FK FK_INFM_RESPCAI_INFM_PESSOA1.sql
+476 - Gerar Tabela INFM_SANGRIA.sql
+477 - Gerar FK FK_INFM_SANGRIA_INFM_RESP1.sql
+478 - Gerar FK FK_INFM_SANGRIA_INFM_PESSOA1.sql
+479 - Gerar Tabela INFM_PRODUTOVALORDINAMICO.sql
+480 - Gerar FK FK_INFM_PRODD_INFM_PRODFIL1.sql
+481 - Gerar Tabela INFM_MESA.sql
+482 - Gerar FK FK_INFM_MESA_INFM_FILIAL1.sql
+483 - Gerar Tabela INFM_MESAAGRUPAR.sql
+484 - Gerar FK FK_INFM_MESAAGRUP_INFM_MESA1.sql
+485 - Gerar FK FK_INFM_MESAAGRUP_INFM_MESA1.sql
+486 - Gerar Tabela INFM_MESAVENDA.sql
+487 - Gerar FK FK_INFM_MESAVENDA_INFM_MESA1.sql
+488 - Gerar FK FK_INFM_MESA_INFM_VENDA2.sql
+489 - Gerar Tabela INFM_PESSOAMESA.sql
+490 - Gerar FK FK_INFM_PESSOA_INFM_PESSOAMES1.sql
+491 - Gerar Tabela INFM_PESSOAMESAXMESA.sql
+492 - Gerar FK FK_INFM_PESSOAM_INFM_MESA1.sql
+493 - Gerar FK FK_INFM_PESSOAMESXM_INFM_PESM1.sql
+494 - Gerar Tabela INFM_PRODUTOVALORDINAMICO.sql
+495 - Gerar FK FK_INFM_PRODDIN_INFM_PRODFIL1.sql
+498 - Gerar AK AK_INFM_PESSOA2.sql
+499 - Gerar Tabela INFM_SETOREMPRESA.sql
+500 - Gerar FK FK_INFM_SETORE_INFM_EMP1.sql
+501 - Gerar FK FK_INFM_SETOREMP_INFM_FIL1.sql
+502 - Gerar Tabela INFM_OBSERVACAO.sql
+503 - Gerar FK FK_INFM_OBS_INFM_EMPRESA1.sql
+504 - Gerar Tabela INFM_OBSERVACAOPRODUTO.sql
+505 - Gerar FK FK_INFM_OBSERV_INFM_OBSPROD1.sql
+506 - Gerar FK FK_INFM_OBS_INFM_PRODSERV1.sql
+507 - Gerar Tabela INFM_ACRESCIMOPRODUTO.sql
+508 - Gerar FK FK_INFM_ACREPROD_INFM_PRODS1.sql
+509 - Gerar FK FK_INFM_ACREPROD_INFM_PRODS2.sql
+510 - Adicionar Coluna BOLVENDAAGRANEL.sql
+511 - Adicionar Coluna BOLINTERNO.sql
+512 - Adicionar Coluna BOLACRESCIMO.sql
+513 - Adicionar Coluna BOLSUPERVISOR.sql
+514 - Adicionar Coluna BOLRESPFINANCEIRO.sql
+515 - Adicionar Coluna BOLENTREGADOR.sql
+516 - Adicionar Coluna BOLGERENTE.sql
+517 - Gerar Tabela INFM_ITEMVENDAACRESCIMO.sql
+518 - Gerar FK FK_INFM_ITEMVE_INFM_ITEVA1.sql
+519 - Gerar FK FK_INFM_ITEMVEDA_INFM_PRODS1.sql
+520 - Gerar Tabela INFM_ITEMVENDAOBSERVACAO.sql
+521 - Gerar FK FK_INFM_ITEMVOB_INFM_OBS1.sql
+522 - Gerar FK FK_INFM_ITEMVO_INFM_ITEMV1.sql
+523 - Gerar Tabela INFM_CODIGOBARRASPESSOA.sql
+524 - Gerar FK FK_INFM_CODIBA_INFM_PES1.sql
+525 - Adicionar Coluna CODLOTE.sql
+525 - Inserir Permissao Compras.sql
+526 - Inserir Permissao Acao Compras 1.sql
+527 - Inserir Permissao Acao Compras 2.sql
+528 - Inserir Permissao Acao Compras 3.sql
+529 - Inserir Permissao Acao Compras 4.sql
+525 - Adicionar Coluna IDEMPRESA.sql
+526 - Gerar FK FK_INFM_FORMAPAG_INFM_EMP1.sql
+530 - Gerar Tabela INFM_PRODUTOOPCAO.sql
+531 - Gerar FK FK_INFM_PRODSERV_INFM_PROOP1.sql
+532 - Gerar Tabela INFM_CODIGOBARRASPRODSERV.sql
+533 - Gerar FK FK_INFM_CODBAPS_INFM_PRODSERV1.sql
+534 - Gerar FK FK_INFM_CODBAPS_INFM_EMPRESA1.sql
+535 - Adicionar Coluna IDPRODUTOOPCAO.sql
+536 - Gerar FK FK_INFM_PRODFIL_INFM_PRODOP1.sql
+537 - Gerar AK AK_INFM_CODIGOBARRASPRODSERV1.sql
+537 - 1 - Apagar Dados Tabela INFM_FORMAPAGAMENTO.sql
+539 - Gerar AK AK_INFM_FORMAPAGAMENTO2.sql
+553 - Inserir Permissao Forma de Pagamento.sql
+554 - Inserir Permissao Acao Forma de Pagamento 1.sql
+555 - Inserir Permissao Acao Forma de Pagamento 2.sql
+556 - Inserir Permissao Acao Forma de Pagamento 3.sql
+557 - Inserir Permissao Acao Forma de Pagamento 4.sql
+558 - Gerar Sequence INFM_SEQ_NUMEROCOMPRA.sql
+559 - Gerar Tabela INFM_COMPRA.sql
+560 - Gerar AK AK_INFM_COMPRA1.sql
+561 - Gerar FK FK_INFM_COMPRA_INFM_PESSOA1.sql
+562 - Gerar FK FK_INFM_COMPRA_INFM_EMPRESA1.sql
+563 - Gerar FK FK_INFM_COMPRA_INFM_FILIAL1.sql
+564 - Adicionar Coluna IDCOMPRA.sql
+565 - Gerar FK FK_INFM_DATOSCOMPRA_INFM_COM1.sql
+550 - Adicionar Coluna DTHVALIDADE.sql
+570 - Adicionar Coluna IDUNIDADEMEDIDAVALORCOMPRA.sql
+572 - Gerar FK FK_INFM_DATC_INFM_UNIDMED3.sql
+574 - Gerar Tabela INFM_GRUPOPARAMETRO.sql
+575 - Gerar Tabela INFM_PARAMETROOPCAO.sql
+576 - Adicionar coluna IDGRUPOPARAMETRO para INFM_PARAMETROS.sql
+577 - Adicionar coluna IDEMPRESA para INFM_PARAMETROVALOR.sql
+578 - Gerar FK FK_INFM_PAR_REFERENCE_INFM_GRU.sql
+579 - Gerar FK FK_INFM_PAR_REFERENCE_INFM_PAR.sql
+580 - Gerar FK FK_INFM_PAR_REFERENCE_INFM_EMP.sql
+581 - Inserir Permissao Parametros.sql
+582 - 1 - Alterar Tipo Coluna CODPERMISSAO.sql
+582 - Inserir Permissao Realizar Compra Para Outra Filial.sql
+583 - Inserir Permissao Acao Realizar Compra Outra Filial 1.sql
+584 - Inserir Permissao Acao Parametros 1.sql
+585 - Inserir Permissao Acao Parametros 2.sql
+586 - Inserir Permissao Acao Parametros 3.sql
+587 - Inserir Permissao Acao Parametros 4.sql
+584 - Adicionar coluna NUMCSTICMS para INFM_DATOSCOMPRAPROD.sql
+585 - Adicionar coluna NUMPERCENTICMS para INFM_DATOSCOMPRAPROD.sql
+586 - Adicionar coluna NUMPERCENTBCICMS para INFM_DATOSCOMPRAPROD.sql
+587 - Adicionar coluna NUMBCST para INFM_DATOSCOMPRAPROD.sql
+588 - Adicionar coluna NUMPERCENTIPI para INFM_DATOSCOMPRAPROD.sql
+589 - Adicionar coluna NUMIPI para INFM_DATOSCOMPRAPROD.sql
+590 - Adicionar coluna NUMCFOP para INFM_DATOSCOMPRAPROD.sql
+591 - Adicionar coluna NUMICMS para INFM_DATOSCOMPRAPROD.sql
+592 - Adicionar coluna NUMBCICMS para INFM_DATOSCOMPRAPROD.sql
+593 - Adicionar coluna NUMICMSST para INFM_DATOSCOMPRAPROD.sql
+594 - Adicionar coluna NUMCSTIPI para INFM_DATOSCOMPRAPROD.sql
+595 - Adicionar coluna NUMBASECALCULO para INFM_COMPRA.sql
+596 - Adicionar coluna NUMICMS para INFM_COMPRA.sql
+597 - Adicionar coluna NUMBASESUBSTITUICAO para INFM_COMPRA.sql
+598 - Adicionar coluna NUMICMSSUBSTITUICAO para INFM_COMPRA.sql
+599 - Adicionar coluna NUMFRETE para INFM_COMPRA.sql
+600 - Adicionar coluna NUMSEGURO para INFM_COMPRA.sql
+601 - Adicionar coluna NUMOUTRASDESPESAS para INFM_COMPRA.sql
+602 - Adicionar coluna NUMDESCONTO para INFM_COMPRA.sql
+603 - Adicionar coluna OBSOUTRASINFORMACOES para INFM_COMPRA.sql
+604 - Adicionar coluna QTDVOLUMES para INFM_COMPRA.sql
+605 - Adicionar coluna DESESPECIE para INFM_COMPRA.sql
+606 - Adicionar coluna DESMARCA para INFM_COMPRA.sql
+607 - Adicionar coluna NUMVOLUMES para INFM_COMPRA.sql
+608 - Adicionar coluna NUMPESOBRUTO para INFM_COMPRA.sql
+609 - Adicionar coluna NUMPESOLIQUIDO para INFM_COMPRA.sql
+610 - Adicionar coluna NUMVALORTOTALIPI para INFM_COMPRA.sql
+611 - Adicionar coluna BOLVENDANUMEROSERIE para INFM_PRODUTOSERVICO.sql
+612 - Adicionar coluna NUMESTOQUE para INFM_PRODUTOFILIAL.sql
+613 - Adicionar coluna IDUNIDADEMEDIDAMINESTOQUE para INFM_PRODUTOFILIAL.sql
+614 - Gerar FK FK_INFM_PRODUTOFIL_INFM_UNM.sql
+615 - Gerar Tabela INFM_PRODUTONUMEROSERIE.sql
+616 - Gerar AK AK_INFM_PRODUTONUMEROSERIE1.sql
+617 - Gerar FK FK_INFM_PRODNUMSE_INFM_DATCOMP1.sql
+618 - Gerar FK FK_INFM_PRODNUMSE_INFM_EMPRESA1.sql
+619 - Adicionar coluna IDPRODUTONUMEROSERIE para INFM_ITEMVENDA.sql
+620 - Gerar FK FK_INFM_ITEMVENDA_INFM_PRODNUMS1.sql
+621 - Inserir permissao Caixa.sql
+622 - Inserir Permissao Acao Caixa 1.sql
+623 - Inserir Permissao Acao Caixa 2.sql
+624 - Inserir Permissao Acao Caixa 3.sql
+625 - Inserir Permissao Acao Caixa 4.sql
+626 - Apagar FK FK_INFM_ITEMVENDA_INFM_PRODNUMS1.sql
+627 - Apagar Coluna IDPRODUTONUMEROSERIE.sql
+628 - Gerar Tabela INFM_ITEMVENDA_NUMSERIE.sql
+629 - Gerar FK FK_INFM_ITEMVNUMS_INFM_ITEMV1.sql
+630 - Gerar FK FK_INFM_ITEMVNUMS_INFM_PRDNS1.sql
+631 - Adicionar coluna DESHOST na tabela de CAIXA.sql
+632 - Gerar AK AK_INFM_CAIXA1.sql
+633 - Gerar AK AK_INFM_CAIXA2.sql
+634 - Adicionar coluna BOLSUPERVISOR para INFM_TIPOEMPREGADO.sql
+635 - Adicionar coluna BOLRESPFINANCEIRO para INFM_TIPOEMPREGADO.sql
+636 - Adicionar coluna BOLENTREGADOR para INFM_TIPOEMPREGADO.sql
+637 - Adicionar coluna BOLGERENTE para INFM_TIPOEMPREGADO.sql
+638 - Gerar Tabela INFM_INTEGRACAOAPI.sql
+640 - Gerar FK FK_INFM_INTAPI_INFM_EMPRESA.sql
+641 - Gerar Tabela INFM_STATUSCRMAGRUP.sql
+642 - Gerar FK FK_INFM_STATUSCRM_INFM_EMP1.sql
+643 - Adicionar coluna IDSTATUSCRMAGRUP.sql
+644 - Gerar FK FK_INFM_STATUSCRM_INFM_STAAG.sql
+645 - Adicionar coluna IDSTATUSCRMAGRUP.sql
+646 - Adicionar coluna IDSTATUSCRM.sql
+647 - Gerar FK FK_INFM_TIPOCRM_INFM_STAAGR.sql
+648 - Gerar FK FK_INFM_TIPO_INFM_STATUS.sql
+649 - Inserir Grupo Parametro Operativo.sql
+650 - Inserir Parametro Tipo Crm.sql
+651 - Adicionar coluna CODTIPOCRM.sql
+652 - Adicionar coluna IDUMVALORVENDAVAREJO para INFM_PRODUTOFILIAL.sql
+653 - Adicionar coluna IDUMVENDAATACADO para INFM_PRODUTOFILIAL.sql
+654 - Adicionar coluna IDUMVALORVENATACADO para INFM_PRODUTOFILIAL.sql
+655 - Adicionar coluna NUMVALORVENDAVAREJO para INFM_PRODUTOFILIAL.sql
+656 - Adicionar coluna NUMVALORVENDAATACADO para INFM_PRODUTOFILIAL.sql
+657 - Adicionar coluna NUMQUANTVENDAATACADO para INFM_PRODUTOFILIAL.sql
+658 - Adicionar coluna NUMPERCENTDESCONTATAC para INFM_PRODUTOFILIAL.sql
+658 - Inserir Parametro DescricaoClienteDefault.sql
+659 - Inserir permissao Integracao API.sql
+660 - Inserir Permissao Acao Integracao API 1.sql
+661 - Inserir Permissao Acao Integracao API 2.sql
+662 - Inserir Permissao Acao Integracao API 3.sql
+663 - Inserir Permissao Acao Integracao API 4.sql
+664 - Adicionar coluna IDEMPRESA para INFM_PRODUTOPROMOCAO.sql
+665 - Adicionar coluna IDFILIAL para INFM_PRODUTOPROMOCAO.sql
+666 - Adicionar coluna BOL_POR_HORARIO para INFM_PRODUTOPROMOCAO.sql
+667 - Gerar FK FK_INFM_PRO_REF_INFM_EMP.sql
+668 - Gerar FK FK_INFM_PRO_REF_INFM_FIL.sql
+669 - Gerar Tabela INFM_DIASEMANAPROMOCAO.sql
+670 - Gerar FK FK_INFM_DIA_REF_INFM_PRO.sql
+664 - Inserir Grupo Parametro IGerence Server.sql
+665 - Inserir Parametro IntervaloExecucaoAPI.sql
+671 - Adicionar coluna IDTIPOCRM para INFM_INTEGRACAOAPI.sql
+672 - Gerar FK FK_INFM_TPCRM_REF_INFM_CRM.sql
+673  - Inserir Parametro IntervaloCompromissoCRM.sql
+674  - Inserir Parametro NivelAtendimentoPadrao.sql
+675 - Inserir permissao Observação.sql
+676 - Inserir Permissao Acao Observacao 1.sql
+677 - Inserir Permissao Acao Observacao 2.sql
+678 - Inserir Permissao Acao Observacao 3.sql
+679 - Inserir Permissao Acao Observacao 4.sql
+679 - X - DROP Procedure SP_RECUPERAR_PRODUTOS.sql
+680- Criar Procedure SP_RECUPERAR_PRODUTOS.sql
+681 - Adicionar coluna CODESTADO para INFM_ITEMVENDA.sql
+682 - Adicionar coluna IDPESSOACANCELAMENTO para INFM_ITEMVENDA.sql
+683 - Gerar FK FK_INFM_ITEMVENDA_INFM_PESCANC.sql
+684 - Adicionar coluna IDPESSOACANCELAMENTO para INFM_VENDA.sql
+685 - Gerar FK FK_INFM_VENDA_INFM_PESSOACANC.sql
+686 - Adicionar coluna BOLESTOQUEATUAL para INFM_DATOSCOMPRAPROD.sql
+687 - Inserir permissao Guardar Estoque Atual.sql
+688 - Inserir Permissao Acao Guardar Estoque Atual 2.sql
+689 - Inserir Permissao Acao Guardar Estoque Atual 3.sql
+690 - DROP Procedure SP_ATUALIZARESTOQUECOMPRA.sql
+691 - Criar Procedure SP_ATUALIZARESTOQUECOMPRA.sql
+692 - DROP Procedure SP_REGISTRAR_VENDA.sql
+693 - Criar Procedure SP_REGISTRAR_VENDA.sql
+694  - Inserir Parametro ValorRealizarSangria.sql
+695  - Inserir Parametro FormaPagamentoPadrao.sql
+696 - Adicionar coluna CODTIPOPAGAMENTO para INFM_FORMAPAGAMENTO.sql
+697 - Adicionar coluna IDPAGAMENTO para INFM_ITEMVENDA.sql
+698 - Gerar FK FK_INFM_ITEMVENDA_INFM_PAG.sql
+699  - Inserir Parametro RecuperarImagemProduto.sql
+700  - Inserir Parametro ImprimirTicketVenda.sql
+701 - Gerar Tabela INFM_SUPRIMENTO.sql
+702 - Gerar FK FK_INFM_SUPRIMENTO_INFM_RESP.sql
+703 - Gerar FK FK_INFM_SUPRIMENTO_INFM_PESSOA.sql
+704  - Inserir Parametro CodigoBarrasPorValor.sql
+705 - Adicionar coluna CODVENDA para INFM_VENDA.sql
+706 - Gerar Tabela INFM_VALORFECHAMENTO.sql
+707 - Gerar FK FK_INFM_VALORFECH_INFM_RESPC.sql
+708 - Gerar FK FK_INFM_VALORFEC_INFM_FORMAPG.sql
+709 - Gerar FK FK_INFM_VALORFEC_INFM_PESSOA.sql
+710  - Inserir Parametro ExibirRelatorioFechamento.sql
+711  - Inserir Parametro TipoCodigoBarras.sql
+712  - Inserir Parametro Opcao 4POSICOES.sql
+713  - Inserir Parametro Opcao 5POSICOES.sql
+714  - Inserir Parametro Opcao 6POSICOES.sql
+714 - Adicionar coluna NUMTROCO para INFM_VENDA.sql
+715 - Adicionar coluna NUMACRESCIMO para INFM_VENDA.sql
+717 - Inserir permissao Venda Simples.sql
+718 - Inserir Permissao Acao Venda Simples 1.sql
+719 - Inserir permissao Venda Comanda.sql
+720 - Inserir Permissao Acao Venda Comanda 1.sql
+721 - Gerar Sequence INFM_SEQ_COMANDA.sql
+722 - Adicionar coluna IDSETOREMPRESA para INFM_PRODUTOSERVICO.sql
+723 - Gerar FK FK_INFM_PRODSERV_INFM_SETOR.sql
+724 - Inserir permissao Setor Empresa.sql
+725 - Inserir Permissao Acao Setor Empresa 1.sql
+726 - Inserir Permissao Acao Setor Empresa 2.sql
+727 - Inserir Permissao Acao Setor Empresa 3.sql
+728 - Adicionar coluna IDSETOREMPRESA para INFM_PRODUTOFILIAL.sql
+729 - Gerar FK FK_INFM_PRODFIL_INFM_SETOR.sql
+730 - Adicionar coluna NUMQUANTIDADE para INFM_ITEMVENDAACRESCIMO.sql
+731 - Adicionar coluna NUMVALOR para INFM_ITEMVENDAACRESCIMO.sql
+732 - Adicionar coluna NUMVALORTOTAL para INFM_ITEMVENDAACRESCIMO.sql
+733 - Adicionar coluna BOLATIVA para INFM_MESA.sql
+734 - Inserir permissao Mesa.sql
+735 - Inserir Permissao Acao Mesa 1.sql
+736 - Inserir Permissao Acao Mesa 2.sql
+737 - Inserir Permissao Acao Mesa 3.sql
+738 - Inserir Permissao Acao Mesa 4.sql
+739 - Adicionar coluna IDPESSOAVENDA para INFM_VENDA.sql
+740 - Gerar FK FK_INFM_VENDA_INFM_PESSOA1.sql
+741 - Adicionar coluna IDRESPONSAVELCAIXA para INFM_PAGAMENTO.sql
+742 - Gerar FK FK_INFM_PAGAMENTO_INFM_RESCA1.sql
+743  - Inserir Parametro TrabalhaPorComanda.sql
+744  - Inserir Parametro ImprimirTicketSetor.sql
+745  - Inserir Parametro GerarComandaAutomatico.sql
+746 - Adicionar coluna DESEMAIL para INFM_EMPRESA.sql
+747 - Adicionar coluna DESSENHA para INFM_EMPRESA.sql
+748 - Adicionar coluna DESSMTP para INFM_EMPRESA.sql
+749 - Adicionar coluna CODPORTA para INFM_EMPRESA.sql
+750 - Adicionar coluna BOLSSL para INFM_EMPRESA.sql
+751 - Adicionar coluna BOLCONCLUIDO para INFM_EMPRESA.sql
+752 - Gerar Tabela INFM_PROCESSO.sql
+753 - Gerar Tabela INFM_ITEMPROCESSO.sql
+754 - Gerar Tabela INFM_ITEMPROCESSOERRO.sql
+755 - Gerar FK FK_INFM_PROCESSO_INFM_EMPRESA.sql
+756 - Gerar FK FK_INFM_ITEMPROCESSO_INFM_PROCESSO.sql
+757 - Gerar FK FK_INFM_ITEMPROCESSO_INFM_ITEMPROCESSOERRO.sql
+758 - Inserir permissao Processos.sql
+759 - Inserir Permissao Acao Processo 1.sql
+760 - Inserir Permissao Acao Processo 2.sql
+761 - Inserir Permissao Acao Processo 3.sql
+762 - Inserir Permissao Acao Processo 4.sql
+763 - Adicionar coluna DTHPROGRAMADO para INFM_ITEMPROCESSO.sql
+764 - Adicionar coluna IDPROCESSO para INFM_ITEMPROCESSOERRO.sql
+765 - Gerar FK FK_INFM_ITEMPROCESSOERRO_INFM_PROCESSO.sql
+766 - Adicionar coluna BOLENVIAREMAILFECHAMENTO para INFM_TIPOEMPREGADO.sql
+767 - Adicionar coluna DESSENHATOUCH para INFM_PESSOA.sql

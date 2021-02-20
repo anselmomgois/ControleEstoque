@@ -1,0 +1,10 @@
+QUERYVALIDACAO select 1 FROM INFM_ESTADO WHERE CODESTADO = 'TO'
+BANCODEDADOS IGERENCE
+INSERT INTO INFM_ESTADO
+			(IDESTADO,
+             CODESTADO,
+             DESESTADO)
+VALUES
+            ('28',
+             'TO',
+             'TOCANTINS')

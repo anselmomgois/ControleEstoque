@@ -1,0 +1,5 @@
+QUERYVALIDACAO select 1 from  sysindexes where  id    = object_id('INFM_FORMAPAGAMENTO') and   name  = 'AK_INFM_FORMAPAGAMENTO2' and   indid > 0 and   indid < 255
+BANCODEDADOS IGERENCE
+create unique index AK_INFM_FORMAPAGAMENTO2 on INFM_FORMAPAGAMENTO (
+CODFORMAPAGAMENTO ASC,
+IDEMPRESA ASC)

@@ -1,0 +1,12 @@
+QUERYVALIDACAO select 1 FROM INFM_PERMISSAO WHERE CODPERMISSAO = 'PRODUTOCFOP'
+BANCODEDADOS INFORMATIZ
+INSERT INTO INFM_PERMISSAO
+           (IDPERMISSAO
+           ,CODPERMISSAO
+           ,DESPERMISSAO
+		   ,BOLOBRIGATORIA)
+     VALUES
+           ('17'
+           ,'PRODUTOCFOP'
+           ,'Tela Cadastro de Operações e Prestações'
+		   ,0)

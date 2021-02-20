@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85041CA5-D545-4C9E-89E2-4BBE2D6C9C27}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informatiz.ControleEstoque.API</RootNamespace>
+    <AssemblyName>Informatiz.ControleEstoque.API</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AmgSistemas.Framework.Email">
+      <HintPath>..\AmgSistemas.Framework.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Classes\CRM.cs" />
+    <Compile Include="Classes\ValidateModel.cs" />
+    <Compile Include="Controllers\AcaoController.cs" />
+    <Compile Include="Controllers\AdministradoraController.cs" />
+    <Compile Include="Controllers\BuscaCRMController.cs" />
+    <Compile Include="Controllers\ChaveController.cs" />
+    <Compile Include="Controllers\ComprasController.cs" />
+    <Compile Include="Controllers\CorController.cs" />
+    <Compile Include="Controllers\CorreiosController.cs" />
+    <Compile Include="Controllers\EmpresaController.cs" />
+    <Compile Include="Controllers\EnderecoController.cs" />
+    <Compile Include="Controllers\ErroController.cs" />
+    <Compile Include="Controllers\FilialController.cs" />
+    <Compile Include="Controllers\CaixaController.cs" />
+    <Compile Include="Controllers\FormaPagamentoController.cs" />
+    <Compile Include="Controllers\GrupoPermissaoController.cs" />
+    <Compile Include="Controllers\GrupoProdutoController.cs" />
+    <Compile Include="Controllers\GuardarAgendamentoController.cs" />
+    <Compile Include="Controllers\GuardarClienteController.cs" />
+    <Compile Include="Controllers\GuardarCompraController.cs" />
+    <Compile Include="Controllers\GuardarCRMController.cs" />
+    <Compile Include="Controllers\GuardarEmpresaController.cs" />
+    <Compile Include="Controllers\GuardarFornecedorController.cs" />
+    <Compile Include="Controllers\GuardarFuncionarioController.cs" />
+    <Compile Include="Controllers\GuardarIntegracaoAPIController.cs" />
+    <Compile Include="Controllers\GuardarMesaController.cs" />
+    <Compile Include="Controllers\GuardarProdutoFilialController.cs" />
+    <Compile Include="Controllers\GuardarProdutoPromocaoController.cs" />
+    <Compile Include="Controllers\GuardarProdutoServicoController.cs" />
+    <Compile Include="Controllers\GuardarTipoCrmConfigController.cs" />
+    <Compile Include="Controllers\GuardarTipoCrmController.cs" />
+    <Compile Include="Controllers\InformatizController.cs" />
+    <Compile Include="Controllers\IntegracaoAPIController.cs" />
+    <Compile Include="Controllers\MarcaController.cs" />
+    <Compile Include="Controllers\MesaController.cs" />
+    <Compile Include="Controllers\ObservacaoController.cs" />
+    <Compile Include="Controllers\ParametroController.cs" />
+    <Compile Include="Controllers\PermissaoController.cs" />
+    <Compile Include="Controllers\ProcessoController.cs" />
+    <Compile Include="Controllers\ProdutoCategoriaController.cs" />
+    <Compile Include="Controllers\ProdutoFilialController.cs" />
+    <Compile Include="Controllers\ProdutoPromocaoController.cs" />
+    <Compile Include="Controllers\ProdutoServicoController.cs" />
+    <Compile Include="Controllers\PropostaController.cs" />
+    <Compile Include="Controllers\RelatorioController.cs" />
+    <Compile Include="Controllers\SegmentoComercialController.cs" />
+    <Compile Include="Controllers\SessaoController.cs" />
+    <Compile Include="Controllers\SetorController.cs" />
+    <Compile Include="Controllers\TipoCrmController.cs" />
+    <Compile Include="Controllers\TipoEmpregadoController.cs" />
+    <Compile Include="Controllers\UnidadeMedidaController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\CRMController.cs" />
+    <Compile Include="Controllers\GrupoCompromissoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PessoaController.cs" />
+    <Compile Include="Controllers\StatusCrmController.cs" />
+    <Compile Include="Controllers\VendaController.cs" />
+    <Compile Include="Controllers\VendaSupermercadoController.cs" />
+    <Compile Include="Entity\IgerenceEntity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IgerenceEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\IgerenceEntity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\IgerenceEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IgerenceEntity.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFMA_EMPRESA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFMA_LICENCA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ACAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ACRESCIMOPRODUTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ADMINISTRADORA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_BAIRRO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_CAIXA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_CIDADE.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_CODIGOBARRASPESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_CODIGOBARRASPRODSERV.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_COMPRA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_COR.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_CRM.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_DATOSCOMPRAPROD.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_DIASEMANAPROMOCAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_DOCUMENTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_EMPRESA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ENDERECO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ESTADO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_FILIAL.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_FILIALBAIRRO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_FILIALPESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_FORMAPAGAMENTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_GRUPOCOMPROMISSO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_GRUPOCOMPROMISSOSUBGRUPO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_GRUPOPARAMETRO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_GRUPOPERMISSAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_GRUPOPERMISSAOACAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_GRUPOPRODUTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_GRUPOPRODUTOSUBGRUPO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_HORATRABALHO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_IMAGEM.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_INTEGRACAOAPI.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ITEMPROCESSO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ITEMPROCESSOERRO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ITEMVENDA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ITEMVENDAACRESCIMO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ITEMVENDAOBSERVACAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_ITEMVENDA_NUMSERIE.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_LICENCA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_LOCALDOCUMENTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_LOGERROR.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_MESA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_MESAAGRUPAR.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_MESAVENDA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_OBSERVACAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_OBSERVACAOPRODUTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PAGAMENTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PARAMETROOPCAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PARAMETROS.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PARAMETROVALOR.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PARCELAMENTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PERGUNTAOPCAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PERGUNTAS.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PERMISSAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PERMISSAOACAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PESSOACRM.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PESSOACRMPESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PESSOAMESA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PESSOAMESAXMESA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PROCESSO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODCATEGORIA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOCFOP.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOCOMISSAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOCST.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTODERIVACAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOFILIAL.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOMARCA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTONCM.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTONUMEROSERIE.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOOPCAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOPROMOCAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOPROMOCAOPRODF.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOSERVICO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PRODUTOVALORDINAMICO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PROPOSTA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_PUBLICIDADE.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_RESPONSAVELCAIXA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_RESPOSTAPERGUNTA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_SALDOFILIAL.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_SALDOPESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_SANGRIA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_SEGMENTOCOMERCIAL.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_SESSAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_SETOREMPRESA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_SITUACAO_PESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_STATUSCRMAGRUP.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_STATUS_CRM.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_SUPRIMENTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TIPOCRM.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TIPOCRMCONFIG.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TIPOCRMCONFIGPESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TIPODOCUMENTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TIPOEMPREGADO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TIPOPESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TIPOPESSOA_PESSOA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TIPOPRODUTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_TRANSACOES.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_UNIDADEMEDIDA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_UNIDADEMEDPRODUTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_USUPERMISSAOACAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_VALORFECHAMENTO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_VENDA.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\INFM_VERSAO.cs">
+      <DependentUpon>IgerenceEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Entity\IgerenceEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IgerenceEntity.edmx</DependentUpon>
+      <LastGenOutput>IgerenceEntity.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entity\IgerenceEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IgerenceEntity.edmx</DependentUpon>
+      <LastGenOutput>IgerenceEntity.cs</LastGenOutput>
+    </Content>
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Entity\IgerenceEntity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IgerenceEntity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Entity\IgerenceEntity.edmx.diagram">
+      <DependentUpon>IgerenceEntity.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\ANSELMO.pubxml" />
+    <None Include="Properties\PublishProfiles\ROMULO.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.AcessoDados\Informatiz.ControleEstoque.AcessoDados.csproj">
+      <Project>{76182113-e4b6-4e6a-82b3-34ab93103c96}</Project>
+      <Name>Informatiz.ControleEstoque.AcessoDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comum\Informatiz.ControleEstoque.Comum.csproj">
+      <Project>{1e5b2b33-02ef-416c-9d4c-89945dec619d}</Project>
+      <Name>Informatiz.ControleEstoque.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.ContratoServico\Informatiz.ControleEstoque.ContratoServico.csproj">
+      <Project>{a054547c-3971-436c-8526-b32e9354de0a}</Project>
+      <Name>Informatiz.ControleEstoque.ContratoServico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Execao\Informatiz.ControleEstoque.Execao.csproj">
+      <Project>{f1fdcba1-e01e-4410-8ea3-6a649c7b5fc3}</Project>
+      <Name>Informatiz.ControleEstoque.Execao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.LogicaNegocio\Informatiz.ControleEstoque.LogicaNegocio.csproj">
+      <Project>{0af1bd0a-4315-4713-88bd-9fd6d3f4d911}</Project>
+      <Name>Informatiz.ControleEstoque.LogicaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58758</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58170/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,12 @@
+QUERYVALIDACAO select 1 FROM INFM_PERMISSAO WHERE CODPERMISSAO = 'ADMINISTRADORA'
+BANCODEDADOS IGERENCE
+INSERT INTO INFM_PERMISSAO
+           (IDPERMISSAO
+           ,CODPERMISSAO
+           ,DESPERMISSAO
+		   ,BOLOBRIGATORIA)
+     VALUES
+           ('28'
+           ,'ADMINISTRADORA'
+           ,'Tela de Administradora de Cartão de Credito'
+		   ,0)

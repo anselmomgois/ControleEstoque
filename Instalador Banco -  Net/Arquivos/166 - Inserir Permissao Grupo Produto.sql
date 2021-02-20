@@ -1,0 +1,12 @@
+QUERYVALIDACAO select 1 FROM INFM_PERMISSAO WHERE CODPERMISSAO = 'GRUPOPRODUTO'
+BANCODEDADOS INFORMATIZ
+INSERT INTO INFM_PERMISSAO
+           (IDPERMISSAO
+           ,CODPERMISSAO
+           ,DESPERMISSAO
+		   ,BOLOBRIGATORIA)
+     VALUES
+           ('13'
+           ,'GRUPOPRODUTO'
+           ,'Tela Cadastro de Grupo de Produtos'
+		   ,0)

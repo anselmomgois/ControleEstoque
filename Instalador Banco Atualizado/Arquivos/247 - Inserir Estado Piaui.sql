@@ -1,0 +1,10 @@
+QUERYVALIDACAO select 1 FROM INFM_ESTADO WHERE CODESTADO = 'PI'
+BANCODEDADOS IGERENCE
+INSERT INTO INFM_ESTADO
+			(IDESTADO,
+             CODESTADO,
+             DESESTADO)
+VALUES
+            ('19',
+             'PI',
+             'PIAUÍ')

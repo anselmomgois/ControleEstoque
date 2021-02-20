@@ -1,0 +1,10 @@
+QUERYVALIDACAO select 1 FROM INFM_ESTADO WHERE CODESTADO = 'BA'
+BANCODEDADOS INFORMATIZ
+INSERT INTO INFM_ESTADO
+			(IDESTADO,
+             CODESTADO,
+             DESESTADO)
+VALUES
+            ('6',
+             'BA',
+             'BAHIA')

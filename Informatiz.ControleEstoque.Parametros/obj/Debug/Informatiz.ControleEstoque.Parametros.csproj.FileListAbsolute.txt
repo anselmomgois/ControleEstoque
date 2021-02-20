@@ -1,0 +1,12 @@
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\bin\Debug\Informatiz.ControleEstoque.Parametros.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\bin\Debug\Informatiz.ControleEstoque.Parametros.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\bin\Debug\Informatiz.ControleEstoque.Comum.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\bin\Debug\CsQuery.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\bin\Debug\Informatiz.ControleEstoque.Execao.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\bin\Debug\Informatiz.ControleEstoque.Comum.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\bin\Debug\Informatiz.ControleEstoque.Execao.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\obj\Debug\Informatiz.ControleEstoque.Parametros.csprojAssemblyReference.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\obj\Debug\Informatiz.ControleEstoque.Parametros.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\obj\Debug\Informatiz.ControleEstoque.Parametros.csproj.CopyComplete
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\obj\Debug\Informatiz.ControleEstoque.Parametros.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Parametros\obj\Debug\Informatiz.ControleEstoque.Parametros.pdb

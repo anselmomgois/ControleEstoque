@@ -1,0 +1,5 @@
+QUERYVALIDACAO select 1 from  sysindexes where  id    = object_id('INFM_PRODUTONUMEROSERIE') and   name  = 'AK_PRODUTONUMEROSERIE1' and   indid > 0 and   indid < 255
+BANCODEDADOS IGERENCE
+create unique index AK_PRODUTONUMEROSERIE1 on INFM_PRODUTONUMEROSERIE (
+DESNUMEROSERIE ASC,
+IDEMPRESA ASC)

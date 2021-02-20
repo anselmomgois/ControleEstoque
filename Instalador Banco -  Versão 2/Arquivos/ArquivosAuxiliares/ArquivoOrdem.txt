@@ -1,0 +1,5 @@
+1 - Alterar Coluna OBSCOMPROMISSO Para Nulo.sql
+2 - Adicionar Coluna CODDOCUMENTO.sql
+3 - Gerar Index IXPESSOACRMPESSOA1.sql
+4 - Gerar Index IXPESSOACRM1.sql
+5 - Alterar Coluna CODEMPRESA INTEIRO.sql

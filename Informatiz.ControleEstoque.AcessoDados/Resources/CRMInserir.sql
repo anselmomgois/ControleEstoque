@@ -1,0 +1,20 @@
+﻿INSERT INTO INFM_CRM
+           (IDCRM
+           ,IDEMPRESA
+           ,IDPESSOACADASTRO
+           ,IDPESSOACLIENTE
+           ,OBSCOMPROMISSO
+           ,DESCRM
+           ,BOLATIVO
+		   ,IDSTATUSCRM
+		   ,IDTIPOCRM)
+     VALUES
+           (@IDCRM
+           ,@IDEMPRESA
+           ,@IDPESSOACADASTRO
+           ,@IDPESSOACLIENTE
+           ,@OBSCOMPROMISSO
+           ,@DESCRM
+           ,@BOLATIVO
+		   ,@IDSTATUSCRM
+		   ,@IDTIPOCRM)

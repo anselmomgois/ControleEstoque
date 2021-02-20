@@ -1,0 +1,10 @@
+QUERYVALIDACAO select 1 FROM INFM_PUBLICIDADE WHERE CODPUBLICIDADE = '2'
+BANCODEDADOS INFORMATIZ
+INSERT INTO INFM_PUBLICIDADE
+           (IDPUBLICIDADE
+           ,CODPUBLICIDADE
+           ,DESPUBLICIDADE)
+     VALUES
+           ('2'
+           ,'2'
+           ,'Indicação de Consultor')

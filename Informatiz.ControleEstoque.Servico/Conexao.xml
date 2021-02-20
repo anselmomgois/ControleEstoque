@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DadosConexao xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataBase>3L/fsrf5pKOnPAoNznG1Mw==</DataBase>
+  <DataSource>G78O8m387uEtNMdQXJpf/w==</DataSource>
+  <AutenticacaoIntegrada>true</AutenticacaoIntegrada>
+</DadosConexao>

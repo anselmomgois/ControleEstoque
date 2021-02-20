@@ -1,0 +1,37 @@
+Private Sub btnCreateDatabase_Click(ByVal sender As System.Object, _
+ByVal e As System.EventArgs) Handles btnCreateDatabase.Click
+    Dim str As String
+
+    Dim myConn As SqlConnection = New SqlConnection("Server=(local)\netsdk;" & _
+                                                    "uid=sa;pwd=;database=master")
+
+    str = "CREATE DATABASE MyDatabase ON PRIMARY " & _
+          "(NAME = MyDatabase_Data, " & _
+          " FILENAME = 'D:\MyFolder\MyDatabaseData.mdf', " & _
+          " SIZE = 2MB, " & _
+          " MAXSIZE = 10MB, " & _
+          " FILEGROWTH = 10%) " & _
+          " LOG ON " & _
+          "(NAME = MyDatabase_Log, " & _
+          " FILENAME = 'D:\MyFolder\MyDatabaseLog.ldf', " & _
+          " SIZE = 1MB, " & _
+          " MAXSIZE = 5MB, " & _
+          " FILEGROWTH = 10%) "
+
+    Dim myCommand As SqlCommand = New SqlCommand(str, myConn)
+
+    Try
+        myConn.Open()
+        myCommand.ExecuteNonQuery()
+        MessageBox.Show("Database is created successfully", _
+                        "MyProgram", MessageBoxButtons.OK, _
+                         MessageBoxIcon.Information)
+       Catch ex As Exception
+           MessageBox.Show(ex.ToString())
+       Finally
+           If (myConn.State = ConnectionState.Open) Then
+               myConn.Close()
+           End If
+       End Try
+
+End Sub

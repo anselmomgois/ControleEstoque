@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B664FD7F-7F8E-4651-A7BA-DEF0F7D9A6CE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informatiz.ControleEstoque.Web</RootNamespace>
+    <AssemblyName>Informatiz.ControleEstoque.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AmgSistemas.Framework.Web">
+      <HintPath>..\AmgSistemas.Framework.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CadastroClientes.aspx" />
+    <Content Include="Download.aspx" />
+    <Content Include="imagem_titulo.png" />
+    <Content Include="Image\aceitar.png" />
+    <Content Include="Image\bar_chart.png" />
+    <Content Include="Image\box.png" />
+    <Content Include="Image\buy-sell-stock-trading-dice.jpg" />
+    <Content Include="Image\cadeado_aberto.png" />
+    <Content Include="Image\cadeado_fechado.png" />
+    <Content Include="Image\cadeado_fechado_16.png" />
+    <Content Include="Image\cancel.png" />
+    <Content Include="Image\category.png" />
+    <Content Include="Image\circle_green.png" />
+    <Content Include="Image\circle_red.png" />
+    <Content Include="Image\cliente.png" />
+    <Content Include="Image\coins.png" />
+    <Content Include="Image\color.png" />
+    <Content Include="Image\cst.png" />
+    <Content Include="Image\diagram_v2_19.png" />
+    <Content Include="Image\dir.png" />
+    <Content Include="Image\edit.png" />
+    <Content Include="Image\email_send.png" />
+    <Content Include="Image\empregado.png" />
+    <Content Include="Image\exit.png" />
+    <Content Include="Image\fundo.png" />
+    <Content Include="Image\fundo_azul_claro.png" />
+    <Content Include="Image\fundo_branco.png" />
+    <Content Include="Image\gear_yellow.png" />
+    <Content Include="Image\gnome_edit_clear.png" />
+    <Content Include="Image\group_key.png" />
+    <Content Include="Image\hard_drive_backups.png" />
+    <Content Include="Image\hard_drive_backups_1.png" />
+    <Content Include="Image\image.png" />
+    <Content Include="Image\imagem_area_trabalho.jpg" />
+    <Content Include="Image\imagem_fundo.png" />
+    <Content Include="Image\imagem_login.jpg" />
+    <Content Include="Image\imagem_sistema.jpg" />
+    <Content Include="Image\Imagem_sistema.png" />
+    <Content Include="Image\imagem_titulo.png" />
+    <Content Include="Image\imagem_topo.jpg" />
+    <Content Include="Image\imagem_topo_pequena.png" />
+    <Content Include="Image\img_small.png" />
+    <Content Include="Image\imposto.jpg" />
+    <Content Include="Image\kchart.png" />
+    <Content Include="Image\key.png" />
+    <Content Include="Image\logo.ico" />
+    <Content Include="Image\logo.jpg" />
+    <Content Include="Image\logoff.png" />
+    <Content Include="Image\logo_estoque.png" />
+    <Content Include="Image\logo_grande.png" />
+    <Content Include="Image\logo_modificada.png" />
+    <Content Include="Image\logo_modificada_1.png" />
+    <Content Include="Image\logo_selecao_empesa.png" />
+    <Content Include="Image\lorrygreen.png" />
+    <Content Include="Image\mark.png" />
+    <Content Include="Image\material.png" />
+    <Content Include="Image\move2red.png" />
+    <Content Include="Image\ncm.jpg" />
+    <Content Include="Image\new.png" />
+    <Content Include="Image\office_building.png" />
+    <Content Include="Image\printer_red.png" />
+    <Content Include="Image\product_documentation.png" />
+    <Content Include="Image\product_documentation_g.png" />
+    <Content Include="Image\promocao.png" />
+    <Content Include="Image\report.png" />
+    <Content Include="Image\report_user.png" />
+    <Content Include="Image\save.png" />
+    <Content Include="Image\search.png" />
+    <Content Include="Image\search_16.png" />
+    <Content Include="Image\sign_up.png" />
+    <Content Include="Image\stock_ticker.ico" />
+    <Content Include="Image\sub_blue_add.png" />
+    <Content Include="Image\sub_blue_minus.png" />
+    <Content Include="Image\symbol_error.png" />
+    <Content Include="Image\system_restore.png" />
+    <Content Include="Image\work_group.png" />
+    <Content Include="Image\x.png" />
+    <Content Include="Image\x_gray.png" />
+    <Content Include="Scripts\JS.js" />
+    <Content Include="SouCadastrado.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="CadastroClientes.aspx.cs">
+      <DependentUpon>CadastroClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroClientes.aspx.designer.cs">
+      <DependentUpon>CadastroClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SouCadastrado.aspx.cs">
+      <DependentUpon>SouCadastrado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SouCadastrado.aspx.designer.cs">
+      <DependentUpon>SouCadastrado.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comum\Informatiz.ControleEstoque.Comum.csproj">
+      <Project>{1E5B2B33-02EF-416C-9D4C-89945DEC619D}</Project>
+      <Name>Informatiz.ControleEstoque.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comunicacao\Informatiz.ControleEstoque.Comunicacao.csproj">
+      <Project>{278AE69F-18D9-4941-9478-DA58EA775620}</Project>
+      <Name>Informatiz.ControleEstoque.Comunicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.ContratoServico\Informatiz.ControleEstoque.ContratoServico.csproj">
+      <Project>{A054547C-3971-436C-8526-B32E9354DE0A}</Project>
+      <Name>Informatiz.ControleEstoque.ContratoServico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Execao\Informatiz.ControleEstoque.Execao.csproj">
+      <Project>{F1FDCBA1-E01E-4410-8EA3-6A649C7B5FC3}</Project>
+      <Name>Informatiz.ControleEstoque.Execao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.LogicaNegocio\Informatiz.ControleEstoque.LogicaNegocio.csproj">
+      <Project>{0AF1BD0A-4315-4713-88BD-9FD6D3F4D911}</Project>
+      <Name>Informatiz.ControleEstoque.LogicaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Arquivos\CE - Controle de Estoque.msi" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2098</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

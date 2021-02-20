@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4DFA716-5B99-4D1C-A236-CBD3296E3AE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informatiz.ControleEstoque.Supervisor</RootNamespace>
+    <AssemblyName>Informatiz.ControleEstoque.Supervisor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Classes\Util.cs" />
+    <Compile Include="DataSet\dtChaves.cs">
+      <DependentUpon>dtChaves.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet\dtChaves.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtChaves.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Chave.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Chave.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\Chaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Chaves.Designer.cs">
+      <DependentUpon>Chaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GerarChave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GerarChave.Designer.cs">
+      <DependentUpon>GerarChave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\RelatorioVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RelatorioVisualizar.Designer.cs">
+      <DependentUpon>RelatorioVisualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaBase\Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaBase\Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaBase\BaseCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaBase\BaseCE.Designer.cs">
+      <DependentUpon>BaseCE.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report\Chave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Chave.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Chaves.resx">
+      <DependentUpon>Chaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GerarChave.resx">
+      <DependentUpon>GerarChave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Telas\RelatorioVisualizar.resx">
+      <DependentUpon>RelatorioVisualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaBase\Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dtChaves.xsc">
+      <DependentUpon>dtChaves.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dtChaves.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtChaves.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dtChaves.xss">
+      <DependentUpon>dtChaves.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comum\Informatiz.ControleEstoque.Comum.csproj">
+      <Project>{1E5B2B33-02EF-416C-9D4C-89945DEC619D}</Project>
+      <Name>Informatiz.ControleEstoque.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comunicacao\Informatiz.ControleEstoque.Comunicacao.csproj">
+      <Project>{278AE69F-18D9-4941-9478-DA58EA775620}</Project>
+      <Name>Informatiz.ControleEstoque.Comunicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.ContratoServico\Informatiz.ControleEstoque.ContratoServico.csproj">
+      <Project>{A054547C-3971-436C-8526-B32E9354DE0A}</Project>
+      <Name>Informatiz.ControleEstoque.ContratoServico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Parametros\Informatiz.ControleEstoque.Parametros.csproj">
+      <Project>{E9129947-403A-4468-8E74-91852776C1AC}</Project>
+      <Name>Informatiz.ControleEstoque.Parametros</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Image\aceitar.png" />
+    <Content Include="Image\bar_chart.png" />
+    <Content Include="Image\box.png" />
+    <Content Include="Image\buy-sell-stock-trading-dice.jpg" />
+    <Content Include="Image\cadeado_aberto.png" />
+    <Content Include="Image\cadeado_fechado.png" />
+    <Content Include="Image\cadeado_fechado_16.png" />
+    <Content Include="Image\cancel.png" />
+    <Content Include="Image\category.png" />
+    <Content Include="Image\circle_green.png" />
+    <Content Include="Image\circle_red.png" />
+    <Content Include="Image\cliente.png" />
+    <Content Include="Image\coins.png" />
+    <Content Include="Image\color.png" />
+    <Content Include="Image\cst.png" />
+    <Content Include="Image\diagram_v2_19.png" />
+    <Content Include="Image\dir.png" />
+    <Content Include="Image\edit.png" />
+    <Content Include="Image\email_send.png" />
+    <Content Include="Image\empregado.png" />
+    <Content Include="Image\exit.png" />
+    <Content Include="Image\fundo.png" />
+    <Content Include="Image\fundo_azul_claro.png" />
+    <Content Include="Image\fundo_branco.png" />
+    <Content Include="Image\gear_yellow.png" />
+    <Content Include="Image\gnome_edit_clear.png" />
+    <Content Include="Image\group_key.png" />
+    <Content Include="Image\hard_drive_backups.png" />
+    <Content Include="Image\hard_drive_backups_1.png" />
+    <Content Include="Image\image.png" />
+    <Content Include="Image\imagem_area_trabalho.jpg" />
+    <Content Include="Image\imagem_fundo.png" />
+    <Content Include="Image\imagem_login.jpg" />
+    <Content Include="Image\imagem_sistema.jpg" />
+    <Content Include="Image\Imagem_sistema.png" />
+    <Content Include="Image\imagem_titulo.png" />
+    <Content Include="Image\imagem_topo.jpg" />
+    <Content Include="Image\imagem_topo_pequena.png" />
+    <Content Include="Image\img_small.png" />
+    <Content Include="Image\imposto.jpg" />
+    <Content Include="Image\kchart.png" />
+    <Content Include="Image\key.png" />
+    <Content Include="Image\logo.ico" />
+    <Content Include="Image\logo.jpg" />
+    <Content Include="Image\logoff.png" />
+    <Content Include="Image\logo_estoque.png" />
+    <Content Include="Image\logo_grande.png" />
+    <Content Include="Image\logo_modificada.png" />
+    <Content Include="Image\logo_modificada_1.png" />
+    <Content Include="Image\logo_selecao_empesa.png" />
+    <Content Include="Image\lorrygreen.png" />
+    <Content Include="Image\mark.png" />
+    <Content Include="Image\material.png" />
+    <Content Include="Image\move2red.png" />
+    <Content Include="Image\ncm.jpg" />
+    <Content Include="Image\new.png" />
+    <Content Include="Image\office_building.png" />
+    <Content Include="Image\printer_red.png" />
+    <Content Include="Image\product_documentation.png" />
+    <Content Include="Image\product_documentation_g.png" />
+    <Content Include="Image\promocao.png" />
+    <Content Include="Image\report.png" />
+    <Content Include="Image\report_user.png" />
+    <Content Include="Image\save.png" />
+    <Content Include="Image\search.png" />
+    <Content Include="Image\search_16.png" />
+    <Content Include="Image\sign_up.png" />
+    <Content Include="Image\stock_ticker.ico" />
+    <Content Include="Image\sub_blue_add.png" />
+    <Content Include="Image\sub_blue_minus.png" />
+    <Content Include="Image\system_restore.png" />
+    <Content Include="Image\work_group.png" />
+    <Content Include="Image\x.png" />
+    <Content Include="Image\x_gray.png" />
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

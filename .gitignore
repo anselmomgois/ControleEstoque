@@ -1,0 +1,87 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/ControleEstoque/ControleEstoque.Aplicacao/bin
+/ControleEstoque/ControleEstoque.Aplicacao/obj
+/ControleEstoque/Informatiz.ControleEstoque.AcessoDados/bin
+/ControleEstoque/Informatiz.ControleEstoque.AcessoDados/obj
+/ControleEstoque/Informatiz.ControleEstoque.API/bin
+/ControleEstoque/Informatiz.ControleEstoque.API/obj
+/ControleEstoque/Informatiz.ControleEstoque.Atualizador/bin
+/ControleEstoque/Informatiz.ControleEstoque.Atualizador/obj
+/ControleEstoque/Informatiz.ControleEstoque.Comum/bin
+/ControleEstoque/Informatiz.ControleEstoque.Comum/obj
+/ControleEstoque/Informatiz.ControleEstoque.Comunicacao/bin
+/ControleEstoque/Informatiz.ControleEstoque.Comunicacao/obj
+/ControleEstoque/Informatiz.ControleEstoque.ContratoServico/bin
+/ControleEstoque/Informatiz.ControleEstoque.ContratoServico/obj
+/ControleEstoque/Informatiz.ControleEstoque.Execao/bin
+/ControleEstoque/Informatiz.ControleEstoque.Execao/obj
+/ControleEstoque/Informatiz.ControleEstoque.Instalador/bin
+/ControleEstoque/Informatiz.ControleEstoque.Instalador/obj
+/ControleEstoque/Informatiz.ControleEstoque.LogicaNegocio/bin
+/ControleEstoque/Informatiz.ControleEstoque.LogicaNegocio/obj
+/ControleEstoque/Informatiz.ControleEstoque.Parametros/bin
+/ControleEstoque/Informatiz.ControleEstoque.Parametros/obj
+/ControleEstoque/Informatiz.ControleEstoque.Relatorios/bin
+/ControleEstoque/Informatiz.ControleEstoque.Relatorios/obj
+/ControleEstoque/Informatiz.ControleEstoque.SDK/bin
+/ControleEstoque/Informatiz.ControleEstoque.SDK/obj
+/ControleEstoque/Informatiz.ControleEstoque.Server/bin
+/ControleEstoque/Informatiz.ControleEstoque.Server/obj
+/ControleEstoque/Informatiz.ControleEstoque.Servico/bin
+/ControleEstoque/Informatiz.ControleEstoque.Servico/obj
+/ControleEstoque/Informatiz.ControleEstoque.SetUp/bin
+/ControleEstoque/Informatiz.ControleEstoque.SetUp/obj
+/ControleEstoque/Informatiz.ControleEstoque.SetupServer/bin
+/ControleEstoque/Informatiz.ControleEstoque.SetupServer/obj
+/ControleEstoque/Informatiz.ControleEstoque.Supervisor/bin
+/ControleEstoque/Informatiz.ControleEstoque.Supervisor/obj
+/ControleEstoque/Informatiz.ControleEstoque.Supervisor.Instalador/bin
+/ControleEstoque/Informatiz.ControleEstoque.Supervisor.Instalador/obj
+/ControleEstoque/Informatiz.ControleEstoque.Web/bin
+/ControleEstoque/Informatiz.ControleEstoque.Web/obj
+
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+/.vs
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db

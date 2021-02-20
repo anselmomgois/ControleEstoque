@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76182113-E4B6-4E6A-82B3-34AB93103C96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informatiz.ControleEstoque.AcessoDados</RootNamespace>
+    <AssemblyName>Informatiz.ControleEstoque.AcessoDados</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AmgSistemas.Framework.AcessoDados">
+      <HintPath>..\AmgSistemas.Framework.AcessoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Criptografia">
+      <HintPath>..\AmgSistemas.Framework.Criptografia.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Utilitarios">
+      <HintPath>..\AmgSistemas.Framework.Utilitarios.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Classes\Acao.cs" />
+    <Compile Include="Classes\Administradora.cs" />
+    <Compile Include="Classes\Backup.cs" />
+    <Compile Include="Classes\Bairro.cs" />
+    <Compile Include="Classes\Cidade.cs" />
+    <Compile Include="Classes\Cor.cs" />
+    <Compile Include="Classes\CRM.cs" />
+    <Compile Include="Classes\Documento.cs" />
+    <Compile Include="Classes\Empresa.cs" />
+    <Compile Include="Classes\Endereco.cs" />
+    <Compile Include="Classes\Erro.cs" />
+    <Compile Include="Classes\Estado.cs" />
+    <Compile Include="Classes\Filial.cs" />
+    <Compile Include="Classes\FilialPessoa.cs" />
+    <Compile Include="Classes\GrupoCompromisso.cs" />
+    <Compile Include="Classes\GrupoPermissao.cs" />
+    <Compile Include="Classes\GrupoProduto.cs" />
+    <Compile Include="Classes\HoraTrabalho.cs" />
+    <Compile Include="Classes\Pergunta.cs" />
+    <Compile Include="Classes\Permissao.cs" />
+    <Compile Include="Classes\Pessoa.cs" />
+    <Compile Include="Classes\ProdutoCFOP.cs" />
+    <Compile Include="Classes\ProdutoComissao.cs" />
+    <Compile Include="Classes\ProdutoCompra.cs" />
+    <Compile Include="Classes\ProdutoCST.cs" />
+    <Compile Include="Classes\ProdutoDerivacao.cs" />
+    <Compile Include="Classes\ProdutoFilial.cs" />
+    <Compile Include="Classes\ProdutoMarca.cs" />
+    <Compile Include="Classes\ProdutoNCM.cs" />
+    <Compile Include="Classes\ProdutoPromocao.cs" />
+    <Compile Include="Classes\ProdutoServico.cs" />
+    <Compile Include="Classes\Proposta.cs" />
+    <Compile Include="Classes\Publicidade.cs" />
+    <Compile Include="Classes\Relatorio.cs" />
+    <Compile Include="Classes\SegmentoComercial.cs" />
+    <Compile Include="Classes\Sequence.cs" />
+    <Compile Include="Classes\Servico\Imagem.cs" />
+    <Compile Include="Classes\Servico\ValidarChave.cs" />
+    <Compile Include="Classes\Sessao.cs" />
+    <Compile Include="Classes\SituacaoPessoa.cs" />
+    <Compile Include="Classes\TipoPessoa.cs" />
+    <Compile Include="Classes\ProdutoCategoria.cs" />
+    <Compile Include="Classes\TipoProdutoServico.cs" />
+    <Compile Include="Classes\UnidadesMedida.cs" />
+    <Compile Include="Classes\Usuario.cs" />
+    <Compile Include="Classes\Servico\Versao.cs" />
+    <Compile Include="Classes\Venda.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comum\Informatiz.ControleEstoque.Comum.csproj">
+      <Project>{1E5B2B33-02EF-416C-9D4C-89945DEC619D}</Project>
+      <Name>Informatiz.ControleEstoque.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Execao\Informatiz.ControleEstoque.Execao.csproj">
+      <Project>{F1FDCBA1-E01E-4410-8EA3-6A649C7B5FC3}</Project>
+      <Name>Informatiz.ControleEstoque.Execao</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AcaoRecuperar.sql" />
+    <Content Include="Resources\AdministradoraDeletar.sql" />
+    <Content Include="Resources\AdministradoraInserir.sql" />
+    <Content Include="Resources\AdministradoraPesquisar.sql" />
+    <Content Include="Resources\AdministradoraRecuperar.sql" />
+    <Content Include="Resources\AdministradoraVerificarEstaSendoUsada.sql" />
+    <Content Include="Resources\CRMAtualizar.sql" />
+    <Content Include="Resources\CRMDesativar.sql" />
+    <Content Include="Resources\CRMInserir.sql" />
+    <Content Include="Resources\CRMPesquisar.sql" />
+    <Content Include="Resources\CRMPesquisarSimples.sql" />
+    <Content Include="Resources\CRMPessoaDeletar.sql" />
+    <Content Include="Resources\CRMPessoaInserir.sql" />
+    <Content Include="Resources\CRMPessoaPessoaInserir.sql" />
+    <Content Include="Resources\CRMRecuperar.sql" />
+    <Content Include="Resources\DocumentoPesquisar.sql" />
+    <Content Include="Resources\EmpresaAtualizarCodigoAcesso.sql" />
+    <Content Include="Resources\GrupoCompromissoAtualizar.sql" />
+    <Content Include="Resources\GrupoCompromissoDeletar.sql" />
+    <Content Include="Resources\GrupoCompromissoDeletarGrupoSubGrupoComIdentificador.sql" />
+    <Content Include="Resources\GrupoCompromissoEstaSendoUsado.sql" />
+    <Content Include="Resources\GrupoCompromissoInserir.sql" />
+    <Content Include="Resources\GrupoCompromissoPesquisar.sql" />
+    <Content Include="Resources\GrupoCompromissoRecuperar.sql" />
+    <Content Include="Resources\GrupoCompromissoRecuperarGrupos.sql" />
+    <Content Include="Resources\GrupoCompromissoRecuperarSubGrupo.sql" />
+    <Content Include="Resources\GrupoCompromissoSubGrupoDeletar.sql" />
+    <Content Include="Resources\GrupoCompromissoSubGrupoDeletarRelacionamento.sql" />
+    <Content Include="Resources\GrupoCompromissoSubGrupoInserir.sql" />
+    <Content Include="Resources\GrupoCompromissoSubGrupoRecuperarIdentificadores.sql" />
+    <Content Include="Resources\PerguntaAtualizar.sql" />
+    <Content Include="Resources\PerguntaDeletar.sql" />
+    <Content Include="Resources\PerguntaDeletarResposta.sql" />
+    <Content Include="Resources\PerguntaEstaSendoUsada.sql" />
+    <Content Include="Resources\PerguntaExiste.sql" />
+    <Content Include="Resources\PerguntaInserir.sql" />
+    <Content Include="Resources\PerguntaInserirResposta.sql" />
+    <Content Include="Resources\PerguntaOpcaoDeletar.sql" />
+    <Content Include="Resources\PerguntaOpcaoInserir.sql" />
+    <Content Include="Resources\PerguntaOpcaoRecuperar.sql" />
+    <Content Include="Resources\PerguntaRecuperar.sql" />
+    <Content Include="Resources\PerguntaReguperarRespostas.sql" />
+    <Content Include="Resources\PessoaCriarUsuario.sql" />
+    <Content Include="Resources\PessoaCRMPessoaDeletar.sql" />
+    <Content Include="Resources\PessoaCRMPessoaRecuperarIdentificadoresPessoas.sql" />
+    <Content Include="Resources\PessoaRecuperarPessoas.sql" />
+    <Content Include="Resources\PessoaRecuperarPessoasSimples.sql" />
+    <Content Include="Resources\ProdutoPromocaoDiasSemanaDeletar.sql" />
+    <Content Include="Resources\ProdutoPromocaoDiasSemanaInserir.sql" />
+    <Content Include="Resources\ProdutoPromocaoRecuperarDiasSemana.sql" />
+    <Content Include="Resources\ProdutoServicoDeletarAcrescimo.sql" />
+    <Content Include="Resources\ProdutoServicoDeletarCodigoBarras.sql" />
+    <Content Include="Resources\ProdutoServicoDeletarObservacao.sql" />
+    <Content Include="Resources\ProdutoServicoInserirAcrescimo.sql" />
+    <Content Include="Resources\ProdutoServicoInserirCodigoBarras.sql" />
+    <Content Include="Resources\ProdutoServicoInserirObservacao.sql" />
+    <Content Include="Resources\ProdutoServicoRecucperarCodigoBarras.sql" />
+    <Content Include="Resources\PropostaAtualizar.sql" />
+    <Content Include="Resources\PropostaDeletarComIdCrm.sql" />
+    <Content Include="Resources\PropostaDesativar.sql" />
+    <Content Include="Resources\PropostaInserir.sql" />
+    <Content Include="Resources\PropostaPesquisar.sql" />
+    <Content Include="Resources\PropostaRecuperar.sql" />
+    <Content Include="Resources\PublicidadeAtualizar.sql" />
+    <Content Include="Resources\PublicidadeDeletar.sql" />
+    <Content Include="Resources\PublicidadeEstaSendoUsada.sql" />
+    <Content Include="Resources\PublicidadeInserir.sql" />
+    <Content Include="Resources\PublicidadeRecuperar.sql" />
+    <Content Include="Resources\PublicidadeRecuperarComIdentificador.sql" />
+    <Content Include="Resources\SegmentoComercialAtualizar.sql" />
+    <Content Include="Resources\SegmentoComercialDeletar.sql" />
+    <Content Include="Resources\SegmentoComercialEstaSendoUsado.sql" />
+    <Content Include="Resources\SegmentoComercialInserir.sql" />
+    <Content Include="Resources\SegmentoComercialRecuperarItem.sql" />
+    <Content Include="Resources\AdministradoraAtualizar.sql" />
+    <Content Include="Resources\Servico\ChaveAtualizar.sql" />
+    <Content Include="Resources\Servico\ChaveGerar.sql" />
+    <Content Include="Resources\Servico\ChaveRecuperar.sql" />
+    <Content Include="Resources\Servico\ChaveRecuperarIdentificador.sql" />
+    <Content Include="Resources\Servico\ChavesRecuperar.sql" />
+    <Content Include="Resources\Servico\ChaveValidar.sql" />
+    <Content Include="Resources\Servico\ChaveValidarExiste.sql" />
+    <Content Include="Resources\Servico\EmpresaAtualizarChave.sql" />
+    <Content Include="Resources\Servico\EmpresaAutenticacaoInserir.sql" />
+    <Content Include="Resources\Servico\EmpresaInserir.sql" />
+    <Content Include="Resources\Servico\EmpresaRecuperarProximoCodigo.sql" />
+    <Content Include="Resources\Servico\ImagemDeletar.sql" />
+    <Content Include="Resources\Servico\ImagemInserir.sql" />
+    <Content Include="Resources\Servico\ImagemRecuperar.sql" />
+    <Content Include="Resources\Servico\VersaoRecuperar.sql" />
+    <Content Include="Resources\TabelasRestaurar.sql" />
+    <Content Include="Resources\BairroAtualizar.sql" />
+    <Content Include="Resources\BairroInserir.sql" />
+    <Content Include="Resources\BairroRecuperar.sql" />
+    <Content Include="Resources\CidadeAtualizar.sql" />
+    <Content Include="Resources\CidadeInserir.sql" />
+    <Content Include="Resources\CidadeRecuperar.sql" />
+    <Content Include="Resources\ColunasRecuperar.sql" />
+    <Content Include="Resources\CorAtualizar.sql" />
+    <Content Include="Resources\CorDeletar.sql" />
+    <Content Include="Resources\CoresRecuperar.sql" />
+    <Content Include="Resources\CorInserir.sql" />
+    <Content Include="Resources\CorRecuperar.sql" />
+    <Content Include="Resources\CorVerificarEstaSendoUsuada.sql" />
+    <Content Include="Resources\EmpresaAtualizar.sql" />
+    <Content Include="Resources\EmpresaAtualizarInformacoesChave.sql" />
+    <Content Include="Resources\EmpresaAtualizarQuantidadeAcessada.sql" />
+    <Content Include="Resources\EmpresaRecuperar.sql" />
+    <Content Include="Resources\EmpresaRecuperarSimples.sql" />
+    <Content Include="Resources\FilialAtualizar.sql" />
+    <Content Include="Resources\FilialDesativar.sql" />
+    <Content Include="Resources\FilialInserir.sql" />
+    <Content Include="Resources\ProdutoCFOPAtualizar.sql" />
+    <Content Include="Resources\ProdutoCFOPDeletar.sql" />
+    <Content Include="Resources\ProdutoCFOPEstaSendoUsado.sql" />
+    <Content Include="Resources\ProdutoCFOPInserir.sql" />
+    <Content Include="Resources\ProdutoCFOPPesquisar.sql" />
+    <Content Include="Resources\ProdutoCFOPRecuperar.sql" />
+    <Content Include="Resources\ProdutoComissaoAtualizar.sql" />
+    <Content Include="Resources\ProdutoComissaoDesativar.sql" />
+    <Content Include="Resources\ProdutoComissaoInserir.sql" />
+    <Content Include="Resources\ProdutoComissaoPesquisar.sql" />
+    <Content Include="Resources\ProdutoComissaoRecuperar.sql" />
+    <Content Include="Resources\ProdutoCompraRecuperar.sql" />
+    <Content Include="Resources\ProdutoCSTAtualizar.sql" />
+    <Content Include="Resources\ProdutoCSTDeletar.sql" />
+    <Content Include="Resources\ProdutoCSTEstaSendoUsado.sql" />
+    <Content Include="Resources\ProdutoCSTInserir.sql" />
+    <Content Include="Resources\ProdutoCSTPesquisar.sql" />
+    <Content Include="Resources\ProdutoCSTRecuperar.sql" />
+    <Content Include="Resources\ProdutoFilialAtualizar.sql" />
+    <Content Include="Resources\ProdutoFilialInserir.sql" />
+    <Content Include="Resources\ProdutoFilialRecuperar.sql" />
+    <Content Include="Resources\ProdutoFilialRecuperarComIdentificador.sql" />
+    <Content Include="Resources\ProdutoNCMAtualizar.sql" />
+    <Content Include="Resources\ProdutoNCMDeletar.sql" />
+    <Content Include="Resources\ProdutoNCMEstaSendoUsado.sql" />
+    <Content Include="Resources\ProdutoNCMInserir.sql" />
+    <Content Include="Resources\ProdutoNCMPesquisar.sql" />
+    <Content Include="Resources\ProdutoNCMRecuperar.sql" />
+    <Content Include="Resources\ProdutoPromocaoAtualizar.sql" />
+    <Content Include="Resources\ProdutoPromocaoDeletarItens.sql" />
+    <Content Include="Resources\ProdutoPromocaoDesativar.sql" />
+    <Content Include="Resources\ProdutoPromocaoInserir.sql" />
+    <Content Include="Resources\ProdutoPromocaoInserirItens.sql" />
+    <Content Include="Resources\ProdutoPromocaoPesquisar.sql" />
+    <Content Include="Resources\ProdutoPromocaoRecuperar.sql" />
+    <Content Include="Resources\ProdutoPromocaoRecuperarProdutos.sql" />
+    <Content Include="Resources\ProdutoServicoDeletar.sql" />
+    <Content Include="Resources\EmpresasRecuperarEmpresasFuncionario.sql" />
+    <Content Include="Resources\EnderecoAtualiar.sql" />
+    <Content Include="Resources\EnderecoInserir.sql" />
+    <Content Include="Resources\EnderecoPesquisar.sql" />
+    <Content Include="Resources\EnderecoRecuperar.sql" />
+    <Content Include="Resources\ErroInserir.sql" />
+    <Content Include="Resources\EstadoRecuperar.sql" />
+    <Content Include="Resources\FilialPessoaRecuperar.sql" />
+    <Content Include="Resources\FilialRecuperarSimples.sql" />
+    <Content Include="Resources\GrupoPermissaoAcaoDeletar.sql" />
+    <Content Include="Resources\GrupoPermissaoAcaoInserir.sql" />
+    <Content Include="Resources\GrupoPermissaoAtualizar.sql" />
+    <Content Include="Resources\GrupoPermissaoDeletar.sql" />
+    <Content Include="Resources\GrupoPermissaoInserir.sql" />
+    <Content Include="Resources\GrupoPermissaoPesquisar.sql" />
+    <Content Include="Resources\GrupoPermissaoRecuperar.sql" />
+    <Content Include="Resources\GrupoPermissaoRecuperarComIdEmpresa.sql" />
+    <Content Include="Resources\GrupoProdutoAtualizar.sql" />
+    <Content Include="Resources\GrupoProdutoDeletar.sql" />
+    <Content Include="Resources\GrupoProdutoEstaSendoUsado.sql" />
+    <Content Include="Resources\GrupoProdutoInserir.sql" />
+    <Content Include="Resources\GrupoProdutoPesquisar.sql" />
+    <Content Include="Resources\GrupoProdutoRecuperar.sql" />
+    <Content Include="Resources\GrupoProdutoRecuperarSubGrupos.sql" />
+    <Content Include="Resources\GrupoProdutoSubGrupoDeletar.sql" />
+    <Content Include="Resources\GrupoProdutoSubGrupoDeletarRelacionamento.sql" />
+    <Content Include="Resources\GrupoProdutoSubGrupoInserir.sql" />
+    <Content Include="Resources\GrupoProdutoSubGrupoRecuperarIdentificadores.sql" />
+    <Content Include="Resources\HoraTrabalhoDeletar.sql" />
+    <Content Include="Resources\HoraTrabalhoInserir.sql" />
+    <Content Include="Resources\HoraTrabalhoRecuperar.sql" />
+    <Content Include="Resources\PermissaoRecuperar.sql" />
+    <Content Include="Resources\PermissaoRecuperarComIdUsuario.sql" />
+    <Content Include="Resources\PermissaoUsuarioDeletar.sql" />
+    <Content Include="Resources\PermissaoUsuarioInserir.sql" />
+    <Content Include="Resources\PessoaAlterarSenha.sql" />
+    <Content Include="Resources\PessoaAtualizar.sql" />
+    <Content Include="Resources\PessoaDesativar.sql" />
+    <Content Include="Resources\PessoaFilialDeletar.sql" />
+    <Content Include="Resources\PessoaFilialInserir.sql" />
+    <Content Include="Resources\PessoaInserir.sql" />
+    <Content Include="Resources\PessoaPesquisar.sql" />
+    <Content Include="Resources\PessoaRecuperar.sql" />
+    <Content Include="Resources\PessoaValidarLoginExiste.sql" />
+    <Content Include="Resources\ProdutoCategoriaAtualizar.sql" />
+    <Content Include="Resources\ProdutoCategoriaDeletar.sql" />
+    <Content Include="Resources\ProdutoCategoriaEstaSendoUsado.sql" />
+    <Content Include="Resources\ProdutoCategoriaRecuperar.sql" />
+    <Content Include="Resources\ProdutoDerivacaoAtualizar.sql" />
+    <Content Include="Resources\ProdutoDerivacaoDeletar.sql" />
+    <Content Include="Resources\ProdutoDerivacaoEstaSendoUsado.sql" />
+    <Content Include="Resources\ProdutoDerivacaoInserir.sql" />
+    <Content Include="Resources\ProdutoDerivacaoPesquisar.sql" />
+    <Content Include="Resources\ProdutoDerivacaoRecuperar.sql" />
+    <Content Include="Resources\ProdutoMarcaAtualizar.sql" />
+    <Content Include="Resources\ProdutoMarcaDeletar.sql" />
+    <Content Include="Resources\ProdutoMarcaEstaSendoUsuada.sql" />
+    <Content Include="Resources\ProdutoMarcaInserir.sql" />
+    <Content Include="Resources\ProdutoMarcaPesquisar.sql" />
+    <Content Include="Resources\ProdutoMarcaRecuperar.sql" />
+    <Content Include="Resources\ProdutoServicoAtualizar.sql" />
+    <Content Include="Resources\ProdutoServicoDeletarUnidadesMedida.sql" />
+    <Content Include="Resources\ProdutoServicoEstaSendoUsado.sql" />
+    <Content Include="Resources\ProdutoServicoInserir.sql" />
+    <Content Include="Resources\ProdutoServicoInserirUnidadesMedida.sql" />
+    <Content Include="Resources\ProdutoServicoPesquisar.sql" />
+    <Content Include="Resources\ProdutoServicoRecuperar.sql" />
+    <Content Include="Resources\ProdutoServicoRecuperarPorEstoque.sql" />
+    <Content Include="Resources\ProdutoServicoRecuperarPorFilial.sql" />
+    <Content Include="Resources\ProdutosGeralRecuperar.sql" />
+    <Content Include="Resources\Relatorio\RelatorioEstoqueRecuperar.sql" />
+    <Content Include="Resources\Relatorio\RelatorioPessoaRecuperar.sql" />
+    <Content Include="Resources\SegmentoComercialRecuperar.sql" />
+    <Content Include="Resources\SessaoAtualizar.sql" />
+    <Content Include="Resources\SessaoDeletar.sql" />
+    <Content Include="Resources\SessaoInserir.sql" />
+    <Content Include="Resources\SessaoValidarExiste.sql" />
+    <Content Include="Resources\SessoesRecuperar.sql" />
+    <Content Include="Resources\SituacaoPessoaRecuperar.sql" />
+    <Content Include="Resources\ProdutoCategoriaInserir.sql" />
+    <Content Include="Resources\ProdutoCategoriaPesquisar.sql" />
+    <Content Include="Resources\TabelasRecuperarDados.sql" />
+    <Content Include="Resources\TabelasVerificarRegistroExiste.sql" />
+    <Content Include="Resources\TipoPessoaInserir.sql" />
+    <Content Include="Resources\TipoProdutoServicoRecuperar.sql" />
+    <Content Include="Resources\TipoProdutoServicoRecuperarComCodigo.sql" />
+    <Content Include="Resources\UnidadeMedidaAtualizar.sql" />
+    <Content Include="Resources\UnidadeMedidaDeletar.sql" />
+    <Content Include="Resources\UnidadeMedidaInserir.sql" />
+    <Content Include="Resources\UnidadeMedidaPesquisar.sql" />
+    <Content Include="Resources\UnidadeMedidaRecuperar.sql" />
+    <Content Include="Resources\UnidadeMedidaRecuperarUnidadesProduto.sql" />
+    <Content Include="Resources\UnidadeMedidaVerificarEstaSendoUsada.sql" />
+    <Content Include="Resources\UsuarioLogar.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

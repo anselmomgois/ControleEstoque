@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DadosConexao xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Server>DaUkksQemDXQQNGGw+VQ1MRoAHMAOfm3aRXi+xrow9w=</Server>
+  <DataBase>Spt5KXMG96gj55oMfEesFw==</DataBase>
+  <UID>2Y2x6mnG6dzcGQ6v6bKWUg==</UID>
+  <pwd>130VUzykmGqSGHtP9oCTnA==</pwd>
+  <AutenticacaoIntegrada>false</AutenticacaoIntegrada>
+</DadosConexao>

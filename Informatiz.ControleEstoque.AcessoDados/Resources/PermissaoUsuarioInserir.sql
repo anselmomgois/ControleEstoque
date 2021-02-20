@@ -1,0 +1,12 @@
+﻿INSERT INTO INFM_USUPERMISSAOACAO
+           (IDUSUPERMISSAOACAO
+           ,IDPERMISSAO
+           ,IDACAO
+           ,IDPESSOA
+           ,IDGRUPOPERMISSAO)
+     VALUES
+           (@IDUSUPERMISSAOACAO
+           ,@IDPERMISSAO
+           ,@IDACAO
+           ,@IDPESSOA
+           ,@IDGRUPOPERMISSAO)

@@ -1,0 +1,4 @@
+﻿SELECT 1
+FROM {0}
+WHERE
+{1}

@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AcaoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\acaorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BairroAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bairroatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BairroInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bairroinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BairroRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bairrorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CidadeAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cidadeatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CidadeInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cidadeinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CidadeRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cidaderecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CoresRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\coresrecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CorInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\corinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresasRecuperarEmpresasFuncionario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\empresasrecuperarempresasfuncionario.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EnderecoAtualiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\enderecoatualiar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EnderecoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\enderecoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EnderecoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\enderecopesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EnderecoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\enderecorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ErroInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\erroinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EstadoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\estadorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilialPessoaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\filialpessoarecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilialRecuperarSimples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\filialrecuperarsimples.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoPermissaoAcaoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupopermissaoacaodeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoPermissaoAcaoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupopermissaoacaoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoPermissaoAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupopermissaoatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoPermissaoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupopermissaodeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoPermissaoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupopermissaoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoPermissaoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupopermissaopesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoPermissaoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupopermissaorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoPermissaoRecuperarComIdEmpresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupopermissaorecuperarcomidempresa.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HoraTrabalhoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\horatrabalhodeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HoraTrabalhoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\horatrabalhoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HoraTrabalhoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\horatrabalhorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PermissaoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\permissaorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PermissaoRecuperarComIdUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\permissaorecuperarcomidusuario.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PermissaoUsuarioDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\permissaousuariodeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PermissaoUsuarioInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\permissaousuarioinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaAlterarSenha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoaalterarsenha.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoaatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaDesativar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoadesativar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaFilialDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoafilialdeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaFilialInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoafilialinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoainserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoapesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaPesquisar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoapesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoarecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaValidarLoginExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoavalidarloginexiste.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SegmentoComercialRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\segmentocomercialrecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SituacaoPessoaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\situacaopessoarecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsuarioLogar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\usuariologar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CorRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\correcuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CorAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\coratualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CorDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cordeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CorVerificarEstaSendoUsuada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\corverificarestasendousuada.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UnidadeMedidaPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\unidademedidapesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UnidadeMedidaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\unidademedidainserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UnidadeMedidaAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\unidademedidaatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UnidadeMedidaDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\unidademedidadeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UnidadeMedidaVerificarEstaSendoUsada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\unidademedidaverificarestasendousada.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UnidadeMedidaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\unidademedidarecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCategoriaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocategoriainserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCategoriaPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocategoriapesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCategoriaAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocategoriaatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCategoriaDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocategoriadeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCategoriaEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocategoriaestasendousado.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCategoriaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocategoriarecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TipoPessoaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipopessoainserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoMarcaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtomarcainserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoMarcaPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtomarcapesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoMarcaAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtomarcaatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoMarcaDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtomarcadeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoMarcaEstaSendoUsuada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtomarcaestasendousuada.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoMarcaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtomarcarecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoDerivacaoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoderivacaopesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoDerivacaoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoderivacaoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoDerivacaoAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoderivacaoatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoDerivacaoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoderivacaodeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoDerivacaoEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoderivacaoestasendousado.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoDerivacaoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoderivacaorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutopesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutoatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutodeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutoestasendousado.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoSubGrupoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutosubgrupodeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoSubGrupoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutosubgrupoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoSubGrupoRecuperarIdentificadores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutosubgruporecuperaridentificadores.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoSubGrupoDeletarRelacionamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutosubgrupodeletarrelacionamento.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoProdutoRecuperarSubGrupos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupoprodutorecuperarsubgrupos.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicopesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicoatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicodeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicoestasendousado.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TipoProdutoServicoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipoprodutoservicorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TipoProdutoServicoRecuperarComCodigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tipoprodutoservicorecuperarcomcodigo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UnidadeMedidaRecuperarUnidadesProduto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\unidademedidarecuperarunidadesproduto.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoDeletarUnidadesMedida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicodeletarunidadesmedida.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoInserirUnidadesMedida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicoinserirunidadesmedida.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoComissaoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocomissaopesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoComissaoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocomissaoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoComissaoAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocomissaoatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoComissaoDesativar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocomissaodesativar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoComissaoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocomissaorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCSTInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocstinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCSTPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocstpesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCSTDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocstdeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCSTEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocstestasendousado.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCSTRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocstrecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCSTAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocstatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCFOPPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocfoppesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCFOPInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocfopinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCFOPAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocfopatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCFOPDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocfopdeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCFOPEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocfopestasendousado.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCFOPRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocfoprecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoNCMPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoncmpesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoNCMInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoncminserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoNCMAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoncmatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoNCMDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoncmdeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoNCMEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoncmestasendousado.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoNCMRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoncmrecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoFilialInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtofilialinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoFilialRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtofilialrecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoFilialAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtofilialatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaoinserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaopesquisar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoInserirItens" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaoinseriritens.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaoatualizar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoDeletarItens" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaodeletaritens.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaorecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoFilialRecuperarComIdentificador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtofilialrecuperarcomidentificador.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoCompraRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtocomprarecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoRecuperarPorFilial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicorecuperarporfilial.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoRecuperarPorEstoque" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicorecuperarporestoque.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoDesativar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaodesativar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutosGeralRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtosgeralrecuperar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoRecuperarProdutos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaorecuperarprodutos.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RelatorioEstoqueRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\relatorio\relatorioestoquerecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\empresaatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilialInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\filialinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilialAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\filialatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\empresarecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FilialDesativar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\filialdesativar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RelatorioPessoaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\relatorio\relatoriopessoarecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ChaveValidar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\chavevalidar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ChaveGerar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\chavegerar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ChaveValidarExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\chavevalidarexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ChaveRecuperarIdentificador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\chaverecuperaridentificador.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaAtualizarChave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\empresaatualizarchave.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ChaveRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\chaverecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ChaveAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\chaveatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ChavesRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\chavesrecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaAtualizarInformacoesChave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\empresaatualizarinformacoeschave.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaRecuperarSimples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\empresarecuperarsimples.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaAtualizarQuantidadeAcessada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\empresaatualizarquantidadeacessada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SessoesRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sessoesrecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SessaoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sessaoinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SessaoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sessaodeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SessaoAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sessaoatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SessaoValidarExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sessaovalidarexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ColunasRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\colunasrecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TabelasRecuperarDados" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tabelasrecuperardados.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TabelasRestaurar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tabelasrestaurar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TabelasVerificarRegistroExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\tabelasverificarregistroexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaAtualizarCodigoAcesso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\empresaatualizarcodigoacesso.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SegmentoComercialInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\segmentocomercialinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SegmentoComercialAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\segmentocomercialatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SegmentoComercialDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\segmentocomercialdeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SegmentoComercialEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\segmentocomercialestasendousado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SegmentoComercialRecuperarItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\segmentocomercialrecuperaritem.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaRecuperarProximoCodigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\empresarecuperarproximocodigo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\empresainserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmpresaAutenticacaoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\empresaautenticacaoinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdministradoraPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\administradorapesquisar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdministradoraInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\administradorainserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaCriarUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoacriarusuario.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PublicidadeRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\publicidaderecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PublicidadeInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\publicidadeinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PublicidadeAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\publicidadeatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PublicidadeDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\publicidadedeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PublicidadeEstaSendoUsada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\publicidadeestasendousada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PublicidadeRecuperarComIdentificador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\publicidaderecuperarcomidentificador.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissoatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoEstaSendoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissoestasendousado.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissoinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissopesquisar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoRecuperarSubGrupo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissorecuperarsubgrupo.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissorecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissodeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoSubGrupoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissosubgrupodeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoSubGrupoDeletarRelacionamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissosubgrupodeletarrelacionamento.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoSubGrupoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissosubgrupoinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoSubGrupoRecuperarIdentificadores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissosubgruporecuperaridentificadores.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PropostaPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\propostapesquisar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PropostaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\propostainserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PropostaAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\propostaatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PropostaDesativar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\propostadesativar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PropostaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\propostarecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crmpesquisar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crminserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMPessoaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crmpessoainserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMPessoaDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crmpessoadeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crmatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMDesativar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crmdesativar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crmrecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PropostaDeletarComIdCrm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\propostadeletarcomidcrm.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ImagemInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\imageminserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ImagemDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\imagemdeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ImagemRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\imagemrecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="VersaoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\servico\versaorecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdministradoraAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\administradoraatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdministradoraDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\administradoradeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdministradoraVerificarEstaSendoUsada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\administradoraverificarestasendousada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AdministradoraRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\administradorarecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntainserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaAtualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntaatualizar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntadeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaExiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntaexiste.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaOpcaoInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntaopcaoinserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaOpcaoDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntaopcaodeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaEstaSendoUsada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntaestasendousada.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntarecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaOpcaoRecuperar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntaopcaorecuperar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaDeletarResposta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntadeletarresposta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaInserirResposta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntainserirresposta.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PerguntaReguperarRespostas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\perguntareguperarrespostas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMPessoaPessoaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crmpessoapessoainserir.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaCRMPessoaDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoacrmpessoadeletar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaCRMPessoaRecuperarIdentificadoresPessoas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoacrmpessoarecuperaridentificadorespessoas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DocumentoPesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\documentopesquisar.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaRecuperarPessoas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoarecuperarpessoas.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoRecuperarGrupos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissorecuperargrupos.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CRMPesquisarSimples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\crmpesquisarsimples.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PessoaRecuperarPessoasSimples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pessoarecuperarpessoassimples.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoRecucperarCodigoBarras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicorecucperarcodigobarras.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoInserirCodigoBarras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicoinserircodigobarras.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoDeletarCodigoBarras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicodeletarcodigobarras.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GrupoCompromissoDeletarGrupoSubGrupoComIdentificador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grupocompromissodeletargruposubgrupocomidentificador.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoRecuperarDiasSemana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaorecuperardiassemana.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoDiasSemanaInserir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaodiassemanainserir.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoPromocaoDiasSemanaDeletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtopromocaodiassemanadeletar.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoDeletarAcrescimo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicodeletaracrescimo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoInserirAcrescimo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicoinseriracrescimo.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoDeletarObservacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicodeletarobservacao.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ProdutoServicoInserirObservacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\produtoservicoinserirobservacao.sql;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+</root>

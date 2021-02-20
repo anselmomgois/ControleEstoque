@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A054547C-3971-436C-8526-B32E9354DE0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informatiz.ControleEstoque.ContratoServico</RootNamespace>
+    <AssemblyName>Informatiz.ControleEstoque.ContratoServico</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Caixa\AberturaCaixa\PeticaoSetAberturaCaixa.cs" />
+    <Compile Include="Caixa\AberturaCaixa\RespostaSetAberturaCaixa.cs" />
+    <Compile Include="Acao\RecuperarAcoes\PeticaoRecuperarAcoes.cs" />
+    <Compile Include="Acao\RecuperarAcoes\RespostaRecuperarAcoes.cs" />
+    <Compile Include="Administradora\AtualizarAdministradora\PeticaoAtualizarAdministradora.cs" />
+    <Compile Include="Administradora\AtualizarAdministradora\RespostaAtualizarAdministradora.cs" />
+    <Compile Include="Administradora\DeletarAdministradora\PeticaoDeletarAdministradora.cs" />
+    <Compile Include="Administradora\DeletarAdministradora\RespostaDeletarAdministradora.cs" />
+    <Compile Include="Administradora\InserirAdministradora\PeticaoInserirAdministradora.cs" />
+    <Compile Include="Administradora\InserirAdministradora\RespostaInserirAdministradora.cs" />
+    <Compile Include="Administradora\RecuperarAdministradoras\PeticaoRecuperarAdministradoras.cs" />
+    <Compile Include="Administradora\RecuperarAdministradoras\RespostaRecuperarAdministradoras.cs" />
+    <Compile Include="Administradora\RecuperarAdministradora\PeticaoRecuperarAdministradora.cs" />
+    <Compile Include="Administradora\RecuperarAdministradora\RespostaRecuperarAdministradora.cs" />
+    <Compile Include="AtivarChave\Peticao.cs" />
+    <Compile Include="AtivarChave\Respuesta.cs" />
+    <Compile Include="Caixa\BuscarCaixaByHost\PeticaoBuscarCaixaByHost.cs" />
+    <Compile Include="Caixa\BuscarCaixaByHost\RespostaBuscarCaixaByHost.cs" />
+    <Compile Include="Caixa\BuscarCaixaDetalhe\PeticaoBuscarCaixaDetalhe.cs" />
+    <Compile Include="Caixa\BuscarCaixaDetalhe\RespostaBuscarCaixaDetalhe.cs" />
+    <Compile Include="Caixa\BuscarCaixa\PeticaoBuscaCaixa.cs" />
+    <Compile Include="Caixa\BuscarCaixa\RespostaBuscarCaixa.cs" />
+    <Compile Include="Caixa\ExcluirCaixa\PeticaoExcluirSetCaixa.cs" />
+    <Compile Include="Caixa\ExcluirCaixa\RespostaExcluirSetCaixa.cs" />
+    <Compile Include="Caixa\FecharCaixa\PeticaoFecharCaixa.cs" />
+    <Compile Include="Caixa\FecharCaixa\RespostaFecharCaixa.cs" />
+    <Compile Include="Caixa\SetCaixa\PeticaoSetCaixa.cs" />
+    <Compile Include="Caixa\SetCaixa\RespostaSetCaixa.cs" />
+    <Compile Include="ChaveAcesso\ValidarChave\PeticaoValidarChave.cs" />
+    <Compile Include="ChaveAcesso\ValidarChave\RespuestaValidarChave.cs" />
+    <Compile Include="Compra\RecuperarCompras\PeticaoRecuperarCompras.cs" />
+    <Compile Include="Compra\RecuperarCompras\RespostaRecuperarCompras.cs" />
+    <Compile Include="Compra\RecuperarProdutoCompras\PeticaoRecuperarProdutoCompras.cs" />
+    <Compile Include="Compra\RecuperarProdutoCompras\RespostaRecuperarProdutoCompras.cs" />
+    <Compile Include="Compra\SetCompra\PeticaoSetCompra.cs" />
+    <Compile Include="Compra\SetCompra\RespostaSetCompra.cs" />
+    <Compile Include="Compra\SetEstoqueAtual\PeticaoSetEstoqueAtual.cs" />
+    <Compile Include="Compra\SetEstoqueAtual\RespostaSetEstoqueAtual.cs" />
+    <Compile Include="Cor\DeletarCor\PeticaoDeletarCor.cs" />
+    <Compile Include="Cor\DeletarCor\RespostaDeletarCor.cs" />
+    <Compile Include="Cor\RecuperarCores\PeticaoRecuperarCores.cs" />
+    <Compile Include="Cor\RecuperarCores\RespostaRecuperarCores.cs" />
+    <Compile Include="Cor\RecuperarCor\PeticaoRecuperarCor.cs" />
+    <Compile Include="Cor\RecuperarCor\RespostaRecuperarCor.cs" />
+    <Compile Include="Cor\SetCor\PeticaoSetCor.cs" />
+    <Compile Include="Cor\SetCor\RespostaSetCor.cs" />
+    <Compile Include="CRM\AtualizarAgendamento\PeticaoAtualizarAgendamento.cs" />
+    <Compile Include="CRM\AtualizarAgendamento\RespostaAtualizarAgendamento.cs" />
+    <Compile Include="CRM\BuscarStatusCrmDetalhe\PeticaoStatusCrmDetalhe.cs" />
+    <Compile Include="CRM\BuscarStatusCrmDetalhe\RespostaStatusCrmDetalhe.cs" />
+    <Compile Include="CRM\BuscarStatusCrmSimples\PeticaoBuscarStatusCrmSimples.cs" />
+    <Compile Include="CRM\BuscarStatusCrmSimples\RespostaBuscarStatusCrmSimples.cs" />
+    <Compile Include="CRM\BuscarStatusCrm\PeticaoBuscarStatusCrm.cs" />
+    <Compile Include="CRM\BuscarStatusCrm\RespostaBuscarStatusCrm.cs" />
+    <Compile Include="CRM\DesativarAgendamento\PeticaoDesativarAgendamento.cs" />
+    <Compile Include="CRM\DesativarAgendamento\RespostaDesativarAgendamento.cs" />
+    <Compile Include="CRM\ExcluirSetStatusCrm\PeticaoExcluirSetStatusCrm.cs" />
+    <Compile Include="CRM\ExcluirSetStatusCrm\RespostaExcluirSetStatusCrm.cs" />
+    <Compile Include="CRM\GerarAgendamentoAutomatico\PeticaoGerarAgendamentoAutomatico.cs" />
+    <Compile Include="CRM\GerarAgendamentoAutomatico\RespostaGerarAgendamentoAutomatico.cs" />
+    <Compile Include="Endereco\PesquisarEndereco\PeticaoPesquisarEndereco.cs" />
+    <Compile Include="Endereco\PesquisarEndereco\RespostaPesquisarEndereco.cs" />
+    <Compile Include="Endereco\RecuperarBairro\PeticaoRecuperarBairro.cs" />
+    <Compile Include="Endereco\RecuperarBairro\RespostaRecuperarBairro.cs" />
+    <Compile Include="Endereco\RecuperarCidades\PeticaoRecuperarCidades.cs" />
+    <Compile Include="Endereco\RecuperarCidades\RespostaRecuperarCidades.cs" />
+    <Compile Include="Endereco\RecuperarEstado\PeticaoRecuperarEstado.cs" />
+    <Compile Include="Endereco\RecuperarEstado\RespostaRecuperarEstado.cs" />
+    <Compile Include="Endereco\SetBairro\PeticaoSetBairro.cs" />
+    <Compile Include="Endereco\SetBairro\RespostaSetBairro.cs" />
+    <Compile Include="Endereco\SetCidades\PeticaoSetCidades.cs" />
+    <Compile Include="Endereco\SetCidades\RespostaSetCidades.cs" />
+    <Compile Include="Endereco\SetEndereco\PeticaoSetEndereco.cs" />
+    <Compile Include="Endereco\SetEndereco\RespostaSetEndereco.cs" />
+    <Compile Include="Erro\InserirErro\PeticaoInserirErro.cs" />
+    <Compile Include="Erro\InserirErro\RespostaInserirErro.cs" />
+    <Compile Include="FormaPagamento\BuscarFormaPagamentoDetalhe\PeticaoBuscarFormaPagamentoDetalhe.cs" />
+    <Compile Include="FormaPagamento\BuscarFormaPagamentoDetalhe\RespostaBuscarFormaPagamentoDetalhe.cs" />
+    <Compile Include="FormaPagamento\BuscarFormaPagamento\PeticaoBuscaFormaPagamento.cs" />
+    <Compile Include="FormaPagamento\BuscarFormaPagamento\RespostaBuscarFormaPagamento.cs" />
+    <Compile Include="FormaPagamento\ExcluirFormaPagamento\PeticaoExcluirSetFormaPagamento.cs" />
+    <Compile Include="FormaPagamento\ExcluirFormaPagamento\RespostaExcluirSetFormaPagamento.cs" />
+    <Compile Include="FormaPagamento\SetFormaPagamento\PeticaoSetFormaPagamento.cs" />
+    <Compile Include="FormaPagamento\SetFormaPagamento\RespostaSetFormaPagamento.cs" />
+    <Compile Include="CRM\InserirAgendamento\PeticaoInserirAgendamento.cs" />
+    <Compile Include="CRM\InserirAgendamento\RespostaInserirAgendamento.cs" />
+    <Compile Include="CRM\RecuperarAgendamentosSimples\PeticaoRecuperarAgendamentosSimples.cs" />
+    <Compile Include="CRM\RecuperarAgendamentosSimples\RespostaRecuperarAgendamentosSimples.cs" />
+    <Compile Include="CRM\RecuperarAgendamentos\PeticaoRecuperarAgendamentos.cs" />
+    <Compile Include="CRM\RecuperarAgendamentos\RespostaRecuperarAgendamentos.cs" />
+    <Compile Include="CRM\RecuperarAgendamento\PeticaoRecuperarAgendamento.cs" />
+    <Compile Include="CRM\RecuperarAgendamento\RespostaRecuperarAgendamento.cs" />
+    <Compile Include="CRM\StatusCrm\PeticaoStatusCrm.cs" />
+    <Compile Include="CRM\StatusCrm\RespostaStatusCrm.cs" />
+    <Compile Include="Empresa\AtualizarEmpresa\PeticaoAtualizarEmpresa.cs" />
+    <Compile Include="Empresa\AtualizarEmpresa\RespostaAtualizarEmpresa.cs" />
+    <Compile Include="Endereco\RegistrarEndereco\PeticaoRegistrarEndereco.cs" />
+    <Compile Include="Endereco\RegistrarEndereco\RespostaRegistrarEndereco.cs" />
+    <Compile Include="Filial\RecuperarFiliais\PeticaoRecuperarFiliais.cs" />
+    <Compile Include="Filial\RecuperarFiliais\RespostaRecuperarFiliais.cs" />
+    <Compile Include="GerarChave\Peticao.cs" />
+    <Compile Include="GerarChave\Respuesta.cs" />
+    <Compile Include="GrupoCompromisso\DeletarGrupoCompromisso\PeticaoDeletarGrupoCompromisso.cs" />
+    <Compile Include="GrupoCompromisso\DeletarGrupoCompromisso\RespostaDeletarGrupoCompromisso.cs" />
+    <Compile Include="GrupoCompromisso\RecuperarGrupoCompromisso\PeticaoRecuperarGrupoCompromisso.cs" />
+    <Compile Include="GrupoCompromisso\RecuperarGrupoCompromisso\RespostaRecuperarGrupoCompromisso.cs" />
+    <Compile Include="GrupoCompromisso\RecuperarGruposCompromisso\PeticaoRecuperarGruposCompromisso.cs" />
+    <Compile Include="GrupoCompromisso\RecuperarGruposCompromisso\RespostaRecuperarGruposCompromisso.cs" />
+    <Compile Include="GrupoCompromisso\SetGrupoCompromisso\PeticaoSetGrupoCompromisso.cs" />
+    <Compile Include="GrupoCompromisso\SetGrupoCompromisso\RespostaSetGrupoCompromisso.cs" />
+    <Compile Include="GrupoPermissao\DeletarGrupoPermissao\PeticaoDeletarGrupoPermissao.cs" />
+    <Compile Include="GrupoPermissao\DeletarGrupoPermissao\RespostaDeletarGrupoPermissao.cs" />
+    <Compile Include="GrupoPermissao\RecuperarGrupos\PeticaoRecuperarGrupos.cs" />
+    <Compile Include="GrupoPermissao\RecuperarGrupos\RespostaRecuperarGrupos.cs" />
+    <Compile Include="GrupoProduto\DeletarGrupoProduto\PeticaoDeletarGrupoProduto.cs" />
+    <Compile Include="GrupoProduto\DeletarGrupoProduto\RespostaDeletarGrupoProduto.cs" />
+    <Compile Include="GrupoProduto\RecuperarGruposProduto\PeticaoRecuperarGruposProduto.cs" />
+    <Compile Include="GrupoProduto\RecuperarGruposProduto\RespostaRecuperarGruposProduto.cs" />
+    <Compile Include="Informatiz\AlterarImagemCentral\PeticaoAlterarImagemCentral.cs" />
+    <Compile Include="Informatiz\AlterarImagemCentral\RespostaAlterarImagemCentral.cs" />
+    <Compile Include="InserirEmpresa\Peticao.cs" />
+    <Compile Include="InserirEmpresa\Respuesta.cs" />
+    <Compile Include="IntegracaoAPI\BuscaIntegracoesAPI\PeticaoBuscaIntegracoesAPI.cs" />
+    <Compile Include="IntegracaoAPI\BuscaIntegracoesAPI\RespostaBuscaIntegracoesAPI.cs" />
+    <Compile Include="IntegracaoAPI\DeletarIntegracaoAPI\PeticaoDeletarIntegracaoAPI.cs" />
+    <Compile Include="IntegracaoAPI\DeletarIntegracaoAPI\RespostaDeletarIntegracaoAPI.cs" />
+    <Compile Include="IntegracaoAPI\RecuperarIntegracaoAPI\PeticaoRecuperarIntegracaoAPI.cs" />
+    <Compile Include="IntegracaoAPI\RecuperarIntegracaoAPI\RespostaRecuperarIntegracaoAPI.cs" />
+    <Compile Include="IntegracaoAPI\SetIntegracaoAPI\PeticaoSetIntegracaoAPI.cs" />
+    <Compile Include="IntegracaoAPI\SetIntegracaoAPI\RespostaSetIntegracaoAPI.cs" />
+    <Compile Include="IServicos.cs" />
+    <Compile Include="Mesa\BuscarMesas\PeticaoBuscarMesas.cs" />
+    <Compile Include="Mesa\BuscarMesas\RespostaBuscarMesas.cs" />
+    <Compile Include="Mesa\RecuperarMesa\PeticaoRecuperarMesa.cs" />
+    <Compile Include="Mesa\RecuperarMesa\RespostaRecuperarMesa.cs" />
+    <Compile Include="Mesa\SetMesa\PeticaoSetMesa.cs" />
+    <Compile Include="Mesa\SetMesa\RespostaSetMesa.cs" />
+    <Compile Include="Observacao\BuscarObservacao\PeticaoBuscarObservacao.cs" />
+    <Compile Include="Observacao\BuscarObservacao\RespostaBuscarObservacao.cs" />
+    <Compile Include="Observacao\RecuperarObservacao\PeticaoRecuperarObservacao.cs" />
+    <Compile Include="Observacao\RecuperarObservacao\RespostaRecuperarObservacao.cs" />
+    <Compile Include="Observacao\DeletarObservacao\PeticaoDeletarObservacao.cs" />
+    <Compile Include="Observacao\DeletarObservacao\RespostaDeletarObservacao.cs" />
+    <Compile Include="Observacao\SetObservacao\PeticaoSetObservacao.cs" />
+    <Compile Include="Observacao\SetObservacao\RespostaSetObservacao.cs" />
+    <Compile Include="Parametro\RecuperarGrupoParametros\PeticaoRecuperarGrupoParametros.cs" />
+    <Compile Include="Parametro\RecuperarGrupoParametros\RespostaRecuperarGrupoParametros.cs" />
+    <Compile Include="Parametro\RecuperarParametros\PeticaoRecuperarParametros.cs" />
+    <Compile Include="Parametro\RecuperarParametros\RespostaRecuperarParametros.cs" />
+    <Compile Include="Parametro\SetParametros\PeticaoSetParametros.cs" />
+    <Compile Include="Parametro\SetParametros\RespostaSetParametros.cs" />
+    <Compile Include="Permissao\GravarGrupoPermissao\PeticaoGravarGrupoPermissao.cs" />
+    <Compile Include="Permissao\GravarGrupoPermissao\RespostaGravarGrupoPermissao.cs" />
+    <Compile Include="Permissao\GravarPermissoesUsuario\PeticaoGravarPermissoesUsuario.cs" />
+    <Compile Include="Permissao\GravarPermissoesUsuario\RespostaGravarPermissoesUsuario.cs" />
+    <Compile Include="Pessoa\AtualizarPessoa\PeticaoAtualizarPessoa.cs" />
+    <Compile Include="Pessoa\AtualizarPessoa\RespostaAtualizarPessoa.cs" />
+    <Compile Include="Pessoa\DesativarPessoa\PeticaoDesativarPessoa.cs" />
+    <Compile Include="Pessoa\DesativarPessoa\RespostaDesativarPessoa.cs" />
+    <Compile Include="Pessoa\InserirPessoa\PeticaoInserirPessoa.cs" />
+    <Compile Include="Pessoa\InserirPessoa\RespostaInserirPessoa.cs" />
+    <Compile Include="Pessoa\RecuperarPessoas\PeticaoRecuperarPessoas.cs" />
+    <Compile Include="Pessoa\RecuperarPessoas\RespostaRecuperarPessoas.cs" />
+    <Compile Include="Pessoa\TrocarSenhaPessoa\PeticaoTrocarSenhaPessoa.cs" />
+    <Compile Include="Pessoa\TrocarSenhaPessoa\RespostaTrocarSenhaPessoa.cs" />
+    <Compile Include="Processo\RecuperarItemProcesso\PeticaoRecuperarItemsProcesso.cs" />
+    <Compile Include="Processo\RecuperarItemProcesso\RespostaRecuperarItemsProcesso.cs" />
+    <Compile Include="Processo\RecuperarProcessos\PeticaoRecuperarProcessos.cs" />
+    <Compile Include="Processo\RecuperarProcessos\RespostaRecuperarProcessos.cs" />
+    <Compile Include="Processo\RecuperarProcesso\PeticaoRecuperarProcesso.cs" />
+    <Compile Include="Processo\RecuperarProcesso\RespostaRecuperarProcesso.cs" />
+    <Compile Include="Processo\RegistrarItemProcesso\PeticaoRegistrarItemProcesso.cs" />
+    <Compile Include="Processo\RegistrarItemProcesso\RespostaRegistrarItemProcesso.cs" />
+    <Compile Include="Processo\SetProcesso\PeticaoSetProcesso.cs" />
+    <Compile Include="Processo\SetProcesso\RespostaSetProcesso.cs" />
+    <Compile Include="ProdutoCategoria\DeletarProdutoCategoria\PeticaoDeletarProdutoCategoria.cs" />
+    <Compile Include="ProdutoCategoria\DeletarProdutoCategoria\RespostaDeletarProdutoCategoria.cs" />
+    <Compile Include="ProdutoCategoria\RecuperarCategorias\PeticaoRecuperarCategorias.cs" />
+    <Compile Include="ProdutoCategoria\RecuperarCategorias\RespostaRecuperarCategorias.cs" />
+    <Compile Include="ProdutoFilial\SetProdutoFilial\PeticaoSetProdutoFilial.cs" />
+    <Compile Include="ProdutoFilial\SetProdutoFilial\RespostaSetProdutoFilial.cs" />
+    <Compile Include="ProdutoMarca\DeletarProdutoMarca\PeticaoDeletarProdutoMarca.cs" />
+    <Compile Include="ProdutoMarca\DeletarProdutoMarca\RespostaDeletarProdutoMarca.cs" />
+    <Compile Include="ProdutoMarca\RecuperarMarcas\PeticaoRecuperarMarcas.cs" />
+    <Compile Include="ProdutoMarca\RecuperarMarcas\RespostaRecuperarMarcas.cs" />
+    <Compile Include="ProdutoPromocao\DesativarProdutoPromocao\PeticaoDesativarProdutoPromocao.cs" />
+    <Compile Include="ProdutoPromocao\DesativarProdutoPromocao\RespostaDesativarProdutoPromocao.cs" />
+    <Compile Include="ProdutoPromocao\PesquisarProdutoPromocao\PeticaoPesquisarProdutoPromocao.cs" />
+    <Compile Include="ProdutoPromocao\PesquisarProdutoPromocao\RespostaPesquisarProdutoPromocao.cs" />
+    <Compile Include="ProdutoPromocao\SetProdutoPromocao\PeticaoSetProdutoPromocao.cs" />
+    <Compile Include="ProdutoPromocao\SetProdutoPromocao\RespostaSetProdutoPromocao.cs" />
+    <Compile Include="ProdutoServico\DeletarProdutoServico\PeticaoDeletarProdutoServico.cs" />
+    <Compile Include="ProdutoServico\DeletarProdutoServico\RespostaDeletarProdutoServico.cs" />
+    <Compile Include="ProdutoServico\RecuperarProdutos\PeticaoRecuperarProdutos.cs" />
+    <Compile Include="ProdutoServico\RecuperarProdutos\RespostaRecuperarProdutos.cs" />
+    <Compile Include="ProdutoServico\SetProdutoServico\PeticaoSetProdutoServico.cs" />
+    <Compile Include="ProdutoServico\SetProdutoServico\RespostaSetProdutoServico.cs" />
+    <Compile Include="ProdutoServico\RecuperarProdutosServicos\PeticaoRecuperarProdutosServicos.cs" />
+    <Compile Include="ProdutoServico\RecuperarProdutosServicos\RespostaRecuperarProdutosServicos.cs" />
+    <Compile Include="Proposta\RecuperarProposta\PeticaoRecuperarProposta.cs" />
+    <Compile Include="Proposta\RecuperarProposta\RespostaRecuperarProposta.cs" />
+    <Compile Include="Proposta\SetProposta\PeticaoSetProposta.cs" />
+    <Compile Include="Proposta\SetProposta\RespostaSetProposta.cs" />
+    <Compile Include="Relatorios\RecuperarFechamentoCaixa\PeticaoRecuperarFechamentoCaixa.cs" />
+    <Compile Include="Relatorios\RecuperarFechamentoCaixa\RespostaRecuperarFechamentoCaixa.cs" />
+    <Compile Include="SegmentoComercial\DeletarSegmentoComercial\PeticaoDeletarSegmentoComercial.cs" />
+    <Compile Include="SegmentoComercial\DeletarSegmentoComercial\RespostaDeletarSegmentoComercial.cs" />
+    <Compile Include="SegmentoComercial\PesquisarSegmentoComercial\PeticaoPesquisarSegmentoComercial.cs" />
+    <Compile Include="SegmentoComercial\PesquisarSegmentoComercial\RespostaPesquisarSegmentoComercial.cs" />
+    <Compile Include="SegmentoComercial\RecuperarSegmentoComercial\PeticaoRecuperarSegmentoComercial.cs" />
+    <Compile Include="SegmentoComercial\RecuperarSegmentoComercial\RespostaRecuperarSegmentoComercial.cs" />
+    <Compile Include="SegmentoComercial\SetSegmentoComercial\PeticaoSetSegmentoComercial.cs" />
+    <Compile Include="SegmentoComercial\SetSegmentoComercial\RespostaSetSegmentoComercial.cs" />
+    <Compile Include="Sessao\AtualizarSessao\PeticaoAtualizarSessao.cs" />
+    <Compile Include="Sessao\AtualizarSessao\RespostaAtualizarSessao.cs" />
+    <Compile Include="Setor\BuscarSetores\PeticaoBuscarSetores.cs" />
+    <Compile Include="Setor\BuscarSetores\RespostaBuscarSetores.cs" />
+    <Compile Include="Setor\BuscarSetor\PeticaoBuscarSetor.cs" />
+    <Compile Include="Setor\BuscarSetor\RespostaBuscarSetor.cs" />
+    <Compile Include="Setor\ExcluirSetor\PeticaoExcluirSetor.cs" />
+    <Compile Include="Setor\ExcluirSetor\RespostaExcluirSetor.cs" />
+    <Compile Include="Setor\SetSetor\PeticaoSetSetor.cs" />
+    <Compile Include="Setor\SetSetor\RespostaSetSetor.cs" />
+    <Compile Include="Telas\BuscarCRM\Carregar\PeticaoBuscarCRMCarregar.cs" />
+    <Compile Include="Telas\BuscarCRM\Carregar\RespostaBuscarCRMCarregar.cs" />
+    <Compile Include="Telas\GuardarAgendamento\Carregar\PeticaoGuardarAgendamentoCarregar.cs" />
+    <Compile Include="Telas\GuardarAgendamento\Carregar\RespostaGuardarAgendamentoCarregar.cs" />
+    <Compile Include="Telas\GuardarCliente\Carregar\PeticaoGuardarClienteCarregar.cs" />
+    <Compile Include="Telas\GuardarCliente\Carregar\RespostaGuardarClienteCarregar.cs" />
+    <Compile Include="Telas\GuardarCompra\Carregar\PeticaoGuardarCompraCarregar.cs" />
+    <Compile Include="Telas\GuardarCompra\Carregar\RespostaGuardarCompraCarregar.cs" />
+    <Compile Include="Telas\GuardarCRM\Carregar\PeticaoGuardarCRMCarregar.cs" />
+    <Compile Include="Telas\GuardarCRM\Carregar\RespostaGuardarCRMCarregar.cs" />
+    <Compile Include="Telas\GuardarEmpresa\Carregar\PeticaoGuardarEmpresaCarregar.cs" />
+    <Compile Include="Telas\GuardarEmpresa\Carregar\RespostaGuardarEmpresaCarregar.cs" />
+    <Compile Include="Telas\GuardarFornecedor\Carregar\PeticaoGuardarFornecedorCarregar.cs" />
+    <Compile Include="Telas\GuardarFornecedor\Carregar\RespostaGuardarFornecedorCarregar.cs" />
+    <Compile Include="Telas\GuardarFuncionario\Carregar\PeticaoGuardarFuncionarioCarregar.cs" />
+    <Compile Include="Telas\GuardarFuncionario\Carregar\RespostaGuardarFuncionarioCarregar.cs" />
+    <Compile Include="Telas\GuardarIntegracaoAPI\Carregar\PeticaoGuardarIntegracaoAPICarregar.cs" />
+    <Compile Include="Telas\GuardarIntegracaoAPI\Carregar\RespostaGuardarIntegracaoAPICarregar.cs" />
+    <Compile Include="Telas\GuardarMesa\Carregar\PeticaoGuardarMesaCarregar.cs" />
+    <Compile Include="Telas\GuardarMesa\Carregar\RespostaGuardarMesaCarregar.cs" />
+    <Compile Include="Telas\GuardarProdutoFilial\Carregar\PeticaoGuardarProdutoFilialCarregar.cs" />
+    <Compile Include="Telas\GuardarProdutoFilial\Carregar\RespostaGuardarProdutoFilialCarregar.cs" />
+    <Compile Include="Telas\GuardarProdutoPromocao\Carregar\PeticaoGuardarProdutoPromocaoCarregar.cs" />
+    <Compile Include="Telas\GuardarProdutoPromocao\Carregar\RespostaGuardarProdutoPromocaoCarregar.cs" />
+    <Compile Include="Telas\GuardarProdutoServico\Carregar\PeticaoGuardarProdutoServicoCarregar.cs" />
+    <Compile Include="Telas\GuardarProdutoServico\Carregar\RespostaGuardarProdutoServicoCarregar.cs" />
+    <Compile Include="Telas\GuardarTipoCrmConfig\Carregar\PeticaoGuardarTipoCrmConfigCarregar.cs" />
+    <Compile Include="Telas\GuardarTipoCrmConfig\Carregar\RespostaGuardarTipoCrmConfigCarregar.cs" />
+    <Compile Include="Telas\GuardarTipoCrm\Carregar\PeticaoGuardarTipoCrmCarregar.cs" />
+    <Compile Include="Telas\GuardarTipoCrm\Carregar\RespostaGuardarTipoCrmCarregar.cs" />
+    <Compile Include="Telas\GuardarVendaSupermercado\PeticaoGuardarVendaSupermercadoCarregar.cs" />
+    <Compile Include="Telas\GuardarVendaSupermercado\RespostaGuardarVendaSupermercadoCarregar.cs" />
+    <Compile Include="Telas\Permissoes\Carregar\PeticaoPermissoesCarregar.cs" />
+    <Compile Include="Telas\Permissoes\Carregar\RespostaPermissoesCarregar.cs" />
+    <Compile Include="Telas\VendaSupermercado\Carregar\PeticaoVendaSupermercadoCarregar.cs" />
+    <Compile Include="Telas\VendaSupermercado\Carregar\RespostaVendaSupermercadoCarregar.cs" />
+    <Compile Include="TipoCrm\BuscarTipoCrm\PeticaoBuscarTipoCrm.cs" />
+    <Compile Include="TipoCrm\BuscarTipoCrm\RespostaBuscarTipoCrm.cs" />
+    <Compile Include="TipoCrm\ExcluirTipoCrm\PeticaoExcluirTipoCrm.cs" />
+    <Compile Include="TipoCrm\ExcluirTipoCrm\RespostaExcluirTipoCrm.cs" />
+    <Compile Include="TipoCrm\PesquisarTipoCrm\PeticaoPesquisarTipoCrm.cs" />
+    <Compile Include="TipoCrm\PesquisarTipoCrm\RespostaPesquisarTipoCrm.cs" />
+    <Compile Include="TipoCrm\SetTipoCrm\PeticaoSetTipoCrm.cs" />
+    <Compile Include="TipoCrm\SetTipoCrm\RespostaSetTipoCrm.cs" />
+    <Compile Include="TipoEmpregado\BuscarTipoEmpregado\PeticaoBuscarTipoEmpregado.cs" />
+    <Compile Include="TipoEmpregado\BuscarTipoEmpregado\RespostaBuscarTipoEmpregado.cs" />
+    <Compile Include="TipoEmpregado\ExcluirTipoEmpregado\PeticaoExcluirTipoEmpregado.cs" />
+    <Compile Include="TipoEmpregado\ExcluirTipoEmpregado\RespostaExcluirTipoEmpregado.cs" />
+    <Compile Include="TipoEmpregado\PesquisarTipoEmpregado\PeticaoPesquisarTipoEmpregado.cs" />
+    <Compile Include="TipoEmpregado\PesquisarTipoEmpregado\RespostaPesquisarTipoEmpregado.cs" />
+    <Compile Include="TipoEmpregado\SetTipoEmpregado\PeticaoSetTipoEmpregado.cs" />
+    <Compile Include="TipoEmpregado\SetTipoEmpregado\RespostaSetTipoEmpregado.cs" />
+    <Compile Include="PeticaoGenerico.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ChaveAcesso\RecuperarChaves\PeticaoRecuperarChaves.cs" />
+    <Compile Include="ChaveAcesso\RecuperarChaves\RespuestaRecuperarChaves.cs" />
+    <Compile Include="RecuperarImagem\Peticao.cs" />
+    <Compile Include="RecuperarImagem\Resposta.cs" />
+    <Compile Include="RecuperarVersao\Peticao.cs" />
+    <Compile Include="RecuperarVersao\Resposta.cs" />
+    <Compile Include="RespostaGenerica.cs" />
+    <Compile Include="UnidadeMedida\DeletarUnidadeMedida\PeticaoDeletarUnidadeMedida.cs" />
+    <Compile Include="UnidadeMedida\DeletarUnidadeMedida\RespostaDeletarUnidadeMedida.cs" />
+    <Compile Include="UnidadeMedida\RecuperarUnidadeMedida\PeticaoRecuperarUnidadeMedida.cs" />
+    <Compile Include="UnidadeMedida\RecuperarUnidadeMedida\RespostaRecuperarUnidadeMedida.cs" />
+    <Compile Include="UnidadeMedida\RecuperarUnidadesMedida\PeticaoRecuperarUnidadesMedida.cs" />
+    <Compile Include="UnidadeMedida\RecuperarUnidadesMedida\RespostaRecuperarUnidadesMedida.cs" />
+    <Compile Include="UnidadeMedida\SetUnidadeMedida\PeticaoSetUnidadeMedida.cs" />
+    <Compile Include="UnidadeMedida\SetUnidadeMedida\RespostaSetUnidadeMedida.cs" />
+    <Compile Include="Usuario\AtivarSessao\PeticaoAtivarSessao.cs" />
+    <Compile Include="Usuario\AtivarSessao\RespostaAtivarSessao.cs" />
+    <Compile Include="Usuario\DeletarSessao\PeticaoDeletarSessao.cs" />
+    <Compile Include="Usuario\DeletarSessao\RespostaDeletarSessao.cs" />
+    <Compile Include="Usuario\Logar\PeticaoLogar.cs" />
+    <Compile Include="Usuario\Logar\RespostaLogar.cs" />
+    <Compile Include="Usuario\ValidarTipoEmpregado\PeticaoValidarTipoEmpregado.cs" />
+    <Compile Include="Usuario\ValidarTipoEmpregado\RespostaValidarTipoEmpregado.cs" />
+    <Compile Include="ValidarChave\Peticao.cs" />
+    <Compile Include="ValidarChave\Respuesta.cs" />
+    <Compile Include="ValidarUsuario\Peticao.cs" />
+    <Compile Include="ValidarUsuario\Respuesta.cs" />
+    <Compile Include="Venda\CancelarItems\PeticaoCancelarItems.cs" />
+    <Compile Include="Venda\CancelarItems\RespostaCancelarItems.cs" />
+    <Compile Include="Venda\FecharVenda\PeticaoFecharVenda.cs" />
+    <Compile Include="Venda\FecharVenda\RespostaFecharVenda.cs" />
+    <Compile Include="Venda\InformarDadosVenda\PeticaoInformarDadosVenda.cs" />
+    <Compile Include="Venda\InformarDadosVenda\RespostaInformarDadosVenda.cs" />
+    <Compile Include="Venda\ModificarPrecoProdutoVenda\PeticaoModificarPrecoProdutoVenda.cs" />
+    <Compile Include="Venda\ModificarPrecoProdutoVenda\RespostaModificarPrecoProdutoVenda.cs" />
+    <Compile Include="Venda\RecuperarVendaPorMesa\PeticaoRecuperarVendaPorMesa.cs" />
+    <Compile Include="Venda\RecuperarVendaPorMesa\RespostaRecuperarVendaPorMesa.cs" />
+    <Compile Include="Venda\RecuperarVendaPorComanda\PeticaoRecuperarVendaPorComanda.cs" />
+    <Compile Include="Venda\RecuperarVendaPorComanda\RespostaRecuperarVendaPorComanda.cs" />
+    <Compile Include="Venda\RecuperarVendaEmCurso\PeticaoRecuperarVendaEmCurso.cs" />
+    <Compile Include="Venda\RecuperarVendaEmCurso\RespostaRecuperarVendaEmCurso.cs" />
+    <Compile Include="Venda\RecuperarVendasCaixa\PeticaoRecuperarPagamentosCaixa.cs" />
+    <Compile Include="Venda\RecuperarVendasCaixa\RespostaRecuperarPagamentosCaixa.cs" />
+    <Compile Include="Venda\RegistrarSuprimento\PeticaoRegistrarSuprimento.cs" />
+    <Compile Include="Venda\RegistrarSuprimento\RespostaRegistrarSuprimento.cs" />
+    <Compile Include="Venda\RegistrarSangria\PeticaoRegistrarSangria.cs" />
+    <Compile Include="Venda\RegistrarSangria\RespostaRegistrarSangria.cs" />
+    <Compile Include="Venda\SetVenda\PeticaoSetVenda.cs" />
+    <Compile Include="Venda\SetVenda\RespostaSetVenda.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comum\Informatiz.ControleEstoque.Comum.csproj">
+      <Project>{1E5B2B33-02EF-416C-9D4C-89945DEC619D}</Project>
+      <Name>Informatiz.ControleEstoque.Comum</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

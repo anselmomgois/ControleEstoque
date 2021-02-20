@@ -1,0 +1,14 @@
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\Informatiz.ControleEstoque.Comunicacao.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\Informatiz.ControleEstoque.Comunicacao.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\Informatiz.ControleEstoque.ContratoServico.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\Informatiz.ControleEstoque.Comum.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\CsQuery.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\Informatiz.ControleEstoque.Execao.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\Informatiz.ControleEstoque.ContratoServico.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\Informatiz.ControleEstoque.Comum.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\bin\Debug\Informatiz.ControleEstoque.Execao.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\obj\Debug\Informatiz.ControleEstoque.Comunicacao.csprojAssemblyReference.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\obj\Debug\Informatiz.ControleEstoque.Comunicacao.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\obj\Debug\Informatiz.ControleEstoque.Comunicacao.csproj.CopyComplete
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\obj\Debug\Informatiz.ControleEstoque.Comunicacao.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comunicacao\obj\Debug\Informatiz.ControleEstoque.Comunicacao.pdb

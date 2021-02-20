@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E5B2B33-02EF-416C-9D4C-89945DEC619D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informatiz.ControleEstoque.Comum</RootNamespace>
+    <AssemblyName>Informatiz.ControleEstoque.Comum</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsQuery">
+      <HintPath>..\CsQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="APIExterna\Modelo3\RootObject.cs" />
+    <Compile Include="APIExterna\Modelo1\Doc.cs" />
+    <Compile Include="APIExterna\Modelo1\RootObject.cs" />
+    <Compile Include="APIExterna\Modelo2\RootObject.cs" />
+    <Compile Include="Atributos\ValorEnum.cs" />
+    <Compile Include="Clases\Acao.cs" />
+    <Compile Include="Clases\Acrescimo.cs" />
+    <Compile Include="Clases\Administradora.cs" />
+    <Compile Include="Clases\Agendamento.cs" />
+    <Compile Include="Clases\Bairro.cs" />
+    <Compile Include="Clases\Chave.cs" />
+    <Compile Include="Clases\Cidade.cs" />
+    <Compile Include="Clases\ClassesAuxiliares\ChaveCodigo.cs" />
+    <Compile Include="Clases\Coluna.cs" />
+    <Compile Include="Clases\Compra.cs" />
+    <Compile Include="Clases\Constantes.cs" />
+    <Compile Include="Clases\Cor.cs" />
+    <Compile Include="Clases\CRM.cs" />
+    <Compile Include="Clases\CRMSimples.cs" />
+    <Compile Include="Clases\Documento.cs" />
+    <Compile Include="Clases\Empresa.cs" />
+    <Compile Include="Clases\Endereco.cs" />
+    <Compile Include="Clases\Erro.cs" />
+    <Compile Include="Clases\Estado.cs" />
+    <Compile Include="Clases\FechamentoCaixa.cs" />
+    <Compile Include="Clases\Filiais.cs" />
+    <Compile Include="Clases\Caixa.cs" />
+    <Compile Include="Clases\FormaPagamento.cs" />
+    <Compile Include="Clases\FuncionarioCrm.cs" />
+    <Compile Include="Clases\Geral.cs" />
+    <Compile Include="Clases\GrupoCompromisso.cs" />
+    <Compile Include="Clases\GrupoPermissao.cs" />
+    <Compile Include="Clases\GrupoProduto.cs" />
+    <Compile Include="Clases\HorarioTrabalho.cs" />
+    <Compile Include="Clases\Imagem.cs" />
+    <Compile Include="Clases\IntegracaoAPI.cs" />
+    <Compile Include="Clases\ItemVenda.cs" />
+    <Compile Include="Clases\Linhas.cs" />
+    <Compile Include="Clases\LocalDocumento.cs" />
+    <Compile Include="Clases\LogProcesso.cs" />
+    <Compile Include="Clases\Mesa.cs" />
+    <Compile Include="Clases\MesaProxima.cs" />
+    <Compile Include="Clases\OperacaoCaixa.cs" />
+    <Compile Include="Clases\Package.cs" />
+    <Compile Include="Clases\Pagamento.cs" />
+    <Compile Include="Clases\Parametros\GrupoParametro.cs" />
+    <Compile Include="Clases\Parametros\Parametro.cs" />
+    <Compile Include="Clases\Parametros\ValorPossivel.cs" />
+    <Compile Include="Clases\Parcelamento.cs" />
+    <Compile Include="Clases\Pergunta.cs" />
+    <Compile Include="Clases\PerguntaOpcao.cs" />
+    <Compile Include="Clases\Permissao.cs" />
+    <Compile Include="Clases\Pessoa.cs" />
+    <Compile Include="Clases\ItemProcesso.cs" />
+    <Compile Include="Clases\Processo.cs" />
+    <Compile Include="Clases\ProdutoCFOP.cs" />
+    <Compile Include="Clases\ProdutoComissao.cs" />
+    <Compile Include="Clases\ProdutoCompra.cs" />
+    <Compile Include="Clases\ProdutoCST.cs" />
+    <Compile Include="Clases\ProdutoDerivacao.cs" />
+    <Compile Include="Clases\ProdutoFilial.cs" />
+    <Compile Include="Clases\ProdutoMarca.cs" />
+    <Compile Include="Clases\ProdutoNCM.cs" />
+    <Compile Include="Clases\ProdutoNumeroSerie.cs" />
+    <Compile Include="Clases\ProdutoObservacao.cs" />
+    <Compile Include="Clases\ProdutoPromocao.cs" />
+    <Compile Include="Clases\ProdutoServico.cs" />
+    <Compile Include="Clases\ProdutoServicoCodigoBarras.cs" />
+    <Compile Include="Clases\ProdutosGeral.cs" />
+    <Compile Include="Clases\ProdutoDisponivelVenda.cs" />
+    <Compile Include="Clases\Proposta.cs" />
+    <Compile Include="Clases\Publicidade.cs" />
+    <Compile Include="Clases\Relatorios\FechamentoCaixaGeral\DadosRelatorio.cs" />
+    <Compile Include="Clases\Relatorios\FechamentoCaixaGeral\DetalheVenda.cs" />
+    <Compile Include="Clases\Relatorios\FechamentoCaixaGeral\PagamentosTotais.cs" />
+    <Compile Include="Clases\Relatorios\FechamentoCaixaGeral\PagamentoTotalPorVenda.cs" />
+    <Compile Include="Clases\Relatorios\FechamentoCaixa\FechamentoCaixa.cs" />
+    <Compile Include="Clases\Relatorios\FechamentoVenda\FechamentoCaixa.cs" />
+    <Compile Include="Clases\Relatorios\RelatorioEstoque.cs" />
+    <Compile Include="Clases\Relatorios\RelatorioPessoas.cs" />
+    <Compile Include="Clases\Relatorios\TicketVenda\Ticket.cs" />
+    <Compile Include="Clases\Suprimento.cs" />
+    <Compile Include="Clases\Sangria.cs" />
+    <Compile Include="Clases\SegmentoComercial.cs" />
+    <Compile Include="Clases\Sessoes.cs" />
+    <Compile Include="Clases\SetorEmpresa.cs" />
+    <Compile Include="Clases\SituacaoPessoa.cs" />
+    <Compile Include="Clases\StatusCrm.cs" />
+    <Compile Include="Clases\StatusCrmAgrupador.cs" />
+    <Compile Include="Clases\Tabela.cs" />
+    <Compile Include="Clases\TabelaColecao.cs" />
+    <Compile Include="Clases\TipoCrm.cs" />
+    <Compile Include="Clases\TipoCrmConfig.cs" />
+    <Compile Include="Clases\TipoDocumento.cs" />
+    <Compile Include="Clases\TipoEmpregado.cs" />
+    <Compile Include="Clases\TipoPessoa.cs" />
+    <Compile Include="Clases\ProdutoCategoria.cs" />
+    <Compile Include="Clases\TipoProdutoServico.cs" />
+    <Compile Include="Clases\Transacao.cs" />
+    <Compile Include="Clases\UnidadeMedida.cs" />
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Clases\Util.cs" />
+    <Compile Include="Clases\Venda.cs" />
+    <Compile Include="Enumeradores\Enumeradores.cs" />
+    <Compile Include="Enumeradores\EstadoCompra.cs" />
+    <Compile Include="Enumeradores\EstadoItemVenda.cs" />
+    <Compile Include="Enumeradores\EstadoMesa.cs" />
+    <Compile Include="Enumeradores\TipoPagamento.cs" />
+    <Compile Include="Enumeradores\EstadoVenda.cs" />
+    <Compile Include="Enumeradores\TipoControle.cs" />
+    <Compile Include="Enumeradores\TipoIntegracao.cs" />
+    <Compile Include="Enumeradores\TipoProcesso.cs" />
+    <Compile Include="Enumeradores\TipoRelatorio.cs" />
+    <Compile Include="Extencoes\CloneExtension.cs" />
+    <Compile Include="Extencoes\EnumExtension.cs" />
+    <Compile Include="Extencoes\StringExtensions.cs" />
+    <Compile Include="ParametrosTela\Generica.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Execao\Informatiz.ControleEstoque.Execao.csproj">
+      <Project>{f1fdcba1-e01e-4410-8ea3-6a649c7b5fc3}</Project>
+      <Name>Informatiz.ControleEstoque.Execao</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

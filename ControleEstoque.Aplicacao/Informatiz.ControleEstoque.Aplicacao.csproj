@@ -1,0 +1,1872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84B32613-F4DD-4238-9AD1-405D6726575B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informatiz.ControleEstoque.Aplicacao</RootNamespace>
+    <AssemblyName>Informatiz.ControleEstoque.Aplicacao</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AmgSistemas.Framework.AcessoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AmgSistemas.Framework.AcessoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Componentes">
+      <HintPath>..\AmgSistemas.Framework.Componentes.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.ConsultaCep">
+      <HintPath>..\AmgSistemas.Framework.ConsultaCep.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Criptografia">
+      <HintPath>..\AmgSistemas.Framework.Criptografia.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Email">
+      <HintPath>..\AmgSistemas.Framework.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Utilitarios">
+      <HintPath>..\AmgSistemas.Framework.Utilitarios.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.WindowsForms">
+      <HintPath>..\AmgSistemas.Framework.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="CharmNotification">
+      <HintPath>..\CharmNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\DLLS\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader">
+      <HintPath>..\DLLS\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet">
+      <HintPath>..\DLLS\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Conversion.v3.5" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NotificationWindow">
+      <HintPath>..\NotificationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.Calendar">
+      <HintPath>..\System.Windows.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.Ribbon">
+      <HintPath>..\System.Windows.Forms.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Classes\AgenteServico.cs" />
+    <Compile Include="Classes\BotaoAtalho.cs" />
+    <Compile Include="Classes\Formularios.cs" />
+    <Compile Include="Classes\ItemInfo.cs" />
+    <Compile Include="Classes\Tabelas.cs" />
+    <Compile Include="Classes\Util.cs" />
+    <Compile Include="Classes\ValorDescricao.cs" />
+    <Compile Include="Componente\InformatizGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\ucDadosVenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucDadosVenda.Designer.cs">
+      <DependentUpon>ucDadosVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CustomTabControl\ButtonX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\CustomTabControl\TabPanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\CustomTabControl\TabPanelControl.Designer.cs">
+      <DependentUpon>TabPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CustomTabControl\TabControlX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\CustomTabControl\TabControlX.Designer.cs">
+      <DependentUpon>TabControlX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucEndereco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucEndereco.Designer.cs">
+      <DependentUpon>ucEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucGridVenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucGridVenda.Designer.cs">
+      <DependentUpon>ucGridVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucHelper.Designer.cs">
+      <DependentUpon>ucHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucItensLegenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucItensLegenda.Designer.cs">
+      <DependentUpon>ucItensLegenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucLegenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucLegenda.Designer.cs">
+      <DependentUpon>ucLegenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UcNotificacao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UcNotificacao.Designer.cs">
+      <DependentUpon>UcNotificacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucNotificacaoUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucNotificacaoUsuario.Designer.cs">
+      <DependentUpon>ucNotificacaoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucNotificacoesUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucNotificacoesUsuario.Designer.cs">
+      <DependentUpon>ucNotificacoesUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucPesquisa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucPesquisa.Designer.cs">
+      <DependentUpon>ucPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucTeclado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucTeclado.Designer.cs">
+      <DependentUpon>ucTeclado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ucTexboxTeclado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\ucTexboxTeclado.Designer.cs">
+      <DependentUpon>ucTexboxTeclado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dtChaves.cs">
+      <DependentUpon>dtChaves.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dtChaves.Designer.cs">
+      <DependentUpon>dtChaves.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSet\dtFicha.cs">
+      <DependentUpon>dtFicha.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dtFicha.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtFicha.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dtRelatorioPessoas.cs">
+      <DependentUpon>dtRelatorioPessoas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dtRelatorioPessoas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRelatorioPessoas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dtRelatorioSaldo.cs">
+      <DependentUpon>dtRelatorioSaldo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dtRelatorioSaldo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRelatorioSaldo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Chave.cs">
+      <DependentUpon>Chave.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\FichaPerguntas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FichaPerguntas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\RelatorioCliente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\RelatorioEstoque.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioEstoque.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\RelatorioEstoqueEmpresa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioEstoqueEmpresa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\RelatorioEstoquePorFilial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioEstoquePorFilial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\RelatorioFornecedor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioFornecedor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Report\RelatorioFuncionario.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioFuncionario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Telas\AlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\AlterarSenha.Designer.cs">
+      <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaCompras.Designer.cs">
+      <DependentUpon>BuscaCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaIntegracaoAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaIntegracaoAPI.Designer.cs">
+      <DependentUpon>BuscaIntegracaoAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaObservacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaObservacao.Designer.cs">
+      <DependentUpon>BuscaObservacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Caixa\BuscarCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Caixa\BuscarCaixa.Designer.cs">
+      <DependentUpon>BuscarCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Caixa\GuardarCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Caixa\GuardarCaixa.Designer.cs">
+      <DependentUpon>GuardarCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CancelarItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CancelarItems.Designer.cs">
+      <DependentUpon>CancelarItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\DiferencasFecharCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\DiferencasFecharCaixa.Designer.cs">
+      <DependentUpon>DiferencasFecharCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FechamentoVendaRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FechamentoVendaRelatorio.Designer.cs">
+      <DependentUpon>FechamentoVendaRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FormaPagamento\BuscarFormaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FormaPagamento\BuscarFormaPagamento.Designer.cs">
+      <DependentUpon>BuscarFormaPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaTipoCrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaTipoCrm.Designer.cs">
+      <DependentUpon>BuscaTipoCrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaTipoEmpregado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaTipoEmpregado.Designer.cs">
+      <DependentUpon>BuscaTipoEmpregado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaStatusCrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaStatusCrm.Designer.cs">
+      <DependentUpon>BuscaStatusCrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaAdministradora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaAdministradora.Designer.cs">
+      <DependentUpon>BuscaAdministradora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaCores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaCores.Designer.cs">
+      <DependentUpon>BuscaCores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaGrupoCompromisso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaGrupoCompromisso.Designer.cs">
+      <DependentUpon>BuscaGrupoCompromisso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaGrupoProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaGrupoProduto.Designer.cs">
+      <DependentUpon>BuscaGrupoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoCFOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoCFOP.Designer.cs">
+      <DependentUpon>BuscaProdutoCFOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoComissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoComissao.Designer.cs">
+      <DependentUpon>BuscaProdutoComissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoCST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoCST.Designer.cs">
+      <DependentUpon>BuscaProdutoCST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoDerivacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoDerivacao.Designer.cs">
+      <DependentUpon>BuscaProdutoDerivacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoMarca.Designer.cs">
+      <DependentUpon>BuscaProdutoMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoServico.Designer.cs">
+      <DependentUpon>BuscaProdutoServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaPromocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaPromocao.Designer.cs">
+      <DependentUpon>BuscaPromocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaPublicidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaPublicidade.Designer.cs">
+      <DependentUpon>BuscaPublicidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscarCRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscarCRM.Designer.cs">
+      <DependentUpon>BuscarCRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscarEndereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscarEndereco.Designer.cs">
+      <DependentUpon>BuscarEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaProdutoCategoria.Designer.cs">
+      <DependentUpon>BuscaProdutoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscarProdutoNCM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscarProdutoNCM.Designer.cs">
+      <DependentUpon>BuscarProdutoNCM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscarProposta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscarProposta.Designer.cs">
+      <DependentUpon>BuscarProposta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaSegmentoComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaSegmentoComercial.Designer.cs">
+      <DependentUpon>BuscaSegmentoComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaUnidadeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaUnidadeMedida.Designer.cs">
+      <DependentUpon>BuscaUnidadeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Chaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Chaves.Designer.cs">
+      <DependentUpon>Chaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Controle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Controle.Designer.cs">
+      <DependentUpon>Controle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarCompra.Designer.cs">
+      <DependentUpon>GuardarCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarFecharVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarFecharVenda.Designer.cs">
+      <DependentUpon>GuardarFecharVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarObservacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarObservacao.Designer.cs">
+      <DependentUpon>GuardarObservacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarIntegracaoAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarIntegracaoAPI.Designer.cs">
+      <DependentUpon>GuardarIntegracaoAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCompra.Designer.cs">
+      <DependentUpon>GuardarProdutoCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCompraEstoqueAtual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCompraEstoqueAtual.Designer.cs">
+      <DependentUpon>GuardarProdutoCompraEstoqueAtual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoNumeroSerie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoNumeroSerie.Designer.cs">
+      <DependentUpon>GuardarProdutoNumeroSerie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarQuantidadeProdutoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarQuantidadeProdutoCompra.Designer.cs">
+      <DependentUpon>GuardarQuantidadeProdutoCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FormaPagamento\GuardarFormaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FormaPagamento\GuardarFormaPagamento.Designer.cs">
+      <DependentUpon>GuardarFormaPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarSaldoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarSaldoCaixa.Designer.cs">
+      <DependentUpon>GuardarSaldoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarStatusCrmAgrup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarStatusCrmAgrup.Designer.cs">
+      <DependentUpon>GuardarStatusCrmAgrup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarTipoCrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarTipoCrmConfig.Designer.cs">
+      <DependentUpon>GuardarTipoCrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarTipoCrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarTipoCrm.Designer.cs">
+      <DependentUpon>GuardarTipoCrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarTipoEmpregado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarTipoEmpregado.Designer.cs">
+      <DependentUpon>GuardarTipoEmpregado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarStatusCrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarStatusCrm.Designer.cs">
+      <DependentUpon>GuardarStatusCrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Cor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Cor.Designer.cs">
+      <DependentUpon>Cor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\DadosEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\DadosEmpresa.Designer.cs">
+      <DependentUpon>DadosEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Documento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Documento.Designer.cs">
+      <DependentUpon>Documento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ExibirFoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ExibirFoto.Designer.cs">
+      <DependentUpon>ExibirFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GerarBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GerarBackup.Designer.cs">
+      <DependentUpon>GerarBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GerarChave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GerarChave.Designer.cs">
+      <DependentUpon>GerarChave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GerarConexao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GerarConexao.Designer.cs">
+      <DependentUpon>GerarConexao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GrupoPermissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GrupoPermissao.Designer.cs">
+      <DependentUpon>GrupoPermissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarAdministradora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarAdministradora.Designer.cs">
+      <DependentUpon>GuardarAdministradora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarAgendamento.Designer.cs">
+      <DependentUpon>GuardarAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarCliente.Designer.cs">
+      <DependentUpon>GuardarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarCRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarCRM.Designer.cs">
+      <DependentUpon>GuardarCRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarEmpresa.Designer.cs">
+      <DependentUpon>GuardarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarFilial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarFilial.Designer.cs">
+      <DependentUpon>GuardarFilial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarFornecedor.Designer.cs">
+      <DependentUpon>GuardarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarFuncionario.Designer.cs">
+      <DependentUpon>GuardarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarGrupoCompromissos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarGrupoCompromissos.Designer.cs">
+      <DependentUpon>GuardarGrupoCompromissos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarGrupoProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarGrupoProdutos.Designer.cs">
+      <DependentUpon>GuardarGrupoProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarItemHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarItemHelper.Designer.cs">
+      <DependentUpon>GuardarItemHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarPergunta.Designer.cs">
+      <DependentUpon>GuardarPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarPerguntaOpcao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarPerguntaOpcao.Designer.cs">
+      <DependentUpon>GuardarPerguntaOpcao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCategoria.Designer.cs">
+      <DependentUpon>GuardarProdutoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCFOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCFOP.Designer.cs">
+      <DependentUpon>GuardarProdutoCFOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoComissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoComissao.Designer.cs">
+      <DependentUpon>GuardarProdutoComissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoCST.Designer.cs">
+      <DependentUpon>GuardarProdutoCST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoDerivacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoDerivacao.Designer.cs">
+      <DependentUpon>GuardarProdutoDerivacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoFilial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoFilial.Designer.cs">
+      <DependentUpon>GuardarProdutoFilial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoMarca.Designer.cs">
+      <DependentUpon>GuardarProdutoMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoNCM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoNCM.Designer.cs">
+      <DependentUpon>GuardarProdutoNCM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoPromocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoPromocao.Designer.cs">
+      <DependentUpon>GuardarProdutoPromocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarProdutoServico.Designer.cs">
+      <DependentUpon>GuardarProdutoServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarPropostas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarPropostas.Designer.cs">
+      <DependentUpon>GuardarPropostas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarPublicidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarPublicidade.Designer.cs">
+      <DependentUpon>GuardarPublicidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarResposta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarResposta.Designer.cs">
+      <DependentUpon>GuardarResposta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarSegmentoComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarSegmentoComercial.Designer.cs">
+      <DependentUpon>GuardarSegmentoComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\GuardarUnidadeMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\GuardarUnidadeMedida.Designer.cs">
+      <DependentUpon>GuardarUnidadeMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Helper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Helper.Designer.cs">
+      <DependentUpon>Helper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\HorarioTrabalho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\HorarioTrabalho.Designer.cs">
+      <DependentUpon>HorarioTrabalho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ImportarExcelCrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ImportarExcelCrm.Designer.cs">
+      <DependentUpon>ImportarExcelCrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Mesa\BuscaMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Mesa\BuscaMesa.Designer.cs">
+      <DependentUpon>BuscaMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Mesa\GuardarMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Mesa\GuardarMesa.Designer.cs">
+      <DependentUpon>GuardarMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ModificarImagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ModificarImagem.Designer.cs">
+      <DependentUpon>ModificarImagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ModificarValorProduto\ModificarValorProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ModificarValorProduto\ModificarValorProduto.Designer.cs">
+      <DependentUpon>ModificarValorProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Parametros\GuardarParametroValor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Parametros\GuardarParametroValor.Designer.cs">
+      <DependentUpon>GuardarParametroValor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Permissoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Permissoes.Designer.cs">
+      <DependentUpon>Permissoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Processo\BuscaProcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Processo\BuscaProcesso.Designer.cs">
+      <DependentUpon>BuscaProcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Processo\GuardarProcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Processo\GuardarProcesso.Designer.cs">
+      <DependentUpon>GuardarProcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RelatorioEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RelatorioEstoque.Designer.cs">
+      <DependentUpon>RelatorioEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RelatorioPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RelatorioPessoa.Designer.cs">
+      <DependentUpon>RelatorioPessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Relatorios\Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Relatorios\Ticket.Designer.cs">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RelatorioVisualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RelatorioVisualizar.Designer.cs">
+      <DependentUpon>RelatorioVisualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ResumoPagamentoVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ResumoPagamentoVenda.Designer.cs">
+      <DependentUpon>ResumoPagamentoVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\SelecionarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\SelecionarEmpresa.Designer.cs">
+      <DependentUpon>SelecionarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\SetorEmpresa\BuscaSetorEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\SetorEmpresa\BuscaSetorEmpresa.Designer.cs">
+      <DependentUpon>BuscaSetorEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\SetorEmpresa\GuardarSetorEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\SetorEmpresa\GuardarSetorEmpresa.Designer.cs">
+      <DependentUpon>GuardarSetorEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaBase\Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaBase\Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaBase\BaseCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaBase\BaseCE.Designer.cs">
+      <DependentUpon>BaseCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaBase\BaseVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaBase\BaseVenda.Designer.cs">
+      <DependentUpon>BaseVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaTeste.Designer.cs">
+      <DependentUpon>TelaTeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ValidarChave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ValidarChave.Designer.cs">
+      <DependentUpon>ValidarChave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ValidarTipoEmpregado\ValidarTipoEmpregado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ValidarTipoEmpregado\ValidarTipoEmpregado.Designer.cs">
+      <DependentUpon>ValidarTipoEmpregado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\CancelarItemsTouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\CancelarItemsTouch.Designer.cs">
+      <DependentUpon>CancelarItemsTouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\HelperTouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\HelperTouch.Designer.cs">
+      <DependentUpon>HelperTouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\InformarMesaAtendenteTouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\InformarMesaAtendenteTouch.Designer.cs">
+      <DependentUpon>InformarMesaAtendenteTouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\RegistrarAcrescimosTouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\RegistrarAcrescimosTouch.Designer.cs">
+      <DependentUpon>RegistrarAcrescimosTouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\ucGrupoProduto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\ucGrupoProduto.Designer.cs">
+      <DependentUpon>ucGrupoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\ucProduto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\ucProduto.Designer.cs">
+      <DependentUpon>ucProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\VendaTouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\VendaTouch\VendaTouch.Designer.cs">
+      <DependentUpon>VendaTouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Venda\InformarMesaAtendente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Venda\InformarMesaAtendente.Designer.cs">
+      <DependentUpon>InformarMesaAtendente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Venda\RegistrarAcrescimos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Venda\RegistrarAcrescimos.Designer.cs">
+      <DependentUpon>RegistrarAcrescimos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Venda\VendaSupermercado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Venda\VendaSupermercado.Designer.cs">
+      <DependentUpon>VendaSupermercado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Venda\AberturaCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Venda\AberturaCaixa.Designer.cs">
+      <DependentUpon>AberturaCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Venda\AcrescimoDescontoFechamentoVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Venda\AcrescimoDescontoFechamentoVenda.Designer.cs">
+      <DependentUpon>AcrescimoDescontoFechamentoVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Venda\VendaPorComanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Venda\VendaPorComanda.Designer.cs">
+      <DependentUpon>VendaPorComanda.cs</DependentUpon>
+    </Compile>
+    <Content Include="Image\alert.png" />
+    <Content Include="Image\Back-Arrow-Icon-PNG-715x715.png" />
+    <Content Include="Image\button_off.png" />
+    <Content Include="Image\button_on.png" />
+    <Content Include="Image\dispatch_order_close.png" />
+    <Content Include="Image\enter_black.png" />
+    <Content Include="Image\go_previous_black.png" />
+    <Content Include="Image\keyboard.png" />
+    <Content Include="Image\order.png" />
+    <Content Include="Image\order_orange.png" />
+    <Content Include="Image\plus.png" />
+    <Content Include="Image\preferences_desktop_user.png" />
+    <Content Include="Image\process.png" />
+    <Content Include="Image\share_alt_2.png" />
+    <Content Include="Image\table.png" />
+    <EmbeddedResource Include="Controles\ucDadosVenda.resx">
+      <DependentUpon>ucDadosVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\CustomTabControl\TabControlX.resx">
+      <DependentUpon>TabControlX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucEndereco.resx">
+      <DependentUpon>ucEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucGridVenda.resx">
+      <DependentUpon>ucGridVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucHelper.resx">
+      <DependentUpon>ucHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucItensLegenda.resx">
+      <DependentUpon>ucItensLegenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucLegenda.resx">
+      <DependentUpon>ucLegenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UcNotificacao.resx">
+      <DependentUpon>UcNotificacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucNotificacaoUsuario.resx">
+      <DependentUpon>ucNotificacaoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucNotificacoesUsuario.resx">
+      <DependentUpon>ucNotificacoesUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucPesquisa.resx">
+      <DependentUpon>ucPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucTeclado.resx">
+      <DependentUpon>ucTeclado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\ucTexboxTeclado.resx">
+      <DependentUpon>ucTexboxTeclado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Image\add.png" />
+    <Content Include="Image\arrow_down.png" />
+    <Content Include="Image\arrow_up.png" />
+    <Content Include="Image\badge.png" />
+    <Content Include="Image\buy.png" />
+    <Content Include="Image\cash_register.png" />
+    <Content Include="Image\cash_stack_add.png" />
+    <Content Include="Image\coins_add.png" />
+    <Content Include="Image\coin_stacks_gold_edit.png" />
+    <Content Include="Image\credit_card.png" />
+    <Content Include="Image\delete.png" />
+    <Content Include="Image\diagram_v2_17.png" />
+    <Content Include="Image\discount.png" />
+    <Content Include="Image\dollars.png" />
+    <Content Include="Image\employee.png" />
+    <Content Include="Image\excel.png" />
+    <Content Include="Image\finish.png" />
+    <Content Include="Image\forma_pagamento.png" />
+    <Content Include="Image\goods.png" />
+    <Content Include="Image\if_Green-Buy_67643.png" />
+    <Content Include="Image\if_shopping_cart_17438.png" />
+    <Content Include="Image\iGerence.png" />
+    <Content Include="Image\img_caixa.png" />
+    <Content Include="Image\logo_reduzido.png" />
+    <Content Include="Image\new_yellow.png" />
+    <Content Include="Image\Notification\678080-shield-error-32.png" />
+    <Content Include="Image\Notification\678136-shield-warning-32.png" />
+    <Content Include="Image\Notification\Download-32.png" />
+    <Content Include="Image\Notification\ic_verified_user_48px-32.png" />
+    <Content Include="Image\Notification\info-32 %281%29.png" />
+    <Content Include="Image\Notification\Info-32.png" />
+    <Content Include="Image\Notification\question-32.png" />
+    <Content Include="Image\Notification\Update-32.png" />
+    <Content Include="Image\Notification\windows-32.png" />
+    <Content Include="Image\not_serial_number.png" />
+    <Content Include="Image\not_serial_number_gray.png" />
+    <Content Include="Image\player_pause.png" />
+    <Content Include="Image\player_play.png" />
+    <Content Include="Image\plus_orange.png" />
+    <Content Include="Image\product_cancel.png" />
+    <Content Include="Image\product_in_process_info.png" />
+    <Content Include="Image\receipt.png" />
+    <Content Include="Image\serial_number_add.png" />
+    <Content Include="Image\shopcart.png" />
+    <Content Include="Image\shopping_full.png" />
+    <Content Include="Image\smart_folder.png" />
+    <Content Include="Image\status_crm.png" />
+    <Content Include="Image\stock_market.png" />
+    <Content Include="Image\tag.png" />
+    <Content Include="Image\taxa1.png" />
+    <Content Include="Image\taxa2.png" />
+    <Content Include="Image\taxa3.png" />
+    <Content Include="Image\tipo_crm.png" />
+    <Content Include="Image\tipo_empregado.jpg" />
+    <Content Include="Image\track_icon.png" />
+    <Content Include="Report\Chave.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Chave.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\FichaPerguntas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FichaPerguntas.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\RelatorioCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioCliente.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\RelatorioEstoque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioEstoque.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\RelatorioEstoqueEmpresa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioEstoqueEmpresa.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\RelatorioEstoquePorFilial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioEstoquePorFilial.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\RelatorioFornecedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioFornecedor.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report\RelatorioFuncionario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioFuncionario.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Telas\AlterarSenha.resx">
+      <DependentUpon>AlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaCompras.resx">
+      <DependentUpon>BuscaCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaIntegracaoAPI.resx">
+      <DependentUpon>BuscaIntegracaoAPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaObservacao.resx">
+      <DependentUpon>BuscaObservacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Caixa\BuscarCaixa.resx">
+      <DependentUpon>BuscarCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Caixa\GuardarCaixa.resx">
+      <DependentUpon>GuardarCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CancelarItems.resx">
+      <DependentUpon>CancelarItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\DiferencasFecharCaixa.resx">
+      <DependentUpon>DiferencasFecharCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FechamentoVendaRelatorio.resx">
+      <DependentUpon>FechamentoVendaRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FormaPagamento\BuscarFormaPagamento.resx">
+      <DependentUpon>BuscarFormaPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaTipoCrm.resx">
+      <DependentUpon>BuscaTipoCrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaTipoEmpregado.resx">
+      <DependentUpon>BuscaTipoEmpregado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaStatusCrm.resx">
+      <DependentUpon>BuscaStatusCrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaAdministradora.resx">
+      <DependentUpon>BuscaAdministradora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaCores.resx">
+      <DependentUpon>BuscaCores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaGrupoCompromisso.resx">
+      <DependentUpon>BuscaGrupoCompromisso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaGrupoProduto.resx">
+      <DependentUpon>BuscaGrupoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaProdutoCFOP.resx">
+      <DependentUpon>BuscaProdutoCFOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaProdutoComissao.resx">
+      <DependentUpon>BuscaProdutoComissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaProdutoCST.resx">
+      <DependentUpon>BuscaProdutoCST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaProdutoDerivacao.resx">
+      <DependentUpon>BuscaProdutoDerivacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaProdutoMarca.resx">
+      <DependentUpon>BuscaProdutoMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaProdutoServico.resx">
+      <DependentUpon>BuscaProdutoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaPromocao.resx">
+      <DependentUpon>BuscaPromocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaPublicidade.resx">
+      <DependentUpon>BuscaPublicidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscarCRM.resx">
+      <DependentUpon>BuscarCRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscarEndereco.resx">
+      <DependentUpon>BuscarEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaProdutoCategoria.resx">
+      <DependentUpon>BuscaProdutoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscarProdutoNCM.resx">
+      <DependentUpon>BuscarProdutoNCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscarProposta.resx">
+      <DependentUpon>BuscarProposta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaSegmentoComercial.resx">
+      <DependentUpon>BuscaSegmentoComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaUnidadeMedida.resx">
+      <DependentUpon>BuscaUnidadeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Chaves.resx">
+      <DependentUpon>Chaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Controle.resx">
+      <DependentUpon>Controle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarCompra.resx">
+      <DependentUpon>GuardarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FormaPagamento\GuardarFormaPagamento.resx">
+      <DependentUpon>GuardarFormaPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarFecharVenda.resx">
+      <DependentUpon>GuardarFecharVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarObservacao.resx">
+      <DependentUpon>GuardarObservacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarIntegracaoAPI.resx">
+      <DependentUpon>GuardarIntegracaoAPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoCompra.resx">
+      <DependentUpon>GuardarProdutoCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoCompraEstoqueAtual.resx">
+      <DependentUpon>GuardarProdutoCompraEstoqueAtual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoNumeroSerie.resx">
+      <DependentUpon>GuardarProdutoNumeroSerie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarQuantidadeProdutoCompra.resx">
+      <DependentUpon>GuardarQuantidadeProdutoCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarSaldoCaixa.resx">
+      <DependentUpon>GuardarSaldoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarStatusCrmAgrup.resx">
+      <DependentUpon>GuardarStatusCrmAgrup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarTipoCrmConfig.resx">
+      <DependentUpon>GuardarTipoCrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarTipoCrm.resx">
+      <DependentUpon>GuardarTipoCrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarTipoEmpregado.resx">
+      <DependentUpon>GuardarTipoEmpregado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarStatusCrm.resx">
+      <DependentUpon>GuardarStatusCrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Cor.resx">
+      <DependentUpon>Cor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\DadosEmpresa.resx">
+      <DependentUpon>DadosEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Documento.resx">
+      <DependentUpon>Documento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ExibirFoto.resx">
+      <DependentUpon>ExibirFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GerarBackup.resx">
+      <DependentUpon>GerarBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GerarChave.resx">
+      <DependentUpon>GerarChave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GerarConexao.resx">
+      <DependentUpon>GerarConexao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GrupoPermissao.resx">
+      <DependentUpon>GrupoPermissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarAdministradora.resx">
+      <DependentUpon>GuardarAdministradora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarAgendamento.resx">
+      <DependentUpon>GuardarAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarCliente.resx">
+      <DependentUpon>GuardarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarCRM.resx">
+      <DependentUpon>GuardarCRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarEmpresa.resx">
+      <DependentUpon>GuardarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarFilial.resx">
+      <DependentUpon>GuardarFilial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarFornecedor.resx">
+      <DependentUpon>GuardarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarFuncionario.resx">
+      <DependentUpon>GuardarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarGrupoCompromissos.resx">
+      <DependentUpon>GuardarGrupoCompromissos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarGrupoProdutos.resx">
+      <DependentUpon>GuardarGrupoProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarItemHelper.resx">
+      <DependentUpon>GuardarItemHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarPergunta.resx">
+      <DependentUpon>GuardarPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarPerguntaOpcao.resx">
+      <DependentUpon>GuardarPerguntaOpcao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoCategoria.resx">
+      <DependentUpon>GuardarProdutoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoCFOP.resx">
+      <DependentUpon>GuardarProdutoCFOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoComissao.resx">
+      <DependentUpon>GuardarProdutoComissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoCST.resx">
+      <DependentUpon>GuardarProdutoCST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoDerivacao.resx">
+      <DependentUpon>GuardarProdutoDerivacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoFilial.resx">
+      <DependentUpon>GuardarProdutoFilial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoMarca.resx">
+      <DependentUpon>GuardarProdutoMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoNCM.resx">
+      <DependentUpon>GuardarProdutoNCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoPromocao.resx">
+      <DependentUpon>GuardarProdutoPromocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarProdutoServico.resx">
+      <DependentUpon>GuardarProdutoServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarPropostas.resx">
+      <DependentUpon>GuardarPropostas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarPublicidade.resx">
+      <DependentUpon>GuardarPublicidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarResposta.resx">
+      <DependentUpon>GuardarResposta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarSegmentoComercial.resx">
+      <DependentUpon>GuardarSegmentoComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\GuardarUnidadeMedida.resx">
+      <DependentUpon>GuardarUnidadeMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Helper.resx">
+      <DependentUpon>Helper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\HorarioTrabalho.resx">
+      <DependentUpon>HorarioTrabalho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ImportarExcelCrm.resx">
+      <DependentUpon>ImportarExcelCrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Mesa\BuscaMesa.resx">
+      <DependentUpon>BuscaMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Mesa\GuardarMesa.resx">
+      <DependentUpon>GuardarMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ModificarImagem.resx">
+      <DependentUpon>ModificarImagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ModificarValorProduto\ModificarValorProduto.resx">
+      <DependentUpon>ModificarValorProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Parametros\GuardarParametroValor.resx">
+      <DependentUpon>GuardarParametroValor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Permissoes.resx">
+      <DependentUpon>Permissoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Processo\BuscaProcesso.resx">
+      <DependentUpon>BuscaProcesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Processo\GuardarProcesso.resx">
+      <DependentUpon>GuardarProcesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RelatorioEstoque.resx">
+      <DependentUpon>RelatorioEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RelatorioPessoa.resx">
+      <DependentUpon>RelatorioPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Relatorios\Ticket.resx">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RelatorioVisualizar.resx">
+      <DependentUpon>RelatorioVisualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ResumoPagamentoVenda.resx">
+      <DependentUpon>ResumoPagamentoVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\SelecionarEmpresa.resx">
+      <DependentUpon>SelecionarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\SetorEmpresa\BuscaSetorEmpresa.resx">
+      <DependentUpon>BuscaSetorEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\SetorEmpresa\GuardarSetorEmpresa.resx">
+      <DependentUpon>GuardarSetorEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaBase\Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaBase\BaseCE.resx">
+      <DependentUpon>BaseCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaBase\BaseVenda.resx">
+      <DependentUpon>BaseVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaTeste.resx">
+      <DependentUpon>TelaTeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ValidarChave.resx">
+      <DependentUpon>ValidarChave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ValidarTipoEmpregado\ValidarTipoEmpregado.resx">
+      <DependentUpon>ValidarTipoEmpregado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\VendaTouch\CancelarItemsTouch.resx">
+      <DependentUpon>CancelarItemsTouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\VendaTouch\HelperTouch.resx">
+      <DependentUpon>HelperTouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\VendaTouch\InformarMesaAtendenteTouch.resx">
+      <DependentUpon>InformarMesaAtendenteTouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\VendaTouch\RegistrarAcrescimosTouch.resx">
+      <DependentUpon>RegistrarAcrescimosTouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\VendaTouch\ucGrupoProduto.resx">
+      <DependentUpon>ucGrupoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\VendaTouch\ucProduto.resx">
+      <DependentUpon>ucProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\VendaTouch\VendaTouch.resx">
+      <DependentUpon>VendaTouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Venda\InformarMesaAtendente.resx">
+      <DependentUpon>InformarMesaAtendente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Venda\RegistrarAcrescimos.resx">
+      <DependentUpon>RegistrarAcrescimos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Venda\VendaSupermercado.resx">
+      <DependentUpon>VendaSupermercado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Venda\AberturaCaixa.resx">
+      <DependentUpon>AberturaCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Venda\AcrescimoDescontoFechamentoVenda.resx">
+      <DependentUpon>AcrescimoDescontoFechamentoVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Venda\VendaPorComanda.resx">
+      <DependentUpon>VendaPorComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dtChaves.xsc">
+      <DependentUpon>dtChaves.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dtChaves.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtChaves.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dtChaves.xss">
+      <DependentUpon>dtChaves.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dtFicha.xsc">
+      <DependentUpon>dtFicha.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dtFicha.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtFicha.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dtFicha.xss">
+      <DependentUpon>dtFicha.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dtRelatorioPessoas.xsc">
+      <DependentUpon>dtRelatorioPessoas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dtRelatorioPessoas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRelatorioPessoas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dtRelatorioPessoas.xss">
+      <DependentUpon>dtRelatorioPessoas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dtRelatorioSaldo.xsc">
+      <DependentUpon>dtRelatorioSaldo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dtRelatorioSaldo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRelatorioSaldo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dtRelatorioSaldo.xss">
+      <DependentUpon>dtRelatorioSaldo.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comum\Informatiz.ControleEstoque.Comum.csproj">
+      <Project>{1E5B2B33-02EF-416C-9D4C-89945DEC619D}</Project>
+      <Name>Informatiz.ControleEstoque.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comunicacao\Informatiz.ControleEstoque.Comunicacao.csproj">
+      <Project>{278AE69F-18D9-4941-9478-DA58EA775620}</Project>
+      <Name>Informatiz.ControleEstoque.Comunicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.ContratoServico\Informatiz.ControleEstoque.ContratoServico.csproj">
+      <Project>{A054547C-3971-436C-8526-B32E9354DE0A}</Project>
+      <Name>Informatiz.ControleEstoque.ContratoServico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Execao\Informatiz.ControleEstoque.Execao.csproj">
+      <Project>{F1FDCBA1-E01E-4410-8EA3-6A649C7B5FC3}</Project>
+      <Name>Informatiz.ControleEstoque.Execao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.LogicaNegocio\Informatiz.ControleEstoque.LogicaNegocio.csproj">
+      <Project>{0af1bd0a-4315-4713-88bd-9fd6d3f4d911}</Project>
+      <Name>Informatiz.ControleEstoque.LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Parametros\Informatiz.ControleEstoque.Parametros.csproj">
+      <Project>{E9129947-403A-4468-8E74-91852776C1AC}</Project>
+      <Name>Informatiz.ControleEstoque.Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Relatorios\Informatiz.ControleEstoque.Relatorios.csproj">
+      <Project>{1a5ed205-cd19-40cf-9ad1-31422ad8d4c3}</Project>
+      <Name>Informatiz.ControleEstoque.Relatorios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.SDK\Informatiz.ControleEstoque.SDK.csproj">
+      <Project>{2d80a5e9-2f5a-4efa-a8f1-e71110a6b5a3}</Project>
+      <Name>Informatiz.ControleEstoque.SDK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArquivoConexao\Conexao.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Image\aceitar.png" />
+    <Content Include="Image\agt_action_success.png" />
+    <Content Include="Image\agt_reload.png" />
+    <Content Include="Image\bar_chart.png" />
+    <Content Include="Image\box.png" />
+    <Content Include="Image\buy-sell-stock-trading-dice.jpg" />
+    <Content Include="Image\cadeado_aberto.png" />
+    <Content Include="Image\cadeado_fechado.png" />
+    <Content Include="Image\cadeado_fechado_16.png" />
+    <Content Include="Image\calendar1_accept.png" />
+    <Content Include="Image\cancel.png" />
+    <Content Include="Image\card_back_share.png" />
+    <Content Include="Image\category.png" />
+    <Content Include="Image\circle_green.png" />
+    <Content Include="Image\circle_red.png" />
+    <Content Include="Image\cliente.png" />
+    <Content Include="Image\coins.png" />
+    <Content Include="Image\color.png" />
+    <Content Include="Image\contract_zoom.png" />
+    <Content Include="Image\cst.png" />
+    <Content Include="Image\customer_service.png" />
+    <Content Include="Image\date.png" />
+    <Content Include="Image\diagram_v2_19.png" />
+    <Content Include="Image\dir.png" />
+    <Content Include="Image\edit.png" />
+    <Content Include="Image\edit_gray.png" />
+    <Content Include="Image\empregado.png" />
+    <Content Include="Image\exit.png" />
+    <Content Include="Image\fundo.png" />
+    <Content Include="Image\fundo_azul_claro.png" />
+    <Content Include="Image\fundo_branco.png" />
+    <Content Include="Image\gear_yellow.png" />
+    <Content Include="Image\gnome_edit_clear.png" />
+    <Content Include="Image\group_key.png" />
+    <Content Include="Image\hard_drive_backups.png" />
+    <Content Include="Image\hard_drive_backups_1.png" />
+    <Content Include="Image\image.png" />
+    <Content Include="Image\imagem_area_trabalho.jpg" />
+    <Content Include="Image\imagem_fundo.png" />
+    <Content Include="Image\imagem_login.jpg" />
+    <Content Include="Image\imagem_sistema.jpg" />
+    <Content Include="Image\Imagem_sistema.png" />
+    <Content Include="Image\imagem_titulo.png" />
+    <Content Include="Image\imagem_topo.jpg" />
+    <Content Include="Image\imagem_topo_pequena.png" />
+    <Content Include="Image\img_small.png" />
+    <Content Include="Image\imposto.jpg" />
+    <Content Include="Image\informatiz.png" />
+    <Content Include="Image\kchart.png" />
+    <Content Include="Image\key.png" />
+    <Content Include="Image\key_add.png" />
+    <Content Include="Image\key_info.png" />
+    <Content Include="Image\logo.ico" />
+    <Content Include="Image\logo.jpg" />
+    <Content Include="Image\logoff.png" />
+    <Content Include="Image\logo_estoque.png" />
+    <Content Include="Image\logo_grande.png" />
+    <Content Include="Image\logo_modificada.png" />
+    <Content Include="Image\logo_modificada_1.png" />
+    <Content Include="Image\logo_selecao_empesa.png" />
+    <Content Include="Image\lorrygreen.png" />
+    <Content Include="Image\mark.png" />
+    <Content Include="Image\material.png" />
+    <Content Include="Image\move2red.png" />
+    <Content Include="Image\ncm.jpg" />
+    <Content Include="Image\negative.png" />
+    <Content Include="Image\new.png" />
+    <Content Include="Image\new_gray.png" />
+    <Content Include="Image\office_building.png" />
+    <Content Include="Image\pics_1.png" />
+    <Content Include="Image\positive.png" />
+    <Content Include="Image\printer.png" />
+    <Content Include="Image\printer_red.png" />
+    <Content Include="Image\product_documentation.png" />
+    <Content Include="Image\product_documentation_g.png" />
+    <Content Include="Image\promocao.png" />
+    <Content Include="Image\purple_group.png" />
+    <Content Include="Image\report.png" />
+    <Content Include="Image\report_user.png" />
+    <Content Include="Image\save.png" />
+    <Content Include="Image\search.png" />
+    <Content Include="Image\search_16.png" />
+    <Content Include="Image\settings1.png" />
+    <Content Include="Image\sign_up.png" />
+    <Content Include="Image\stock_ticker.ico" />
+    <Content Include="Image\sub_blue_add.png" />
+    <Content Include="Image\sub_blue_minus.png" />
+    <Content Include="Image\symbol_error.png" />
+    <Content Include="Image\symbol_information.png" />
+    <Content Include="Image\system_config_rootpassword.png" />
+    <Content Include="Image\system_restore.png" />
+    <Content Include="Image\tab_new_r.png" />
+    <Content Include="Image\the_news_location_icon.png" />
+    <Content Include="Image\work_group.png" />
+    <Content Include="Image\x.png" />
+    <Content Include="Image\x_gray.png" />
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

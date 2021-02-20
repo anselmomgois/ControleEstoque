@@ -1,0 +1,14 @@
+﻿INSERT INTO INFM_PERGUNTAS
+           (IDPERGUNTA
+           ,IDGRUPOCOMPROMISSO
+           ,DESPERGUNTA
+           ,BOLOBRIGATORIA
+           ,CODTIPOCOMPONENTE
+           ,BOLNUMERICO)
+     VALUES
+           (@IDPERGUNTA
+           ,@IDGRUPOCOMPROMISSO
+           ,@DESPERGUNTA
+           ,@BOLOBRIGATORIA
+           ,@CODTIPOCOMPONENTE
+           ,@BOLNUMERICO)

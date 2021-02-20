@@ -1,0 +1,10 @@
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\bin\Release\Informatiz.ControleEstoque.Comum.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\bin\Release\Informatiz.ControleEstoque.Comum.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\bin\Release\CsQuery.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\bin\Release\Informatiz.ControleEstoque.Execao.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\bin\Release\Informatiz.ControleEstoque.Execao.pdb
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\obj\Release\Informatiz.ControleEstoque.Comum.csprojAssemblyReference.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\obj\Release\Informatiz.ControleEstoque.Comum.csproj.CoreCompileInputs.cache
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\obj\Release\Informatiz.ControleEstoque.Comum.csproj.CopyComplete
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\obj\Release\Informatiz.ControleEstoque.Comum.dll
+C:\Projetos\ControleEstoque\Informatiz.ControleEstoque.Comum\obj\Release\Informatiz.ControleEstoque.Comum.pdb

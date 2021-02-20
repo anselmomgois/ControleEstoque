@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="F:\PUBLICAR" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Informatiz.ControleEstoque.Execao.pdb" publishTime="07/13/2014 10:37:17" />
+    <file relUrl="bin/Informatiz.ControleEstoque.Comum.dll" publishTime="07/13/2014 10:37:17" />
+    <file relUrl="bin/Informatiz.ControleEstoque.Comunicacao.dll" publishTime="07/13/2014 10:37:22" />
+    <file relUrl="bin/Informatiz.ControleEstoque.LogicaNegocio.pdb" publishTime="07/13/2014 10:37:22" />
+    <file relUrl="bin/AmgSistemas.Framework.Criptografia.dll" publishTime="07/08/2014 12:49:49" />
+    <file relUrl="bin/Informatiz.ControleEstoque.AcessoDados.pdb" publishTime="07/13/2014 10:37:21" />
+    <file relUrl="bin/AmgSistemas.Framework.Utilitarios.dll" publishTime="07/08/2014 12:50:13" />
+    <file relUrl="bin/AmgSistemas.Framework.ConsultaCep.dll" publishTime="07/08/2014 12:49:57" />
+    <file relUrl="bin/Informatiz.ControleEstoque.Servico.pdb" publishTime="07/13/2014 10:37:27" />
+    <file relUrl="bin/Informatiz.ControleEstoque.Servico.dll" publishTime="07/13/2014 10:37:28" />
+    <file relUrl="bin/AmgSistemas.Framework.AcessoDados.dll" publishTime="07/08/2014 12:50:08" />
+    <file relUrl="CE.asmx" publishTime="03/05/2014 16:51:00" />
+    <file relUrl="bin/Informatiz.ControleEstoque.ContratoServico.dll" publishTime="07/13/2014 10:37:18" />
+    <file relUrl="bin/Informatiz.ControleEstoque.Execao.dll" publishTime="07/13/2014 10:37:17" />
+    <file relUrl="bin/Informatiz.ControleEstoque.Comum.pdb" publishTime="07/13/2014 10:37:17" />
+    <file relUrl="bin/Informatiz.ControleEstoque.Comunicacao.pdb" publishTime="07/13/2014 10:37:21" />
+    <file relUrl="Web.config" publishTime="07/13/2014 11:05:42" />
+    <file relUrl="bin/Informatiz.ControleEstoque.AcessoDados.dll" publishTime="07/13/2014 10:37:21" />
+    <file relUrl="bin/Informatiz.ControleEstoque.LogicaNegocio.dll" publishTime="07/13/2014 10:37:22" />
+    <file relUrl="bin/Informatiz.ControleEstoque.ContratoServico.pdb" publishTime="07/13/2014 10:37:18" />
+  </publishProfile>
+</publishData>

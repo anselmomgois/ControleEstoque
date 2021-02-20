@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsFechamento" targetNamespace="http://tempuri.org/dsFechamento.xsd" xmlns:mstns="http://tempuri.org/dsFechamento.xsd" xmlns="http://tempuri.org/dsFechamento.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsFechamento" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsFechamento" msprop:Generator_UserDSName="dsFechamento">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PARAMETROS" msprop:Generator_TableClassName="PARAMETROSDataTable" msprop:Generator_TableVarName="tablePARAMETROS" msprop:Generator_TablePropName="PARAMETROS" msprop:Generator_RowDeletingName="PARAMETROSRowDeleting" msprop:Generator_RowChangingName="PARAMETROSRowChanging" msprop:Generator_RowEvHandlerName="PARAMETROSRowChangeEventHandler" msprop:Generator_RowDeletedName="PARAMETROSRowDeleted" msprop:Generator_UserTableName="PARAMETROS" msprop:Generator_RowChangedName="PARAMETROSRowChanged" msprop:Generator_RowEvArgName="PARAMETROSRowChangeEvent" msprop:Generator_RowClassName="PARAMETROSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FUNCIONARIOCAIXA" msprop:Generator_ColumnVarNameInTable="columnFUNCIONARIOCAIXA" msprop:Generator_ColumnPropNameInRow="FUNCIONARIOCAIXA" msprop:Generator_ColumnPropNameInTable="FUNCIONARIOCAIXAColumn" msprop:Generator_UserColumnName="FUNCIONARIOCAIXA" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMEEMPRESA" msprop:Generator_ColumnVarNameInTable="columnNOMEEMPRESA" msprop:Generator_ColumnPropNameInRow="NOMEEMPRESA" msprop:Generator_ColumnPropNameInTable="NOMEEMPRESAColumn" msprop:Generator_UserColumnName="NOMEEMPRESA" type="xs:string" minOccurs="0" />
+              <xs:element name="NUMEROCAIXA" msprop:Generator_ColumnVarNameInTable="columnNUMEROCAIXA" msprop:Generator_ColumnPropNameInRow="NUMEROCAIXA" msprop:Generator_ColumnPropNameInTable="NUMEROCAIXAColumn" msprop:Generator_UserColumnName="NUMEROCAIXA" type="xs:int" minOccurs="0" />
+              <xs:element name="ENDERECO" msprop:Generator_ColumnVarNameInTable="columnENDERECO" msprop:Generator_ColumnPropNameInRow="ENDERECO" msprop:Generator_ColumnPropNameInTable="ENDERECOColumn" msprop:Generator_UserColumnName="ENDERECO" type="xs:string" minOccurs="0" />
+              <xs:element name="SALDOINICIAL" msprop:Generator_ColumnVarNameInTable="columnSALDOINICIAL" msprop:Generator_ColumnPropNameInRow="SALDOINICIAL" msprop:Generator_ColumnPropNameInTable="SALDOINICIALColumn" msprop:Generator_UserColumnName="SALDOINICIAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SUPRIMENTO" msprop:Generator_ColumnVarNameInTable="columnSUPRIMENTO" msprop:Generator_ColumnPropNameInRow="SUPRIMENTO" msprop:Generator_ColumnPropNameInTable="SUPRIMENTOColumn" msprop:Generator_UserColumnName="SUPRIMENTO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SANGRIA" msprop:Generator_ColumnVarNameInTable="columnSANGRIA" msprop:Generator_ColumnPropNameInRow="SANGRIA" msprop:Generator_ColumnPropNameInTable="SANGRIAColumn" msprop:Generator_UserColumnName="SANGRIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SUPERVISOR" msprop:Generator_ColumnVarNameInTable="columnSUPERVISOR" msprop:Generator_ColumnPropNameInRow="SUPERVISOR" msprop:Generator_ColumnPropNameInTable="SUPERVISORColumn" msprop:Generator_UserColumnName="SUPERVISOR" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PAGAMENTO" msprop:Generator_TableClassName="PAGAMENTODataTable" msprop:Generator_TableVarName="tablePAGAMENTO" msprop:Generator_TablePropName="PAGAMENTO" msprop:Generator_RowDeletingName="PAGAMENTORowDeleting" msprop:Generator_RowChangingName="PAGAMENTORowChanging" msprop:Generator_RowEvHandlerName="PAGAMENTORowChangeEventHandler" msprop:Generator_RowDeletedName="PAGAMENTORowDeleted" msprop:Generator_UserTableName="PAGAMENTO" msprop:Generator_RowChangedName="PAGAMENTORowChanged" msprop:Generator_RowEvArgName="PAGAMENTORowChangeEvent" msprop:Generator_RowClassName="PAGAMENTORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VALORRECEBIDO" msdata:Caption="VALOR" msprop:Generator_ColumnVarNameInTable="columnVALORRECEBIDO" msprop:Generator_ColumnPropNameInRow="VALORRECEBIDO" msprop:Generator_ColumnPropNameInTable="VALORRECEBIDOColumn" msprop:Generator_UserColumnName="VALORRECEBIDO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FORMAPAGAMENTO" msprop:Generator_ColumnVarNameInTable="columnFORMAPAGAMENTO" msprop:Generator_ColumnPropNameInRow="FORMAPAGAMENTO" msprop:Generator_ColumnPropNameInTable="FORMAPAGAMENTOColumn" msprop:Generator_UserColumnName="FORMAPAGAMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="VALORINFORMADO" msprop:Generator_ColumnVarNameInTable="columnVALORINFORMADO" msprop:Generator_ColumnPropNameInRow="VALORINFORMADO" msprop:Generator_ColumnPropNameInTable="VALORINFORMADOColumn" msprop:Generator_UserColumnName="VALORINFORMADO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DIFERENCA" msprop:Generator_ColumnVarNameInTable="columnDIFERENCA" msprop:Generator_ColumnPropNameInRow="DIFERENCA" msprop:Generator_ColumnPropNameInTable="DIFERENCAColumn" msprop:Generator_UserColumnName="DIFERENCA" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0AF1BD0A-4315-4713-88BD-9FD6D3F4D911}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informatiz.ControleEstoque.LogicaNegocio</RootNamespace>
+    <AssemblyName>Informatiz.ControleEstoque.LogicaNegocio</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AmgSistemas.Framework.AcessoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AmgSistemas.Framework.AcessoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.ConsultaCep">
+      <HintPath>..\AmgSistemas.Framework.ConsultaCep.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Criptografia, Version=1.0.1403.901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AmgSistemas.Framework.Criptografia.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Email">
+      <HintPath>..\AmgSistemas.Framework.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="AmgSistemas.Framework.Utilitarios">
+      <HintPath>..\AmgSistemas.Framework.Utilitarios.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Acao.cs" />
+    <Compile Include="Administradora.cs" />
+    <Compile Include="Backup.cs" />
+    <Compile Include="Bairro.cs" />
+    <Compile Include="ChaveAcesso.cs" />
+    <Compile Include="Cidade.cs" />
+    <Compile Include="Cor.cs" />
+    <Compile Include="CRM.cs" />
+    <Compile Include="Documento.cs" />
+    <Compile Include="Empresa.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="Erro.cs" />
+    <Compile Include="Estado.cs" />
+    <Compile Include="Filial.cs" />
+    <Compile Include="FilialPessoa.cs" />
+    <Compile Include="GrupoCompromisso.cs" />
+    <Compile Include="GrupoPermissao.cs" />
+    <Compile Include="GrupoProduto.cs" />
+    <Compile Include="Pergunta.cs" />
+    <Compile Include="Permissao.cs" />
+    <Compile Include="Pessoa.cs" />
+    <Compile Include="ProdutoCFOP.cs" />
+    <Compile Include="ProdutoComissao.cs" />
+    <Compile Include="ProdutoCST.cs" />
+    <Compile Include="ProdutoDerivacao.cs" />
+    <Compile Include="ProdutoFilial.cs" />
+    <Compile Include="ProdutoMarca.cs" />
+    <Compile Include="ProdutoNCM.cs" />
+    <Compile Include="ProdutoPromocao.cs" />
+    <Compile Include="ProdutoServico.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proposta.cs" />
+    <Compile Include="Publicidade.cs" />
+    <Compile Include="Relatorios.cs" />
+    <Compile Include="SegmentoComercial.cs" />
+    <Compile Include="Servico\Chave.cs" />
+    <Compile Include="Servico\Empresa.cs" />
+    <Compile Include="Servico\Imagem.cs" />
+    <Compile Include="Servico\Versao.cs" />
+    <Compile Include="SituacaoPessoa.cs" />
+    <Compile Include="ProdutoCategoria.cs" />
+    <Compile Include="TipoProdutoServico.cs" />
+    <Compile Include="UnidadeMedida.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.AcessoDados\Informatiz.ControleEstoque.AcessoDados.csproj">
+      <Project>{76182113-E4B6-4E6A-82B3-34AB93103C96}</Project>
+      <Name>Informatiz.ControleEstoque.AcessoDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comum\Informatiz.ControleEstoque.Comum.csproj">
+      <Project>{1E5B2B33-02EF-416C-9D4C-89945DEC619D}</Project>
+      <Name>Informatiz.ControleEstoque.Comum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Comunicacao\Informatiz.ControleEstoque.Comunicacao.csproj">
+      <Project>{278AE69F-18D9-4941-9478-DA58EA775620}</Project>
+      <Name>Informatiz.ControleEstoque.Comunicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.ContratoServico\Informatiz.ControleEstoque.ContratoServico.csproj">
+      <Project>{A054547C-3971-436C-8526-B32E9354DE0A}</Project>
+      <Name>Informatiz.ControleEstoque.ContratoServico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Informatiz.ControleEstoque.Execao\Informatiz.ControleEstoque.Execao.csproj">
+      <Project>{F1FDCBA1-E01E-4410-8EA3-6A649C7B5FC3}</Project>
+      <Name>Informatiz.ControleEstoque.Execao</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

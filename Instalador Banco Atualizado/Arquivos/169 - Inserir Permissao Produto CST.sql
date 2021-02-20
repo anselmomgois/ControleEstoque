@@ -1,0 +1,12 @@
+QUERYVALIDACAO select 1 FROM INFM_PERMISSAO WHERE CODPERMISSAO = 'PRODUTOCST'
+BANCODEDADOS IGERENCE
+INSERT INTO INFM_PERMISSAO
+           (IDPERMISSAO
+           ,CODPERMISSAO
+           ,DESPERMISSAO
+		   ,BOLOBRIGATORIA)
+     VALUES
+           ('16'
+           ,'PRODUTOCST'
+           ,'Tela Cadastro de Código Situação Tributária'
+		   ,0)

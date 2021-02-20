@@ -1,0 +1,4 @@
+﻿SELECT IDACAO
+      ,CODACAO
+      ,DESACAO
+  FROM INFM_ACAO

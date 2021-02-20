@@ -1,0 +1,8 @@
+﻿INSERT INTO INFM_TIPOPESSOA_PESSOA
+           (IDTIPOPESSOAPESSOA
+           ,IDTIPOPESSOA
+           ,IDPESSOA)
+     VALUES
+           (@IDTIPOPESSOAPESSOA
+           ,@IDTIPOPESSOA
+           ,@IDPESSOA)

@@ -1,0 +1,6 @@
+﻿INSERT INTO INFM_IMAGEM
+           (IDIMAGEM
+           ,BITIMAGEMCENTRAL)
+     VALUES
+           (@IDIMAGEM
+           ,@BITIMAGEMCENTRAL)

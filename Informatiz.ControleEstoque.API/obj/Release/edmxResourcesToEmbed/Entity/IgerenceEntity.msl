@@ -1,0 +1,1357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IGERENCEModelStoreContainer" CdmEntityContainer="IGERENCEEntities">
+    <EntitySetMapping Name="INFM_ACAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ACAO">
+        <MappingFragment StoreEntitySet="INFM_ACAO">
+          <ScalarProperty Name="IDACAO" ColumnName="IDACAO" />
+          <ScalarProperty Name="CODACAO" ColumnName="CODACAO" />
+          <ScalarProperty Name="DESACAO" ColumnName="DESACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ACRESCIMOPRODUTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ACRESCIMOPRODUTO">
+        <MappingFragment StoreEntitySet="INFM_ACRESCIMOPRODUTO">
+          <ScalarProperty Name="IDACRESCIMOPRODUTO" ColumnName="IDACRESCIMOPRODUTO" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+          <ScalarProperty Name="IDACRESCIMO" ColumnName="IDACRESCIMO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ADMINISTRADORA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ADMINISTRADORA">
+        <MappingFragment StoreEntitySet="INFM_ADMINISTRADORA">
+          <ScalarProperty Name="IDADMINISTRADORA" ColumnName="IDADMINISTRADORA" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODADMINISTRADORA" ColumnName="CODADMINISTRADORA" />
+          <ScalarProperty Name="DESADMINISTRADORA" ColumnName="DESADMINISTRADORA" />
+          <ScalarProperty Name="DESTELADMINISTRADORA" ColumnName="DESTELADMINISTRADORA" />
+          <ScalarProperty Name="OBSREFADMINISTRADORA" ColumnName="OBSREFADMINISTRADORA" />
+          <ScalarProperty Name="NUMTARIFAPERCENT" ColumnName="NUMTARIFAPERCENT" />
+          <ScalarProperty Name="NUMTARIFAVALOR" ColumnName="NUMTARIFAVALOR" />
+          <ScalarProperty Name="NUMTARIFAANTPERCENT" ColumnName="NUMTARIFAANTPERCENT" />
+          <ScalarProperty Name="NUMTARIFAANTVALOR" ColumnName="NUMTARIFAANTVALOR" />
+          <ScalarProperty Name="NUMDESCONTPERCENT" ColumnName="NUMDESCONTPERCENT" />
+          <ScalarProperty Name="NUMDESCONTVALOR" ColumnName="NUMDESCONTVALOR" />
+          <ScalarProperty Name="BITIMGADMINISTRADORA" ColumnName="BITIMGADMINISTRADORA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_BAIRRO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_BAIRRO">
+        <MappingFragment StoreEntitySet="INFM_BAIRRO">
+          <ScalarProperty Name="IDBAIRRO" ColumnName="IDBAIRRO" />
+          <ScalarProperty Name="IDCIDADE" ColumnName="IDCIDADE" />
+          <ScalarProperty Name="DESBAIRRO" ColumnName="DESBAIRRO" />
+          <ScalarProperty Name="CODBAIRRO" ColumnName="CODBAIRRO" />
+          <ScalarProperty Name="NUMTAXAENTREGA" ColumnName="NUMTAXAENTREGA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_CAIXA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_CAIXA">
+        <MappingFragment StoreEntitySet="INFM_CAIXA">
+          <ScalarProperty Name="IDCAIXA" ColumnName="IDCAIXA" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="BOLABERTO" ColumnName="BOLABERTO" />
+          <ScalarProperty Name="CODCAIXA" ColumnName="CODCAIXA" />
+          <ScalarProperty Name="DESHOST" ColumnName="DESHOST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_CIDADE">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_CIDADE">
+        <MappingFragment StoreEntitySet="INFM_CIDADE">
+          <ScalarProperty Name="IDCIDADE" ColumnName="IDCIDADE" />
+          <ScalarProperty Name="IDESTADO" ColumnName="IDESTADO" />
+          <ScalarProperty Name="DESCIDADE" ColumnName="DESCIDADE" />
+          <ScalarProperty Name="CODCIDADE" ColumnName="CODCIDADE" />
+          <ScalarProperty Name="CODDDD" ColumnName="CODDDD" />
+          <ScalarProperty Name="CODIBGE" ColumnName="CODIBGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_CODIGOBARRASPESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_CODIGOBARRASPESSOA">
+        <MappingFragment StoreEntitySet="INFM_CODIGOBARRASPESSOA">
+          <ScalarProperty Name="IDCODIGOBARRASPESSOA" ColumnName="IDCODIGOBARRASPESSOA" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="DESCODIGOBARRASPESSOA" ColumnName="DESCODIGOBARRASPESSOA" />
+          <ScalarProperty Name="BOLATIVO" ColumnName="BOLATIVO" />
+          <ScalarProperty Name="DTHCODIGO" ColumnName="DTHCODIGO" />
+          <ScalarProperty Name="NUMVALOR" ColumnName="NUMVALOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_CODIGOBARRASPRODSERV">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_CODIGOBARRASPRODSERV">
+        <MappingFragment StoreEntitySet="INFM_CODIGOBARRASPRODSERV">
+          <ScalarProperty Name="IDCODIGOBARRASPRODSERV" ColumnName="IDCODIGOBARRASPRODSERV" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DESCODBARRAS" ColumnName="DESCODBARRAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_COMPRA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_COMPRA">
+        <MappingFragment StoreEntitySet="INFM_COMPRA">
+          <ScalarProperty Name="IDCOMPRA" ColumnName="IDCOMPRA" />
+          <ScalarProperty Name="IDFORNECEDOR" ColumnName="IDFORNECEDOR" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="CODCOMPRA" ColumnName="CODCOMPRA" />
+          <ScalarProperty Name="DTHCOMPRA" ColumnName="DTHCOMPRA" />
+          <ScalarProperty Name="CODESTADO" ColumnName="CODESTADO" />
+          <ScalarProperty Name="OBSCOMPRA" ColumnName="OBSCOMPRA" />
+          <ScalarProperty Name="CODNOTAFISCAL" ColumnName="CODNOTAFISCAL" />
+          <ScalarProperty Name="CODRASTREIO" ColumnName="CODRASTREIO" />
+          <ScalarProperty Name="DTHRECEBIMENTO" ColumnName="DTHRECEBIMENTO" />
+          <ScalarProperty Name="NUMBASECALCULO" ColumnName="NUMBASECALCULO" />
+          <ScalarProperty Name="NUMICMS" ColumnName="NUMICMS" />
+          <ScalarProperty Name="NUMBASESUBSTITUICAO" ColumnName="NUMBASESUBSTITUICAO" />
+          <ScalarProperty Name="NUMICMSSUBSTITUICAO" ColumnName="NUMICMSSUBSTITUICAO" />
+          <ScalarProperty Name="NUMFRETE" ColumnName="NUMFRETE" />
+          <ScalarProperty Name="NUMSEGURO" ColumnName="NUMSEGURO" />
+          <ScalarProperty Name="NUMOUTRASDESPESAS" ColumnName="NUMOUTRASDESPESAS" />
+          <ScalarProperty Name="NUMDESCONTO" ColumnName="NUMDESCONTO" />
+          <ScalarProperty Name="OBSOUTRASINFORMACOES" ColumnName="OBSOUTRASINFORMACOES" />
+          <ScalarProperty Name="QTDVOLUMES" ColumnName="QTDVOLUMES" />
+          <ScalarProperty Name="DESESPECIE" ColumnName="DESESPECIE" />
+          <ScalarProperty Name="DESMARCA" ColumnName="DESMARCA" />
+          <ScalarProperty Name="NUMVOLUMES" ColumnName="NUMVOLUMES" />
+          <ScalarProperty Name="NUMPESOBRUTO" ColumnName="NUMPESOBRUTO" />
+          <ScalarProperty Name="NUMPESOLIQUIDO" ColumnName="NUMPESOLIQUIDO" />
+          <ScalarProperty Name="NUMVALORTOTALIPI" ColumnName="NUMVALORTOTALIPI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_COR">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_COR">
+        <MappingFragment StoreEntitySet="INFM_COR">
+          <ScalarProperty Name="IDCOR" ColumnName="IDCOR" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODCOR" ColumnName="CODCOR" />
+          <ScalarProperty Name="CODCORRGB" ColumnName="CODCORRGB" />
+          <ScalarProperty Name="DESCOR" ColumnName="DESCOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_CRM">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_CRM">
+        <MappingFragment StoreEntitySet="INFM_CRM">
+          <ScalarProperty Name="IDCRM" ColumnName="IDCRM" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDGRUPOCOMPROMISSO" ColumnName="IDGRUPOCOMPROMISSO" />
+          <ScalarProperty Name="IDPESSOACADASTRO" ColumnName="IDPESSOACADASTRO" />
+          <ScalarProperty Name="IDPESSOACLIENTE" ColumnName="IDPESSOACLIENTE" />
+          <ScalarProperty Name="CODCRM" ColumnName="CODCRM" />
+          <ScalarProperty Name="OBSCOMPROMISSO" ColumnName="OBSCOMPROMISSO" />
+          <ScalarProperty Name="DESCRM" ColumnName="DESCRM" />
+          <ScalarProperty Name="BOLATIVO" ColumnName="BOLATIVO" />
+          <ScalarProperty Name="IDSTATUSCRM" ColumnName="IDSTATUSCRM" />
+          <ScalarProperty Name="IDTIPOCRM" ColumnName="IDTIPOCRM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_DATOSCOMPRAPROD">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_DATOSCOMPRAPROD">
+        <MappingFragment StoreEntitySet="INFM_DATOSCOMPRAPROD">
+          <ScalarProperty Name="IDDATOSCOMPRAPROD" ColumnName="IDDATOSCOMPRAPROD" />
+          <ScalarProperty Name="IDUNIDADEMEDIDA" ColumnName="IDUNIDADEMEDIDA" />
+          <ScalarProperty Name="IDPRODUTOFILIAL" ColumnName="IDPRODUTOFILIAL" />
+          <ScalarProperty Name="NUMUNIDADECOMPRA" ColumnName="NUMUNIDADECOMPRA" />
+          <ScalarProperty Name="NUMVALORCOMPRA" ColumnName="NUMVALORCOMPRA" />
+          <ScalarProperty Name="NUMESTOQUE" ColumnName="NUMESTOQUE" />
+          <ScalarProperty Name="CODLOTE" ColumnName="CODLOTE" />
+          <ScalarProperty Name="DTHVALIDADE" ColumnName="DTHVALIDADE" />
+          <ScalarProperty Name="IDCOMPRA" ColumnName="IDCOMPRA" />
+          <ScalarProperty Name="IDUNIDADEMEDIDAVALORCOMPRA" ColumnName="IDUNIDADEMEDIDAVALORCOMPRA" />
+          <ScalarProperty Name="NUMCSTICMS" ColumnName="NUMCSTICMS" />
+          <ScalarProperty Name="NUMPERCENTICMS" ColumnName="NUMPERCENTICMS" />
+          <ScalarProperty Name="NUMPERCENTBCICMS" ColumnName="NUMPERCENTBCICMS" />
+          <ScalarProperty Name="NUMBCST" ColumnName="NUMBCST" />
+          <ScalarProperty Name="NUMPERCENTIPI" ColumnName="NUMPERCENTIPI" />
+          <ScalarProperty Name="NUMIPI" ColumnName="NUMIPI" />
+          <ScalarProperty Name="NUMCFOP" ColumnName="NUMCFOP" />
+          <ScalarProperty Name="NUMICMS" ColumnName="NUMICMS" />
+          <ScalarProperty Name="NUMBCICMS" ColumnName="NUMBCICMS" />
+          <ScalarProperty Name="NUMICMSST" ColumnName="NUMICMSST" />
+          <ScalarProperty Name="NUMCSTIPI" ColumnName="NUMCSTIPI" />
+          <ScalarProperty Name="BOLESTOQUEATUAL" ColumnName="BOLESTOQUEATUAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_DIASEMANAPROMOCAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_DIASEMANAPROMOCAO">
+        <MappingFragment StoreEntitySet="INFM_DIASEMANAPROMOCAO">
+          <ScalarProperty Name="IDDIASEMANAPROMOCAO" ColumnName="IDDIASEMANAPROMOCAO" />
+          <ScalarProperty Name="IDPRODUTOPROMOCAO" ColumnName="IDPRODUTOPROMOCAO" />
+          <ScalarProperty Name="CODDIASEMANA" ColumnName="CODDIASEMANA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_DOCUMENTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_DOCUMENTO">
+        <MappingFragment StoreEntitySet="INFM_DOCUMENTO">
+          <ScalarProperty Name="IDDOCUMENTO" ColumnName="IDDOCUMENTO" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="IDTIPODOCUMENTO" ColumnName="IDTIPODOCUMENTO" />
+          <ScalarProperty Name="IDLOCALDOCUMENTO" ColumnName="IDLOCALDOCUMENTO" />
+          <ScalarProperty Name="IDFORMAPAGAMENTO" ColumnName="IDFORMAPAGAMENTO" />
+          <ScalarProperty Name="IDADMINISTRADORA" ColumnName="IDADMINISTRADORA" />
+          <ScalarProperty Name="IDDOCUMENTOPAI" ColumnName="IDDOCUMENTOPAI" />
+          <ScalarProperty Name="CODTRANSACAO" ColumnName="CODTRANSACAO" />
+          <ScalarProperty Name="DESNUMBOLETOBANCARIO" ColumnName="DESNUMBOLETOBANCARIO" />
+          <ScalarProperty Name="DTHEMISSAO" ColumnName="DTHEMISSAO" />
+          <ScalarProperty Name="DTHVENCORIGINAL" ColumnName="DTHVENCORIGINAL" />
+          <ScalarProperty Name="DTHVENCATUAL" ColumnName="DTHVENCATUAL" />
+          <ScalarProperty Name="NUMVALORORIGINAL" ColumnName="NUMVALORORIGINAL" />
+          <ScalarProperty Name="BOLPARCELADO" ColumnName="BOLPARCELADO" />
+          <ScalarProperty Name="OBSDOCUMENTO" ColumnName="OBSDOCUMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_EMPRESA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_EMPRESA">
+        <MappingFragment StoreEntitySet="INFM_EMPRESA">
+          <ScalarProperty Name="CODPORTA" ColumnName="CODPORTA" />
+          <ScalarProperty Name="BOLSSL" ColumnName="BOLSSL" />
+          <ScalarProperty Name="DESSMTP" ColumnName="DESSMTP" />
+          <ScalarProperty Name="DESSENHA" ColumnName="DESSENHA" />
+          <ScalarProperty Name="DESEMAIL" ColumnName="DESEMAIL" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODEMPRESA" ColumnName="CODEMPRESA" />
+          <ScalarProperty Name="DESEMPRESA" ColumnName="DESEMPRESA" />
+          <ScalarProperty Name="DESCNPJ" ColumnName="DESCNPJ" />
+          <ScalarProperty Name="DESINSCRICAOESTADUAL" ColumnName="DESINSCRICAOESTADUAL" />
+          <ScalarProperty Name="CODACESSO" ColumnName="CODACESSO" />
+          <ScalarProperty Name="CODLICENCA" ColumnName="CODLICENCA" />
+          <ScalarProperty Name="NUMQUANTIDADESESSOES" ColumnName="NUMQUANTIDADESESSOES" />
+          <ScalarProperty Name="NUMQUANTIDADEACESSADA" ColumnName="NUMQUANTIDADEACESSADA" />
+          <ScalarProperty Name="NUMQUANTIDADEACESSO" ColumnName="NUMQUANTIDADEACESSO" />
+          <ScalarProperty Name="SESSOSILIMITADAS" ColumnName="SESSOSILIMITADAS" />
+          <ScalarProperty Name="VALIDADEILIMITADA" ColumnName="VALIDADEILIMITADA" />
+          <ScalarProperty Name="BOLEMPRESAMESTE" ColumnName="BOLEMPRESAMESTE" />
+          <ScalarProperty Name="IDLICENCA" ColumnName="IDLICENCA" />
+          <ScalarProperty Name="IDPUBLICIDADE" ColumnName="IDPUBLICIDADE" />
+          <ScalarProperty Name="DESAMIGO" ColumnName="DESAMIGO" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ENDERECO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ENDERECO">
+        <MappingFragment StoreEntitySet="INFM_ENDERECO">
+          <ScalarProperty Name="IDENDERECO" ColumnName="IDENDERECO" />
+          <ScalarProperty Name="IDBAIRRO" ColumnName="IDBAIRRO" />
+          <ScalarProperty Name="CODENDERECO" ColumnName="CODENDERECO" />
+          <ScalarProperty Name="DESRUA" ColumnName="DESRUA" />
+          <ScalarProperty Name="CODCEP" ColumnName="CODCEP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ESTADO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ESTADO">
+        <MappingFragment StoreEntitySet="INFM_ESTADO">
+          <ScalarProperty Name="IDESTADO" ColumnName="IDESTADO" />
+          <ScalarProperty Name="CODESTADO" ColumnName="CODESTADO" />
+          <ScalarProperty Name="DESESTADO" ColumnName="DESESTADO" />
+          <ScalarProperty Name="NUMICMS" ColumnName="NUMICMS" />
+          <ScalarProperty Name="CODIBGE" ColumnName="CODIBGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_FILIAL">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_FILIAL">
+        <MappingFragment StoreEntitySet="INFM_FILIAL">
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDENDERECO" ColumnName="IDENDERECO" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="CODFILIAL" ColumnName="CODFILIAL" />
+          <ScalarProperty Name="DESFILIAL" ColumnName="DESFILIAL" />
+          <ScalarProperty Name="BOLMATRIZ" ColumnName="BOLMATRIZ" />
+          <ScalarProperty Name="NUMENDERECO" ColumnName="NUMENDERECO" />
+          <ScalarProperty Name="DESCOMPENDERECO" ColumnName="DESCOMPENDERECO" />
+          <ScalarProperty Name="DESPONTREFENDERECO" ColumnName="DESPONTREFENDERECO" />
+          <ScalarProperty Name="DTHABERTURA" ColumnName="DTHABERTURA" />
+          <ScalarProperty Name="DESTELEFONEFIXO" ColumnName="DESTELEFONEFIXO" />
+          <ScalarProperty Name="DESTELEFONEFAX" ColumnName="DESTELEFONEFAX" />
+          <ScalarProperty Name="DESTELEFONECEL" ColumnName="DESTELEFONECEL" />
+          <ScalarProperty Name="OBSFILIAL" ColumnName="OBSFILIAL" />
+          <ScalarProperty Name="DESEMAIL" ColumnName="DESEMAIL" />
+          <ScalarProperty Name="NUMPISPER" ColumnName="NUMPISPER" />
+          <ScalarProperty Name="NUMCONFINSPER" ColumnName="NUMCONFINSPER" />
+          <ScalarProperty Name="NUMOUTDESPPER" ColumnName="NUMOUTDESPPER" />
+          <ScalarProperty Name="NUMCONTSOCPER" ColumnName="NUMCONTSOCPER" />
+          <ScalarProperty Name="CODTABMERCADORIA" ColumnName="CODTABMERCADORIA" />
+          <ScalarProperty Name="BOLATIVA" ColumnName="BOLATIVA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_FILIALBAIRRO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_FILIALBAIRRO">
+        <MappingFragment StoreEntitySet="INFM_FILIALBAIRRO">
+          <ScalarProperty Name="IDFILIALBAIRRO" ColumnName="IDFILIALBAIRRO" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="IDBAIRRO" ColumnName="IDBAIRRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_FILIALPESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_FILIALPESSOA">
+        <MappingFragment StoreEntitySet="INFM_FILIALPESSOA">
+          <ScalarProperty Name="IDFILIALPESSOA" ColumnName="IDFILIALPESSOA" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_FORMAPAGAMENTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_FORMAPAGAMENTO">
+        <MappingFragment StoreEntitySet="INFM_FORMAPAGAMENTO">
+          <ScalarProperty Name="IDFORMAPAGAMENTO" ColumnName="IDFORMAPAGAMENTO" />
+          <ScalarProperty Name="DESFORMAPAGAMENTO" ColumnName="DESFORMAPAGAMENTO" />
+          <ScalarProperty Name="CODFORMAPAGAMENTO" ColumnName="CODFORMAPAGAMENTO" />
+          <ScalarProperty Name="NUMVALORDESCONTO" ColumnName="NUMVALORDESCONTO" />
+          <ScalarProperty Name="NUMPERCENTDESCONTO" ColumnName="NUMPERCENTDESCONTO" />
+          <ScalarProperty Name="NUMVALORACRESCIMO" ColumnName="NUMVALORACRESCIMO" />
+          <ScalarProperty Name="NUMPERCENTACRESCIMO" ColumnName="NUMPERCENTACRESCIMO" />
+          <ScalarProperty Name="BOLCARTAO" ColumnName="BOLCARTAO" />
+          <ScalarProperty Name="BOLCREDITO" ColumnName="BOLCREDITO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODTIPOPAGAMENTO" ColumnName="CODTIPOPAGAMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_GRUPOCOMPROMISSO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_GRUPOCOMPROMISSO">
+        <MappingFragment StoreEntitySet="INFM_GRUPOCOMPROMISSO">
+          <ScalarProperty Name="IDGRUPOCOMPROMISSO" ColumnName="IDGRUPOCOMPROMISSO" />
+          <ScalarProperty Name="CODGRUPOCOMPROMISSO" ColumnName="CODGRUPOCOMPROMISSO" />
+          <ScalarProperty Name="DESGRUPOCOMPROMISSO" ColumnName="DESGRUPOCOMPROMISSO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_GRUPOCOMPROMISSOSUBGRUPO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_GRUPOCOMPROMISSOSUBGRUPO">
+        <MappingFragment StoreEntitySet="INFM_GRUPOCOMPROMISSOSUBGRUPO">
+          <ScalarProperty Name="IDGRUPOCOMPROMISSOSUBGRUPO" ColumnName="IDGRUPOCOMPROMISSOSUBGRUPO" />
+          <ScalarProperty Name="IDGRUPOCOMPROMISSOPAI" ColumnName="IDGRUPOCOMPROMISSOPAI" />
+          <ScalarProperty Name="IDGRUPOCOMPROMISSO" ColumnName="IDGRUPOCOMPROMISSO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_GRUPOPARAMETRO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_GRUPOPARAMETRO">
+        <MappingFragment StoreEntitySet="INFM_GRUPOPARAMETRO">
+          <ScalarProperty Name="IDGRUPOPARAMETRO" ColumnName="IDGRUPOPARAMETRO" />
+          <ScalarProperty Name="CODGRUPOPARAMETRO" ColumnName="CODGRUPOPARAMETRO" />
+          <ScalarProperty Name="DESGRUPOPARAMETRO" ColumnName="DESGRUPOPARAMETRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_GRUPOPERMISSAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_GRUPOPERMISSAO">
+        <MappingFragment StoreEntitySet="INFM_GRUPOPERMISSAO">
+          <ScalarProperty Name="IDGRUPOPERMISSAO" ColumnName="IDGRUPOPERMISSAO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DESGRUPO" ColumnName="DESGRUPO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_GRUPOPERMISSAOACAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_GRUPOPERMISSAOACAO">
+        <MappingFragment StoreEntitySet="INFM_GRUPOPERMISSAOACAO">
+          <ScalarProperty Name="IDGRUPOPERMISSAOACAO" ColumnName="IDGRUPOPERMISSAOACAO" />
+          <ScalarProperty Name="IDPERMISSAO" ColumnName="IDPERMISSAO" />
+          <ScalarProperty Name="IDACAO" ColumnName="IDACAO" />
+          <ScalarProperty Name="IDGRUPOPERMISSAO" ColumnName="IDGRUPOPERMISSAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_GRUPOPRODUTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_GRUPOPRODUTO">
+        <MappingFragment StoreEntitySet="INFM_GRUPOPRODUTO">
+          <ScalarProperty Name="IDGRUPOPRODUTO" ColumnName="IDGRUPOPRODUTO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODGRUPOPRODUTO" ColumnName="CODGRUPOPRODUTO" />
+          <ScalarProperty Name="DESGRUPOPRODUTO" ColumnName="DESGRUPOPRODUTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_GRUPOPRODUTOSUBGRUPO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_GRUPOPRODUTOSUBGRUPO">
+        <MappingFragment StoreEntitySet="INFM_GRUPOPRODUTOSUBGRUPO">
+          <ScalarProperty Name="IDGRUPOPRODUTOSUBGRUPO" ColumnName="IDGRUPOPRODUTOSUBGRUPO" />
+          <ScalarProperty Name="IDGRUPOPRODUTOPAI" ColumnName="IDGRUPOPRODUTOPAI" />
+          <ScalarProperty Name="IDGRUPOPRODUTO" ColumnName="IDGRUPOPRODUTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_HORATRABALHO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_HORATRABALHO">
+        <MappingFragment StoreEntitySet="INFM_HORATRABALHO">
+          <ScalarProperty Name="IDHORATRABALHO" ColumnName="IDHORATRABALHO" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="CODDIASEMANA" ColumnName="CODDIASEMANA" />
+          <ScalarProperty Name="DTHINICIO" ColumnName="DTHINICIO" />
+          <ScalarProperty Name="DTHFIM" ColumnName="DTHFIM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_IMAGEM">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_IMAGEM">
+        <MappingFragment StoreEntitySet="INFM_IMAGEM">
+          <ScalarProperty Name="IDIMAGEM" ColumnName="IDIMAGEM" />
+          <ScalarProperty Name="BITIMAGEMCENTRAL" ColumnName="BITIMAGEMCENTRAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_INTEGRACAOAPI">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_INTEGRACAOAPI">
+        <MappingFragment StoreEntitySet="INFM_INTEGRACAOAPI">
+          <ScalarProperty Name="IDINTEGRACAOAPI" ColumnName="IDINTEGRACAOAPI" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODINTEGRACAOAPI" ColumnName="CODINTEGRACAOAPI" />
+          <ScalarProperty Name="DESURLINTEGRACAOAPI" ColumnName="DESURLINTEGRACAOAPI" />
+          <ScalarProperty Name="IDTIPOCRM" ColumnName="IDTIPOCRM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ITEMVENDA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ITEMVENDA">
+        <MappingFragment StoreEntitySet="INFM_ITEMVENDA">
+          <ScalarProperty Name="BOLCONCLUIDO" ColumnName="BOLCONCLUIDO" />
+          <ScalarProperty Name="IDITEMVENDA" ColumnName="IDITEMVENDA" />
+          <ScalarProperty Name="IDVENDA" ColumnName="IDVENDA" />
+          <ScalarProperty Name="IDPESSOAVENDA" ColumnName="IDPESSOAVENDA" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+          <ScalarProperty Name="BOLCANCELADO" ColumnName="BOLCANCELADO" />
+          <ScalarProperty Name="NUMVALORITEM" ColumnName="NUMVALORITEM" />
+          <ScalarProperty Name="NUMVALORDESCONTO" ColumnName="NUMVALORDESCONTO" />
+          <ScalarProperty Name="NUMVALORTOTAL" ColumnName="NUMVALORTOTAL" />
+          <ScalarProperty Name="NUMQUANTIDADE" ColumnName="NUMQUANTIDADE" />
+          <ScalarProperty Name="NUMVALORACRESCIMO" ColumnName="NUMVALORACRESCIMO" />
+          <ScalarProperty Name="NUMSEQUENCIA" ColumnName="NUMSEQUENCIA" />
+          <ScalarProperty Name="CODESTADO" ColumnName="CODESTADO" />
+          <ScalarProperty Name="IDPESSOACANCELAMENTO" ColumnName="IDPESSOACANCELAMENTO" />
+          <ScalarProperty Name="IDPAGAMENTO" ColumnName="IDPAGAMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ITEMVENDA_NUMSERIE">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ITEMVENDA_NUMSERIE">
+        <MappingFragment StoreEntitySet="INFM_ITEMVENDA_NUMSERIE">
+          <ScalarProperty Name="IDITEMVENDA" ColumnName="IDITEMVENDA" />
+          <ScalarProperty Name="IDITEMVENDA_NUMSERIE" ColumnName="IDITEMVENDA_NUMSERIE" />
+          <ScalarProperty Name="IDPRODUTONUMEROSERIE" ColumnName="IDPRODUTONUMEROSERIE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ITEMVENDAACRESCIMO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ITEMVENDAACRESCIMO">
+        <MappingFragment StoreEntitySet="INFM_ITEMVENDAACRESCIMO">
+          <ScalarProperty Name="NUMVALORTOTAL" ColumnName="NUMVALORTOTAL" />
+          <ScalarProperty Name="NUMVALOR" ColumnName="NUMVALOR" />
+          <ScalarProperty Name="NUMQUANTIDADE" ColumnName="NUMQUANTIDADE" />
+          <ScalarProperty Name="IDITEMVENDAACRESCIMO" ColumnName="IDITEMVENDAACRESCIMO" />
+          <ScalarProperty Name="IDITEMVENDA" ColumnName="IDITEMVENDA" />
+          <ScalarProperty Name="IDACRESCIMO" ColumnName="IDACRESCIMO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ITEMVENDAOBSERVACAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ITEMVENDAOBSERVACAO">
+        <MappingFragment StoreEntitySet="INFM_ITEMVENDAOBSERVACAO">
+          <ScalarProperty Name="IDITEMVENDAOBSERVACAO" ColumnName="IDITEMVENDAOBSERVACAO" />
+          <ScalarProperty Name="IDOBSERVACAO" ColumnName="IDOBSERVACAO" />
+          <ScalarProperty Name="IDITEMVENDA" ColumnName="IDITEMVENDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_LICENCA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_LICENCA">
+        <MappingFragment StoreEntitySet="INFM_LICENCA">
+          <ScalarProperty Name="IDLICENCA" ColumnName="IDLICENCA" />
+          <ScalarProperty Name="CODLICENCA" ColumnName="CODLICENCA" />
+          <ScalarProperty Name="SESSOESINFINITAS" ColumnName="SESSOESINFINITAS" />
+          <ScalarProperty Name="NUMQUANTIDADESESSOES" ColumnName="NUMQUANTIDADESESSOES" />
+          <ScalarProperty Name="NUMVALIDADE" ColumnName="NUMVALIDADE" />
+          <ScalarProperty Name="VALIDADEINFINITA" ColumnName="VALIDADEINFINITA" />
+          <ScalarProperty Name="CHAVEATIVA" ColumnName="CHAVEATIVA" />
+          <ScalarProperty Name="NUMQUANTIDADEACESSOS" ColumnName="NUMQUANTIDADEACESSOS" />
+          <ScalarProperty Name="DATAATIVACAO" ColumnName="DATAATIVACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_LOCALDOCUMENTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_LOCALDOCUMENTO">
+        <MappingFragment StoreEntitySet="INFM_LOCALDOCUMENTO">
+          <ScalarProperty Name="IDLOCALDOCUMENTO" ColumnName="IDLOCALDOCUMENTO" />
+          <ScalarProperty Name="CODLOCALDOCUMENTO" ColumnName="CODLOCALDOCUMENTO" />
+          <ScalarProperty Name="DESLOCALDOCUMENTO" ColumnName="DESLOCALDOCUMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_LOGERROR">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_LOGERROR">
+        <MappingFragment StoreEntitySet="INFM_LOGERROR">
+          <ScalarProperty Name="IDLOGERROR" ColumnName="IDLOGERROR" />
+          <ScalarProperty Name="DESERROR" ColumnName="DESERROR" />
+          <ScalarProperty Name="DESPESSOA" ColumnName="DESPESSOA" />
+          <ScalarProperty Name="DTHERROR" ColumnName="DTHERROR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_MESA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_MESA">
+        <MappingFragment StoreEntitySet="INFM_MESA">
+          <ScalarProperty Name="BOLATIVA" ColumnName="BOLATIVA" />
+          <ScalarProperty Name="IDMESA" ColumnName="IDMESA" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="CODMESA" ColumnName="CODMESA" />
+          <ScalarProperty Name="NELQUANTIDADELUGAR" ColumnName="NELQUANTIDADELUGAR" />
+          <ScalarProperty Name="CODESTADO" ColumnName="CODESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_MESAAGRUPAR">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_MESAAGRUPAR">
+        <MappingFragment StoreEntitySet="INFM_MESAAGRUPAR">
+          <ScalarProperty Name="IDMESAAGRUPAR" ColumnName="IDMESAAGRUPAR" />
+          <ScalarProperty Name="IDMESAPRINCIPAL" ColumnName="IDMESAPRINCIPAL" />
+          <ScalarProperty Name="IDMESAAUXILIAR" ColumnName="IDMESAAUXILIAR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_MESAVENDA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_MESAVENDA">
+        <MappingFragment StoreEntitySet="INFM_MESAVENDA">
+          <ScalarProperty Name="IDMESAVENDA" ColumnName="IDMESAVENDA" />
+          <ScalarProperty Name="IDMESA" ColumnName="IDMESA" />
+          <ScalarProperty Name="IDVENDA" ColumnName="IDVENDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_OBSERVACAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_OBSERVACAO">
+        <MappingFragment StoreEntitySet="INFM_OBSERVACAO">
+          <ScalarProperty Name="IDOBSERVACAO" ColumnName="IDOBSERVACAO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DESOBSERVACAO" ColumnName="DESOBSERVACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_OBSERVACAOPRODUTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_OBSERVACAOPRODUTO">
+        <MappingFragment StoreEntitySet="INFM_OBSERVACAOPRODUTO">
+          <ScalarProperty Name="IDOBSERVACAOPRODUTO" ColumnName="IDOBSERVACAOPRODUTO" />
+          <ScalarProperty Name="IDOBSERVACAO" ColumnName="IDOBSERVACAO" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PAGAMENTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PAGAMENTO">
+        <MappingFragment StoreEntitySet="INFM_PAGAMENTO">
+          <ScalarProperty Name="IDRESPONSAVELCAIXA" ColumnName="IDRESPONSAVELCAIXA" />
+          <ScalarProperty Name="IDPAGAMENTO" ColumnName="IDPAGAMENTO" />
+          <ScalarProperty Name="IDVENDA" ColumnName="IDVENDA" />
+          <ScalarProperty Name="IDFORMAPAGAMENTO" ColumnName="IDFORMAPAGAMENTO" />
+          <ScalarProperty Name="NUMVALOR" ColumnName="NUMVALOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PARAMETROOPCAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PARAMETROOPCAO">
+        <MappingFragment StoreEntitySet="INFM_PARAMETROOPCAO">
+          <ScalarProperty Name="IDPARAMETROOPCAO" ColumnName="IDPARAMETROOPCAO" />
+          <ScalarProperty Name="IDPARAMETRO" ColumnName="IDPARAMETRO" />
+          <ScalarProperty Name="CODPARAMETROOPCAO" ColumnName="CODPARAMETROOPCAO" />
+          <ScalarProperty Name="DESPARAMETROOPCAO" ColumnName="DESPARAMETROOPCAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PARAMETROS">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PARAMETROS">
+        <MappingFragment StoreEntitySet="INFM_PARAMETROS">
+          <ScalarProperty Name="IDPARAMETRO" ColumnName="IDPARAMETRO" />
+          <ScalarProperty Name="CODPARAMETRO" ColumnName="CODPARAMETRO" />
+          <ScalarProperty Name="DESPARAMETRO" ColumnName="DESPARAMETRO" />
+          <ScalarProperty Name="TIPOCOMPONENTE" ColumnName="TIPOCOMPONENTE" />
+          <ScalarProperty Name="BOLNIVELFILIAL" ColumnName="BOLNIVELFILIAL" />
+          <ScalarProperty Name="IDGRUPOPARAMETRO" ColumnName="IDGRUPOPARAMETRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PARAMETROVALOR">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PARAMETROVALOR">
+        <MappingFragment StoreEntitySet="INFM_PARAMETROVALOR">
+          <ScalarProperty Name="IDPARAMETROVALOR" ColumnName="IDPARAMETROVALOR" />
+          <ScalarProperty Name="IDPARAMETRO" ColumnName="IDPARAMETRO" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="DESVALORPARAMETRO" ColumnName="DESVALORPARAMETRO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PARCELAMENTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PARCELAMENTO">
+        <MappingFragment StoreEntitySet="INFM_PARCELAMENTO">
+          <ScalarProperty Name="IDPARCELAMENTO" ColumnName="IDPARCELAMENTO" />
+          <ScalarProperty Name="IDDOCUMENTO" ColumnName="IDDOCUMENTO" />
+          <ScalarProperty Name="DTHVENCATUAL" ColumnName="DTHVENCATUAL" />
+          <ScalarProperty Name="DTHVENCORIGINAL" ColumnName="DTHVENCORIGINAL" />
+          <ScalarProperty Name="NUMVALORORIGINAL" ColumnName="NUMVALORORIGINAL" />
+          <ScalarProperty Name="NUMPARCELA" ColumnName="NUMPARCELA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PERGUNTAOPCAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PERGUNTAOPCAO">
+        <MappingFragment StoreEntitySet="INFM_PERGUNTAOPCAO">
+          <ScalarProperty Name="IDPERGUNTAOPCAO" ColumnName="IDPERGUNTAOPCAO" />
+          <ScalarProperty Name="IDPERGUNTA" ColumnName="IDPERGUNTA" />
+          <ScalarProperty Name="DESPERGUNTAOPCAO" ColumnName="DESPERGUNTAOPCAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PERGUNTAS">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PERGUNTAS">
+        <MappingFragment StoreEntitySet="INFM_PERGUNTAS">
+          <ScalarProperty Name="IDPERGUNTA" ColumnName="IDPERGUNTA" />
+          <ScalarProperty Name="IDGRUPOCOMPROMISSO" ColumnName="IDGRUPOCOMPROMISSO" />
+          <ScalarProperty Name="DESPERGUNTA" ColumnName="DESPERGUNTA" />
+          <ScalarProperty Name="BOLOBRIGATORIA" ColumnName="BOLOBRIGATORIA" />
+          <ScalarProperty Name="CODTIPOCOMPONENTE" ColumnName="CODTIPOCOMPONENTE" />
+          <ScalarProperty Name="BOLNUMERICO" ColumnName="BOLNUMERICO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PERMISSAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PERMISSAO">
+        <MappingFragment StoreEntitySet="INFM_PERMISSAO">
+          <ScalarProperty Name="IDPERMISSAO" ColumnName="IDPERMISSAO" />
+          <ScalarProperty Name="CODPERMISSAO" ColumnName="CODPERMISSAO" />
+          <ScalarProperty Name="DESPERMISSAO" ColumnName="DESPERMISSAO" />
+          <ScalarProperty Name="BOLOBRIGATORIA" ColumnName="BOLOBRIGATORIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PERMISSAOACAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PERMISSAOACAO">
+        <MappingFragment StoreEntitySet="INFM_PERMISSAOACAO">
+          <ScalarProperty Name="IDPERMISSAOACAO" ColumnName="IDPERMISSAOACAO" />
+          <ScalarProperty Name="IDPERMISSAO" ColumnName="IDPERMISSAO" />
+          <ScalarProperty Name="IDACAO" ColumnName="IDACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PESSOA">
+        <MappingFragment StoreEntitySet="INFM_PESSOA">
+          <ScalarProperty Name="IDENDERECO" ColumnName="IDENDERECO" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="IDSITUACAOPESSOA" ColumnName="IDSITUACAOPESSOA" />
+          <ScalarProperty Name="IDPESSOARESPONSAVEL" ColumnName="IDPESSOARESPONSAVEL" />
+          <ScalarProperty Name="IDSEGMENTOCOMERCIAL" ColumnName="IDSEGMENTOCOMERCIAL" />
+          <ScalarProperty Name="IDENDERECOEMPRESA" ColumnName="IDENDERECOEMPRESA" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODPESSOA" ColumnName="CODPESSOA" />
+          <ScalarProperty Name="DESNOME" ColumnName="DESNOME" />
+          <ScalarProperty Name="DESNOMEFANTASIA" ColumnName="DESNOMEFANTASIA" />
+          <ScalarProperty Name="DESRG" ColumnName="DESRG" />
+          <ScalarProperty Name="DTHNASCIMENTO" ColumnName="DTHNASCIMENTO" />
+          <ScalarProperty Name="DESCPF" ColumnName="DESCPF" />
+          <ScalarProperty Name="DESCNPJ" ColumnName="DESCNPJ" />
+          <ScalarProperty Name="DTHCADASTRO" ColumnName="DTHCADASTRO" />
+          <ScalarProperty Name="DESINSCRICAOESTADUAL" ColumnName="DESINSCRICAOESTADUAL" />
+          <ScalarProperty Name="DESTELEFONEFIXO" ColumnName="DESTELEFONEFIXO" />
+          <ScalarProperty Name="DESTELEFONEFAX" ColumnName="DESTELEFONEFAX" />
+          <ScalarProperty Name="DESTELEFONECELULAR" ColumnName="DESTELEFONECELULAR" />
+          <ScalarProperty Name="DESHABILITACAO" ColumnName="DESHABILITACAO" />
+          <ScalarProperty Name="NUMCOMISSAO" ColumnName="NUMCOMISSAO" />
+          <ScalarProperty Name="NUMSALARIO" ColumnName="NUMSALARIO" />
+          <ScalarProperty Name="DTHADMISSAO" ColumnName="DTHADMISSAO" />
+          <ScalarProperty Name="DESCONTATO" ColumnName="DESCONTATO" />
+          <ScalarProperty Name="OBSPESSOA" ColumnName="OBSPESSOA" />
+          <ScalarProperty Name="NUMLIMITE" ColumnName="NUMLIMITE" />
+          <ScalarProperty Name="DESEMAIL" ColumnName="DESEMAIL" />
+          <ScalarProperty Name="DESNOMEPAI" ColumnName="DESNOMEPAI" />
+          <ScalarProperty Name="DESNOMEMAE" ColumnName="DESNOMEMAE" />
+          <ScalarProperty Name="DESEMPRESA" ColumnName="DESEMPRESA" />
+          <ScalarProperty Name="DESFONEEMPRESA" ColumnName="DESFONEEMPRESA" />
+          <ScalarProperty Name="DESCARGO" ColumnName="DESCARGO" />
+          <ScalarProperty Name="OBSREFPESSOAL" ColumnName="OBSREFPESSOAL" />
+          <ScalarProperty Name="DTHALMOCOINICIO" ColumnName="DTHALMOCOINICIO" />
+          <ScalarProperty Name="DTHALMOCOFIM" ColumnName="DTHALMOCOFIM" />
+          <ScalarProperty Name="CODLOGIN" ColumnName="CODLOGIN" />
+          <ScalarProperty Name="DESSENHA" ColumnName="DESSENHA" />
+          <ScalarProperty Name="CODTABMERCADORIA" ColumnName="CODTABMERCADORIA" />
+          <ScalarProperty Name="BOLALTERARSENHA" ColumnName="BOLALTERARSENHA" />
+          <ScalarProperty Name="BOLFUNICIONARIOATIVO" ColumnName="BOLFUNICIONARIOATIVO" />
+          <ScalarProperty Name="BOLFORNECEDORATIVO" ColumnName="BOLFORNECEDORATIVO" />
+          <ScalarProperty Name="NUMENDERECO" ColumnName="NUMENDERECO" />
+          <ScalarProperty Name="DESCOMPLEMENTOENDER" ColumnName="DESCOMPLEMENTOENDER" />
+          <ScalarProperty Name="DESPONTOREFERENCIA" ColumnName="DESPONTOREFERENCIA" />
+          <ScalarProperty Name="CODTABELAMERCADORIA" ColumnName="CODTABELAMERCADORIA" />
+          <ScalarProperty Name="NUMENDERECOEMP" ColumnName="NUMENDERECOEMP" />
+          <ScalarProperty Name="DESCOMPLEMENTOENDEREMP" ColumnName="DESCOMPLEMENTOENDEREMP" />
+          <ScalarProperty Name="DESPONTOREFERENCIAEMP" ColumnName="DESPONTOREFERENCIAEMP" />
+          <ScalarProperty Name="BOLCONSULTOR" ColumnName="BOLCONSULTOR" />
+          <ScalarProperty Name="IDTIPOEMPREGADO" ColumnName="IDTIPOEMPREGADO" />
+          <ScalarProperty Name="BOLPERMITEVENDAPRAZO" ColumnName="BOLPERMITEVENDAPRAZO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PESSOACRM">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PESSOACRM">
+        <MappingFragment StoreEntitySet="INFM_PESSOACRM">
+          <ScalarProperty Name="IDPESSOACRM" ColumnName="IDPESSOACRM" />
+          <ScalarProperty Name="IDCRM" ColumnName="IDCRM" />
+          <ScalarProperty Name="DTHPROXAGENDAMENTO" ColumnName="DTHPROXAGENDAMENTO" />
+          <ScalarProperty Name="DTHPROXAGENDAMENTOFIN" ColumnName="DTHPROXAGENDAMENTOFIN" />
+          <ScalarProperty Name="IDGRUPOCOMPROMISSO" ColumnName="IDGRUPOCOMPROMISSO" />
+          <ScalarProperty Name="DESAGENDAMENTO" ColumnName="DESAGENDAMENTO" />
+          <ScalarProperty Name="BOLCONCLUIDO" ColumnName="BOLCONCLUIDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PESSOACRMPESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PESSOACRMPESSOA">
+        <MappingFragment StoreEntitySet="INFM_PESSOACRMPESSOA">
+          <ScalarProperty Name="IDPESSOACRMPESSOA" ColumnName="IDPESSOACRMPESSOA" />
+          <ScalarProperty Name="IDPESSOACRM" ColumnName="IDPESSOACRM" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PESSOAMESA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PESSOAMESA">
+        <MappingFragment StoreEntitySet="INFM_PESSOAMESA">
+          <ScalarProperty Name="IDPESSOAMESA" ColumnName="IDPESSOAMESA" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="DTHLIMITE" ColumnName="DTHLIMITE" />
+          <ScalarProperty Name="CODESTADO" ColumnName="CODESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PESSOAMESAXMESA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PESSOAMESAXMESA">
+        <MappingFragment StoreEntitySet="INFM_PESSOAMESAXMESA">
+          <ScalarProperty Name="IDPESSOAMESAXMESA" ColumnName="IDPESSOAMESAXMESA" />
+          <ScalarProperty Name="IDMESA" ColumnName="IDMESA" />
+          <ScalarProperty Name="IDPESSOAMESA" ColumnName="IDPESSOAMESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODCATEGORIA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODCATEGORIA">
+        <MappingFragment StoreEntitySet="INFM_PRODCATEGORIA">
+          <ScalarProperty Name="IDPRODCATEGORIA" ColumnName="IDPRODCATEGORIA" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODPRODCATEGORIA" ColumnName="CODPRODCATEGORIA" />
+          <ScalarProperty Name="DESPRODCATEGORIA" ColumnName="DESPRODCATEGORIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOCFOP">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOCFOP">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOCFOP">
+          <ScalarProperty Name="IDPRODUTOCFOP" ColumnName="IDPRODUTOCFOP" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODPRODUTOCFOP" ColumnName="CODPRODUTOCFOP" />
+          <ScalarProperty Name="DESPRODUTOCFOP" ColumnName="DESPRODUTOCFOP" />
+          <ScalarProperty Name="CODCFOP" ColumnName="CODCFOP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOCOMISSAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOCOMISSAO">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOCOMISSAO">
+          <ScalarProperty Name="IDPRODUTOCOMISSAO" ColumnName="IDPRODUTOCOMISSAO" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="CODPRODUTOCOMISSAO" ColumnName="CODPRODUTOCOMISSAO" />
+          <ScalarProperty Name="DESPRODUTOCOMISSAO" ColumnName="DESPRODUTOCOMISSAO" />
+          <ScalarProperty Name="NUMCOMISSAOPER" ColumnName="NUMCOMISSAOPER" />
+          <ScalarProperty Name="NUMCOMISSAOVALOR" ColumnName="NUMCOMISSAOVALOR" />
+          <ScalarProperty Name="BOLHABILITADA" ColumnName="BOLHABILITADA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOCST">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOCST">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOCST">
+          <ScalarProperty Name="IDPRODUTOCST" ColumnName="IDPRODUTOCST" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODPRODUTOCST" ColumnName="CODPRODUTOCST" />
+          <ScalarProperty Name="DESPRODUTOCST" ColumnName="DESPRODUTOCST" />
+          <ScalarProperty Name="CODCST" ColumnName="CODCST" />
+          <ScalarProperty Name="BOLTEMST" ColumnName="BOLTEMST" />
+          <ScalarProperty Name="OBSMSGNOTAFISCAL" ColumnName="OBSMSGNOTAFISCAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTODERIVACAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTODERIVACAO">
+        <MappingFragment StoreEntitySet="INFM_PRODUTODERIVACAO">
+          <ScalarProperty Name="IDPRODUTODERIVACAO" ColumnName="IDPRODUTODERIVACAO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODPRODUTODERIVACAO" ColumnName="CODPRODUTODERIVACAO" />
+          <ScalarProperty Name="DESPRODUTODERIVACAO" ColumnName="DESPRODUTODERIVACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOFILIAL">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOFILIAL">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOFILIAL">
+          <ScalarProperty Name="IDSETOREMPRESA" ColumnName="IDSETOREMPRESA" />
+          <ScalarProperty Name="IDPRODUTOFILIAL" ColumnName="IDPRODUTOFILIAL" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="IDPRODUTOCOMISSAO" ColumnName="IDPRODUTOCOMISSAO" />
+          <ScalarProperty Name="IDUNIDADEMEDIDAESTOQUE" ColumnName="IDUNIDADEMEDIDAESTOQUE" />
+          <ScalarProperty Name="IDUNIDADEMEDIDAVENDA" ColumnName="IDUNIDADEMEDIDAVENDA" />
+          <ScalarProperty Name="DESPRATELEIRA" ColumnName="DESPRATELEIRA" />
+          <ScalarProperty Name="NUMESTOQUEMINIMO" ColumnName="NUMESTOQUEMINIMO" />
+          <ScalarProperty Name="NUMMINIMOVENDA" ColumnName="NUMMINIMOVENDA" />
+          <ScalarProperty Name="NUMIPIPER" ColumnName="NUMIPIPER" />
+          <ScalarProperty Name="NUMEMBALAGEMPER" ColumnName="NUMEMBALAGEMPER" />
+          <ScalarProperty Name="NUMFRETEPER" ColumnName="NUMFRETEPER" />
+          <ScalarProperty Name="NUMOUTDESPPER" ColumnName="NUMOUTDESPPER" />
+          <ScalarProperty Name="IDPRODUTOOPCAO" ColumnName="IDPRODUTOOPCAO" />
+          <ScalarProperty Name="NUMESTOQUE" ColumnName="NUMESTOQUE" />
+          <ScalarProperty Name="IDUNIDADEMEDIDAMINESTOQUE" ColumnName="IDUNIDADEMEDIDAMINESTOQUE" />
+          <ScalarProperty Name="IDUMVALORVENDAVAREJO" ColumnName="IDUMVALORVENDAVAREJO" />
+          <ScalarProperty Name="IDUMVENDAATACADO" ColumnName="IDUMVENDAATACADO" />
+          <ScalarProperty Name="IDUMVALORVENATACADO" ColumnName="IDUMVALORVENATACADO" />
+          <ScalarProperty Name="NUMVALORVENDAVAREJO" ColumnName="NUMVALORVENDAVAREJO" />
+          <ScalarProperty Name="NUMVALORVENDAATACADO" ColumnName="NUMVALORVENDAATACADO" />
+          <ScalarProperty Name="NUMQUANTVENDAATACADO" ColumnName="NUMQUANTVENDAATACADO" />
+          <ScalarProperty Name="NUMPERCENTDESCONTATAC" ColumnName="NUMPERCENTDESCONTATAC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOMARCA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOMARCA">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOMARCA">
+          <ScalarProperty Name="IDPRODUTOMARCA" ColumnName="IDPRODUTOMARCA" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODPRODUTOMARCA" ColumnName="CODPRODUTOMARCA" />
+          <ScalarProperty Name="DESPRODUTOMARCA" ColumnName="DESPRODUTOMARCA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTONCM">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTONCM">
+        <MappingFragment StoreEntitySet="INFM_PRODUTONCM">
+          <ScalarProperty Name="IDPRODUTONCM" ColumnName="IDPRODUTONCM" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODPRODUTONCM" ColumnName="CODPRODUTONCM" />
+          <ScalarProperty Name="CODNCM" ColumnName="CODNCM" />
+          <ScalarProperty Name="NUMMVAPER" ColumnName="NUMMVAPER" />
+          <ScalarProperty Name="DESPRODUTONCM" ColumnName="DESPRODUTONCM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTONUMEROSERIE">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTONUMEROSERIE">
+        <MappingFragment StoreEntitySet="INFM_PRODUTONUMEROSERIE">
+          <ScalarProperty Name="IDPRODUTONUMEROSERIE" ColumnName="IDPRODUTONUMEROSERIE" />
+          <ScalarProperty Name="IDDATOSCOMPRAPROD" ColumnName="IDDATOSCOMPRAPROD" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DESNUMEROSERIE" ColumnName="DESNUMEROSERIE" />
+          <ScalarProperty Name="BOLVENDIDO" ColumnName="BOLVENDIDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOOPCAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOOPCAO">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOOPCAO">
+          <ScalarProperty Name="IDPRODUTOOPCAO" ColumnName="IDPRODUTOOPCAO" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+          <ScalarProperty Name="CODPRODUTOOPCAO" ColumnName="CODPRODUTOOPCAO" />
+          <ScalarProperty Name="DESPRODUTOOPCAO" ColumnName="DESPRODUTOOPCAO" />
+          <ScalarProperty Name="DESCODBARRAS" ColumnName="DESCODBARRAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOPROMOCAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOPROMOCAO">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOPROMOCAO">
+          <ScalarProperty Name="IDPRODUTOPROMOCAO" ColumnName="IDPRODUTOPROMOCAO" />
+          <ScalarProperty Name="CODPRODUTOPROMOCAO" ColumnName="CODPRODUTOPROMOCAO" />
+          <ScalarProperty Name="DESPRODUTOPROMOCAO" ColumnName="DESPRODUTOPROMOCAO" />
+          <ScalarProperty Name="NUMPROMOCAOPER" ColumnName="NUMPROMOCAOPER" />
+          <ScalarProperty Name="NUMPROMOCAOVALOR" ColumnName="NUMPROMOCAOVALOR" />
+          <ScalarProperty Name="BOLHABILITADA" ColumnName="BOLHABILITADA" />
+          <ScalarProperty Name="DTHINICIO" ColumnName="DTHINICIO" />
+          <ScalarProperty Name="DTHFIM" ColumnName="DTHFIM" />
+          <ScalarProperty Name="CODTIPOPROMOCAO" ColumnName="CODTIPOPROMOCAO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="BOL_POR_HORARIO" ColumnName="BOL_POR_HORARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOPROMOCAOPRODF">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOPROMOCAOPRODF">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOPROMOCAOPRODF">
+          <ScalarProperty Name="IDPRODUTOPROMOCAOPRODF" ColumnName="IDPRODUTOPROMOCAOPRODF" />
+          <ScalarProperty Name="IDPRODUTOPROMOCAO" ColumnName="IDPRODUTOPROMOCAO" />
+          <ScalarProperty Name="IDPRODUTOFILIAL" ColumnName="IDPRODUTOFILIAL" />
+          <ScalarProperty Name="IDDATOSCOMPRAPROD" ColumnName="IDDATOSCOMPRAPROD" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOSERVICO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOSERVICO">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOSERVICO">
+          <ScalarProperty Name="IDSETOREMPRESA" ColumnName="IDSETOREMPRESA" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+          <ScalarProperty Name="IDTIPOPRODUTO" ColumnName="IDTIPOPRODUTO" />
+          <ScalarProperty Name="IDGRUPOPRODUTO" ColumnName="IDGRUPOPRODUTO" />
+          <ScalarProperty Name="IDCOR" ColumnName="IDCOR" />
+          <ScalarProperty Name="IDPRODUTODERIVACAO" ColumnName="IDPRODUTODERIVACAO" />
+          <ScalarProperty Name="IDPRODCATEGORIA" ColumnName="IDPRODCATEGORIA" />
+          <ScalarProperty Name="IDPRODUTOMARCA" ColumnName="IDPRODUTOMARCA" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDPRODUTONCM" ColumnName="IDPRODUTONCM" />
+          <ScalarProperty Name="IDPRODUTOCST" ColumnName="IDPRODUTOCST" />
+          <ScalarProperty Name="IDPRODUTOCFOP" ColumnName="IDPRODUTOCFOP" />
+          <ScalarProperty Name="CODPRODUTO" ColumnName="CODPRODUTO" />
+          <ScalarProperty Name="DESPRODUTO" ColumnName="DESPRODUTO" />
+          <ScalarProperty Name="DESCODBARRAS" ColumnName="DESCODBARRAS" />
+          <ScalarProperty Name="OBSPRODUTO" ColumnName="OBSPRODUTO" />
+          <ScalarProperty Name="NUMPESOPRODUTO" ColumnName="NUMPESOPRODUTO" />
+          <ScalarProperty Name="BITIMGPRODUTO" ColumnName="BITIMGPRODUTO" />
+          <ScalarProperty Name="BOLVENDAAGRANEL" ColumnName="BOLVENDAAGRANEL" />
+          <ScalarProperty Name="BOLINTERNO" ColumnName="BOLINTERNO" />
+          <ScalarProperty Name="BOLACRESCIMO" ColumnName="BOLACRESCIMO" />
+          <ScalarProperty Name="BOLVENDANUMEROSERIE" ColumnName="BOLVENDANUMEROSERIE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PRODUTOVALORDINAMICO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PRODUTOVALORDINAMICO">
+        <MappingFragment StoreEntitySet="INFM_PRODUTOVALORDINAMICO">
+          <ScalarProperty Name="IDPRODUTOVALORDINAMICO" ColumnName="IDPRODUTOVALORDINAMICO" />
+          <ScalarProperty Name="IDPRODUTOFILIAL" ColumnName="IDPRODUTOFILIAL" />
+          <ScalarProperty Name="DESHORAINICIO" ColumnName="DESHORAINICIO" />
+          <ScalarProperty Name="DESHORAFIM" ColumnName="DESHORAFIM" />
+          <ScalarProperty Name="BOLHORARIO" ColumnName="BOLHORARIO" />
+          <ScalarProperty Name="CODDIA" ColumnName="CODDIA" />
+          <ScalarProperty Name="NUMVALORDESCONTO" ColumnName="NUMVALORDESCONTO" />
+          <ScalarProperty Name="NUMPERCENTDESCONTO" ColumnName="NUMPERCENTDESCONTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PROPOSTA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PROPOSTA">
+        <MappingFragment StoreEntitySet="INFM_PROPOSTA">
+          <ScalarProperty Name="IDPROPOSTA" ColumnName="IDPROPOSTA" />
+          <ScalarProperty Name="IDCRM" ColumnName="IDCRM" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DESPROPOSTA" ColumnName="DESPROPOSTA" />
+          <ScalarProperty Name="NUMPROPOSTAVENDA" ColumnName="NUMPROPOSTAVENDA" />
+          <ScalarProperty Name="NUMPROPOSTAMANUTENCAO" ColumnName="NUMPROPOSTAMANUTENCAO" />
+          <ScalarProperty Name="NUMCONTRAPROPOSTAVENDA" ColumnName="NUMCONTRAPROPOSTAVENDA" />
+          <ScalarProperty Name="NUMCONTRAPROPOSTAMANUT" ColumnName="NUMCONTRAPROPOSTAMANUT" />
+          <ScalarProperty Name="DESOPNIAO" ColumnName="DESOPNIAO" />
+          <ScalarProperty Name="DESDUVIDA" ColumnName="DESDUVIDA" />
+          <ScalarProperty Name="BOLATENDENECESSIDADE" ColumnName="BOLATENDENECESSIDADE" />
+          <ScalarProperty Name="DTINSTALACAO" ColumnName="DTINSTALACAO" />
+          <ScalarProperty Name="BOLATIVA" ColumnName="BOLATIVA" />
+          <ScalarProperty Name="CODPROPOSTA" ColumnName="CODPROPOSTA" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="IDPESSOACLIENTE" ColumnName="IDPESSOACLIENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PUBLICIDADE">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PUBLICIDADE">
+        <MappingFragment StoreEntitySet="INFM_PUBLICIDADE">
+          <ScalarProperty Name="IDPUBLICIDADE" ColumnName="IDPUBLICIDADE" />
+          <ScalarProperty Name="DESPUBLICIDADE" ColumnName="DESPUBLICIDADE" />
+          <ScalarProperty Name="CODPUBLICIDADE" ColumnName="CODPUBLICIDADE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_RESPONSAVELCAIXA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_RESPONSAVELCAIXA">
+        <MappingFragment StoreEntitySet="INFM_RESPONSAVELCAIXA">
+          <ScalarProperty Name="IDRESPONSAVELCAIXA" ColumnName="IDRESPONSAVELCAIXA" />
+          <ScalarProperty Name="IDCAIXA" ColumnName="IDCAIXA" />
+          <ScalarProperty Name="IDPESSOARESPONSAVEL" ColumnName="IDPESSOARESPONSAVEL" />
+          <ScalarProperty Name="NUMVALORINICIAL" ColumnName="NUMVALORINICIAL" />
+          <ScalarProperty Name="NUMSALDO" ColumnName="NUMSALDO" />
+          <ScalarProperty Name="DTHINICIOOPERACAO" ColumnName="DTHINICIOOPERACAO" />
+          <ScalarProperty Name="DTHFIMOPERACAO" ColumnName="DTHFIMOPERACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_RESPOSTAPERGUNTA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_RESPOSTAPERGUNTA">
+        <MappingFragment StoreEntitySet="INFM_RESPOSTAPERGUNTA">
+          <ScalarProperty Name="IDRESPOSTAPERGUNTA" ColumnName="IDRESPOSTAPERGUNTA" />
+          <ScalarProperty Name="IDPERGUNTA" ColumnName="IDPERGUNTA" />
+          <ScalarProperty Name="DESVALOR" ColumnName="DESVALOR" />
+          <ScalarProperty Name="IDPESSOACRM" ColumnName="IDPESSOACRM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_SALDOFILIAL">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_SALDOFILIAL">
+        <MappingFragment StoreEntitySet="INFM_SALDOFILIAL">
+          <ScalarProperty Name="IDSALDOFILIAL" ColumnName="IDSALDOFILIAL" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="NUMSALDO" ColumnName="NUMSALDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_SALDOPESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_SALDOPESSOA">
+        <MappingFragment StoreEntitySet="INFM_SALDOPESSOA">
+          <ScalarProperty Name="IDSALDOPESSOA" ColumnName="IDSALDOPESSOA" />
+          <ScalarProperty Name="IDDOCUMENTO" ColumnName="IDDOCUMENTO" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="NUMVALORSALDO" ColumnName="NUMVALORSALDO" />
+          <ScalarProperty Name="IDTRANSACAO" ColumnName="IDTRANSACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_SANGRIA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_SANGRIA">
+        <MappingFragment StoreEntitySet="INFM_SANGRIA">
+          <ScalarProperty Name="IDSANGRIA" ColumnName="IDSANGRIA" />
+          <ScalarProperty Name="IDRESPONSAVELCAIXA" ColumnName="IDRESPONSAVELCAIXA" />
+          <ScalarProperty Name="IDPESSOASUPERVISOR" ColumnName="IDPESSOASUPERVISOR" />
+          <ScalarProperty Name="NUMVALORSANGRIA" ColumnName="NUMVALORSANGRIA" />
+          <ScalarProperty Name="OBSSANGRIA" ColumnName="OBSSANGRIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_SEGMENTOCOMERCIAL">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_SEGMENTOCOMERCIAL">
+        <MappingFragment StoreEntitySet="INFM_SEGMENTOCOMERCIAL">
+          <ScalarProperty Name="IDSEGMENTOCOMERCIAL" ColumnName="IDSEGMENTOCOMERCIAL" />
+          <ScalarProperty Name="CODSEGMENTOCOMERCIAL" ColumnName="CODSEGMENTOCOMERCIAL" />
+          <ScalarProperty Name="DESSEGMENTOCOMERCIAL" ColumnName="DESSEGMENTOCOMERCIAL" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_SESSAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_SESSAO">
+        <MappingFragment StoreEntitySet="INFM_SESSAO">
+          <ScalarProperty Name="IDSESSAO" ColumnName="IDSESSAO" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="DTHINICIO" ColumnName="DTHINICIO" />
+          <ScalarProperty Name="DTHFIM" ColumnName="DTHFIM" />
+          <ScalarProperty Name="DTHULTIMOUSO" ColumnName="DTHULTIMOUSO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_SETOREMPRESA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_SETOREMPRESA">
+        <MappingFragment StoreEntitySet="INFM_SETOREMPRESA">
+          <ScalarProperty Name="IDSETOREMPRESA" ColumnName="IDSETOREMPRESA" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="DESIMPRESSORA" ColumnName="DESIMPRESSORA" />
+          <ScalarProperty Name="DESSETOR" ColumnName="DESSETOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_SITUACAO_PESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_SITUACAO_PESSOA">
+        <MappingFragment StoreEntitySet="INFM_SITUACAO_PESSOA">
+          <ScalarProperty Name="IDSITUACAOPESSOA" ColumnName="IDSITUACAOPESSOA" />
+          <ScalarProperty Name="DESSITUACAO" ColumnName="DESSITUACAO" />
+          <ScalarProperty Name="CODSITUACAO" ColumnName="CODSITUACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_STATUS_CRM">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_STATUS_CRM">
+        <MappingFragment StoreEntitySet="INFM_STATUS_CRM">
+          <ScalarProperty Name="IDSTATUSCRM" ColumnName="IDSTATUSCRM" />
+          <ScalarProperty Name="CODSTATUSCRM" ColumnName="CODSTATUSCRM" />
+          <ScalarProperty Name="DESSTATUSCRM" ColumnName="DESSTATUSCRM" />
+          <ScalarProperty Name="CODCORRGB" ColumnName="CODCORRGB" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDSTATUSCRMAGRUP" ColumnName="IDSTATUSCRMAGRUP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_STATUSCRMAGRUP">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_STATUSCRMAGRUP">
+        <MappingFragment StoreEntitySet="INFM_STATUSCRMAGRUP">
+          <ScalarProperty Name="IDSTATUSCRMAGRUP" ColumnName="IDSTATUSCRMAGRUP" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DESSTATUSCRMAGRUP" ColumnName="DESSTATUSCRMAGRUP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_SUPRIMENTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_SUPRIMENTO">
+        <MappingFragment StoreEntitySet="INFM_SUPRIMENTO">
+          <ScalarProperty Name="IDSUPRIMENTO" ColumnName="IDSUPRIMENTO" />
+          <ScalarProperty Name="IDRESPONSAVELCAIXA" ColumnName="IDRESPONSAVELCAIXA" />
+          <ScalarProperty Name="IDPESSOASUPERVISOR" ColumnName="IDPESSOASUPERVISOR" />
+          <ScalarProperty Name="NUMVALORSUPRIMENTO" ColumnName="NUMVALORSUPRIMENTO" />
+          <ScalarProperty Name="OBSSUPRIMENTO" ColumnName="OBSSUPRIMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TIPOCRM">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TIPOCRM">
+        <MappingFragment StoreEntitySet="INFM_TIPOCRM">
+          <ScalarProperty Name="IDTIPOCRM" ColumnName="IDTIPOCRM" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DESTIPOCRM" ColumnName="DESTIPOCRM" />
+          <ScalarProperty Name="IDSTATUSCRMAGRUP" ColumnName="IDSTATUSCRMAGRUP" />
+          <ScalarProperty Name="IDSTATUSCRM" ColumnName="IDSTATUSCRM" />
+          <ScalarProperty Name="CODTIPOCRM" ColumnName="CODTIPOCRM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TIPOCRMCONFIG">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TIPOCRMCONFIG">
+        <MappingFragment StoreEntitySet="INFM_TIPOCRMCONFIG">
+          <ScalarProperty Name="IDTIPOCRMCONFIG" ColumnName="IDTIPOCRMCONFIG" />
+          <ScalarProperty Name="IDTIPOCRM" ColumnName="IDTIPOCRM" />
+          <ScalarProperty Name="IDTIPOEMPREGADO" ColumnName="IDTIPOEMPREGADO" />
+          <ScalarProperty Name="BOLEMPREGADOATUAL" ColumnName="BOLEMPREGADOATUAL" />
+          <ScalarProperty Name="NELQUANTDIASDATA" ColumnName="NELQUANTDIASDATA" />
+          <ScalarProperty Name="NELQUANTFUNCIONARIOS" ColumnName="NELQUANTFUNCIONARIOS" />
+          <ScalarProperty Name="NELNIVEL" ColumnName="NELNIVEL" />
+          <ScalarProperty Name="DESNIVELCONFIG" ColumnName="DESNIVELCONFIG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TIPOCRMCONFIGPESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TIPOCRMCONFIGPESSOA">
+        <MappingFragment StoreEntitySet="INFM_TIPOCRMCONFIGPESSOA">
+          <ScalarProperty Name="IDTIPOCRMCONFIGPESSOA" ColumnName="IDTIPOCRMCONFIGPESSOA" />
+          <ScalarProperty Name="IDTIPOCRMCONFIG" ColumnName="IDTIPOCRMCONFIG" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TIPODOCUMENTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TIPODOCUMENTO">
+        <MappingFragment StoreEntitySet="INFM_TIPODOCUMENTO">
+          <ScalarProperty Name="IDTIPODOCUMENTO" ColumnName="IDTIPODOCUMENTO" />
+          <ScalarProperty Name="CODTIPODOCUMENTO" ColumnName="CODTIPODOCUMENTO" />
+          <ScalarProperty Name="DESTIPODOCUMENTO" ColumnName="DESTIPODOCUMENTO" />
+          <ScalarProperty Name="BOLCREDITO" ColumnName="BOLCREDITO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TIPOEMPREGADO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TIPOEMPREGADO">
+        <MappingFragment StoreEntitySet="INFM_TIPOEMPREGADO">
+          <ScalarProperty Name="IDTIPOEMPREGADO" ColumnName="IDTIPOEMPREGADO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DESTIPOEMPREGADO" ColumnName="DESTIPOEMPREGADO" />
+          <ScalarProperty Name="BOLSUPERVISOR" ColumnName="BOLSUPERVISOR" />
+          <ScalarProperty Name="BOLRECEBEREMAILVENDA" ColumnName="BOLRECEBEREMAILVENDA" />
+          <ScalarProperty Name="BOLENTREGADOR" ColumnName="BOLENTREGADOR" />
+          <ScalarProperty Name="BOLRESPFINANCEIRO" ColumnName="BOLRESPFINANCEIRO" />
+          <ScalarProperty Name="BOLGERENTE" ColumnName="BOLGERENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TIPOPESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TIPOPESSOA">
+        <MappingFragment StoreEntitySet="INFM_TIPOPESSOA">
+          <ScalarProperty Name="IDTIPOPESSOA" ColumnName="IDTIPOPESSOA" />
+          <ScalarProperty Name="DESTIPOPESSOA" ColumnName="DESTIPOPESSOA" />
+          <ScalarProperty Name="CODTIPOPESSOA" ColumnName="CODTIPOPESSOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TIPOPESSOA_PESSOA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TIPOPESSOA_PESSOA">
+        <MappingFragment StoreEntitySet="INFM_TIPOPESSOA_PESSOA">
+          <ScalarProperty Name="IDTIPOPESSOAPESSOA" ColumnName="IDTIPOPESSOAPESSOA" />
+          <ScalarProperty Name="IDTIPOPESSOA" ColumnName="IDTIPOPESSOA" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TIPOPRODUTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TIPOPRODUTO">
+        <MappingFragment StoreEntitySet="INFM_TIPOPRODUTO">
+          <ScalarProperty Name="IDTIPOPRODUTO" ColumnName="IDTIPOPRODUTO" />
+          <ScalarProperty Name="CODTIPOPRODUTO" ColumnName="CODTIPOPRODUTO" />
+          <ScalarProperty Name="DESTIPOPRODUTO" ColumnName="DESTIPOPRODUTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_TRANSACOES">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_TRANSACOES">
+        <MappingFragment StoreEntitySet="INFM_TRANSACOES">
+          <ScalarProperty Name="IDTRANSACAO" ColumnName="IDTRANSACAO" />
+          <ScalarProperty Name="IDDOCUMENTO" ColumnName="IDDOCUMENTO" />
+          <ScalarProperty Name="IDPARCELAMENTO" ColumnName="IDPARCELAMENTO" />
+          <ScalarProperty Name="NUMVALORACRESCIMO" ColumnName="NUMVALORACRESCIMO" />
+          <ScalarProperty Name="NUMVALORDESCONTO" ColumnName="NUMVALORDESCONTO" />
+          <ScalarProperty Name="NUMVALORTRANSACAO" ColumnName="NUMVALORTRANSACAO" />
+          <ScalarProperty Name="DTHTRANSACAO" ColumnName="DTHTRANSACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_UNIDADEMEDIDA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_UNIDADEMEDIDA">
+        <MappingFragment StoreEntitySet="INFM_UNIDADEMEDIDA">
+          <ScalarProperty Name="IDUNIDADEMEDIDA" ColumnName="IDUNIDADEMEDIDA" />
+          <ScalarProperty Name="IDUNIDADEMEDIDAPAI" ColumnName="IDUNIDADEMEDIDAPAI" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="CODUNIDADEMEDIDA" ColumnName="CODUNIDADEMEDIDA" />
+          <ScalarProperty Name="NUMUNIDADEPAI" ColumnName="NUMUNIDADEPAI" />
+          <ScalarProperty Name="DESUNIDADEMEDIDA" ColumnName="DESUNIDADEMEDIDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_UNIDADEMEDPRODUTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_UNIDADEMEDPRODUTO">
+        <MappingFragment StoreEntitySet="INFM_UNIDADEMEDPRODUTO">
+          <ScalarProperty Name="IDUNIDADEMEDPRODUTO" ColumnName="IDUNIDADEMEDPRODUTO" />
+          <ScalarProperty Name="IDUNIDADEMEDIDA" ColumnName="IDUNIDADEMEDIDA" />
+          <ScalarProperty Name="IDPRODUTOSERVICO" ColumnName="IDPRODUTOSERVICO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_USUPERMISSAOACAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_USUPERMISSAOACAO">
+        <MappingFragment StoreEntitySet="INFM_USUPERMISSAOACAO">
+          <ScalarProperty Name="IDUSUPERMISSAOACAO" ColumnName="IDUSUPERMISSAOACAO" />
+          <ScalarProperty Name="IDPERMISSAO" ColumnName="IDPERMISSAO" />
+          <ScalarProperty Name="IDACAO" ColumnName="IDACAO" />
+          <ScalarProperty Name="IDPESSOA" ColumnName="IDPESSOA" />
+          <ScalarProperty Name="IDGRUPOPERMISSAO" ColumnName="IDGRUPOPERMISSAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_VENDA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_VENDA">
+        <MappingFragment StoreEntitySet="INFM_VENDA">
+          <ScalarProperty Name="IDPESSOAVENDA" ColumnName="IDPESSOAVENDA" />
+          <ScalarProperty Name="NUMACRESCIMO" ColumnName="NUMACRESCIMO" />
+          <ScalarProperty Name="NUMTROCO" ColumnName="NUMTROCO" />
+          <ScalarProperty Name="IDFILIAL" ColumnName="IDFILIAL" />
+          <ScalarProperty Name="IDVENDA" ColumnName="IDVENDA" />
+          <ScalarProperty Name="IDPESSOACLIENTE" ColumnName="IDPESSOACLIENTE" />
+          <ScalarProperty Name="IDRESPONSAVELCAIXA" ColumnName="IDRESPONSAVELCAIXA" />
+          <ScalarProperty Name="IDPESSOAENTREGADOR" ColumnName="IDPESSOAENTREGADOR" />
+          <ScalarProperty Name="IDENDERECOENTREGA" ColumnName="IDENDERECOENTREGA" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="DTHVENDAINICIO" ColumnName="DTHVENDAINICIO" />
+          <ScalarProperty Name="DTHVENDAFIM" ColumnName="DTHVENDAFIM" />
+          <ScalarProperty Name="NUMVALORSERVICO" ColumnName="NUMVALORSERVICO" />
+          <ScalarProperty Name="NUMVALORTAXAENTREGA" ColumnName="NUMVALORTAXAENTREGA" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="NUMDESCONTO" ColumnName="NUMDESCONTO" />
+          <ScalarProperty Name="NUMVALORVENDA" ColumnName="NUMVALORVENDA" />
+          <ScalarProperty Name="NUMVALORTOTAL" ColumnName="NUMVALORTOTAL" />
+          <ScalarProperty Name="CODCOMANDA" ColumnName="CODCOMANDA" />
+          <ScalarProperty Name="CODESTADOVENDA" ColumnName="CODESTADOVENDA" />
+          <ScalarProperty Name="NUMQUANTIDADEPESSOAS" ColumnName="NUMQUANTIDADEPESSOAS" />
+          <ScalarProperty Name="OBSVENDA" ColumnName="OBSVENDA" />
+          <ScalarProperty Name="IDPESSOACANCELAMENTO" ColumnName="IDPESSOACANCELAMENTO" />
+          <ScalarProperty Name="CODVENDA" ColumnName="CODVENDA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_VERSAO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_VERSAO">
+        <MappingFragment StoreEntitySet="INFM_VERSAO">
+          <ScalarProperty Name="CODVERSAO" ColumnName="CODVERSAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFMA_EMPRESA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFMA_EMPRESA">
+        <MappingFragment StoreEntitySet="INFMA_EMPRESA">
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDLICENCA" ColumnName="IDLICENCA" />
+          <ScalarProperty Name="CODEMPRESA" ColumnName="CODEMPRESA" />
+          <ScalarProperty Name="DESEMPRESA" ColumnName="DESEMPRESA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFMA_LICENCA">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFMA_LICENCA">
+        <MappingFragment StoreEntitySet="INFMA_LICENCA">
+          <ScalarProperty Name="IDLICENCA" ColumnName="IDLICENCA" />
+          <ScalarProperty Name="CODLICENCA" ColumnName="CODLICENCA" />
+          <ScalarProperty Name="SESSOESINFINITAS" ColumnName="SESSOESINFINITAS" />
+          <ScalarProperty Name="NUMQUANTIDADESESSOES" ColumnName="NUMQUANTIDADESESSOES" />
+          <ScalarProperty Name="NUMVALIDADE" ColumnName="NUMVALIDADE" />
+          <ScalarProperty Name="VALIDADEINFINITA" ColumnName="VALIDADEINFINITA" />
+          <ScalarProperty Name="CHAVEATIVA" ColumnName="CHAVEATIVA" />
+          <ScalarProperty Name="NUMQUANTIDADEACESSOS" ColumnName="NUMQUANTIDADEACESSOS" />
+          <ScalarProperty Name="DATAATIVACAO" ColumnName="DATAATIVACAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_VALORFECHAMENTO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_VALORFECHAMENTO">
+        <MappingFragment StoreEntitySet="INFM_VALORFECHAMENTO">
+          <ScalarProperty Name="NUMVALORDIFERENCA" ColumnName="NUMVALORDIFERENCA" />
+          <ScalarProperty Name="NUMVALOR" ColumnName="NUMVALOR" />
+          <ScalarProperty Name="IDPESSOASUPERVISOR" ColumnName="IDPESSOASUPERVISOR" />
+          <ScalarProperty Name="IDFORMAPAGAMENTO" ColumnName="IDFORMAPAGAMENTO" />
+          <ScalarProperty Name="IDRESPONSAVELCAIXA" ColumnName="IDRESPONSAVELCAIXA" />
+          <ScalarProperty Name="IDVALORFECHAMENTO" ColumnName="IDVALORFECHAMENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ITEMPROCESSO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ITEMPROCESSO">
+        <MappingFragment StoreEntitySet="INFM_ITEMPROCESSO">
+          <ScalarProperty Name="BOLCONCLUIDO" ColumnName="BOLCONCLUIDO" />
+          <ScalarProperty Name="NELTENTATIVAS" ColumnName="NELTENTATIVAS" />
+          <ScalarProperty Name="DTHEXECUCAO" ColumnName="DTHEXECUCAO" />
+          <ScalarProperty Name="DTHCRIACAO" ColumnName="DTHCRIACAO" />
+          <ScalarProperty Name="DESVALOR" ColumnName="DESVALOR" />
+          <ScalarProperty Name="IDPROCESSO" ColumnName="IDPROCESSO" />
+          <ScalarProperty Name="IDITEMPROCESSO" ColumnName="IDITEMPROCESSO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_ITEMPROCESSOERRO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_ITEMPROCESSOERRO">
+        <MappingFragment StoreEntitySet="INFM_ITEMPROCESSOERRO">
+          <ScalarProperty Name="DTHERRO" ColumnName="DTHERRO" />
+          <ScalarProperty Name="DESERRO" ColumnName="DESERRO" />
+          <ScalarProperty Name="IDITEMPROCESSO" ColumnName="IDITEMPROCESSO" />
+          <ScalarProperty Name="IDITEMPROCESSOERRO" ColumnName="IDITEMPROCESSOERRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INFM_PROCESSO">
+      <EntityTypeMapping TypeName="IGERENCEModel.INFM_PROCESSO">
+        <MappingFragment StoreEntitySet="INFM_PROCESSO">
+          <ScalarProperty Name="DESPROCESSO" ColumnName="DESPROCESSO" />
+          <ScalarProperty Name="NELTENTATIVAS" ColumnName="NELTENTATIVAS" />
+          <ScalarProperty Name="NELINTERVALO" ColumnName="NELINTERVALO" />
+          <ScalarProperty Name="CODTIPOPROCESSO" ColumnName="CODTIPOPROCESSO" />
+          <ScalarProperty Name="BOLATIVO" ColumnName="BOLATIVO" />
+          <ScalarProperty Name="IDEMPRESA" ColumnName="IDEMPRESA" />
+          <ScalarProperty Name="IDPROCESSO" ColumnName="IDPROCESSO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
