@@ -19,7 +19,7 @@ namespace Informatiz.ControleEstoque.AcessoDados.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -714,6 +714,11 @@ namespace Informatiz.ControleEstoque.AcessoDados.Properties {
         ///   SET DESEMPRESA = @DESEMPRESA
         ///      ,DESCNPJ = @DESCNPJ
         ///      ,DESINSCRICAOESTADUAL = @DESINSCRICAOESTADUAL
+        ///	  ,DESEMAIL = @DESEMAIL
+        ///      ,DESSENHA = @DESSENHA
+        ///	  ,DESSMTP = @DESSMTP
+        ///      ,CODPORTA = @CODPORTA
+        ///      ,BOLSSL  = @BOLSSL
         /// WHERE IDEMPRESA = @IDEMPRESA.
         /// </summary>
         internal static string EmpresaAtualizar {
@@ -836,16 +841,18 @@ namespace Informatiz.ControleEstoque.AcessoDados.Properties {
         ///	   E.SESSOSILIMITADAS,
         ///	   E.VALIDADEILIMITADA,
         ///	   E.BOLEMPRESAMESTE,
+        ///	   E.DESEMAIL,
+        ///	   E.DESSENHA,
+        ///	   E.DESSMTP, 
+        ///	   E.CODPORTA,
+        ///	   E.BOLSSL,  
         ///	   F.IDFILIAL,
         ///	   F.CODFILIAL,
         ///	   F.DESFILIAL,
         ///	   F.NUMENDERECO,
         ///	   F.DESCOMPENDERECO,
         ///	   F.DESPONTREFENDERECO,
-        ///	   F.DESTELEFONEFIXO,
-        ///	   F.DESTELEFONEFAX,
-        ///	   F.DESTELEFONECEL,
-        ///	   F.DESEMAIL, [rest of string was truncated]&quot;;.
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string EmpresaRecuperar {
             get {
@@ -2628,8 +2635,9 @@ namespace Informatiz.ControleEstoque.AcessoDados.Properties {
         ///	  ,NUMVALORVENDAATACADO
         ///	  ,NUMQUANTVENDAATACADO
         ///	  ,NUMPERCENTDESCONTATAC
+        ///	  ,IDSETOREMPRESA
         ///FROM INFM_PRODUTOFILIAL
-        ///WHERE IDFILIAL = @IDFILIAL AND IDPRODUTOSERVICO = @I [rest of string was truncated]&quot;;.
+        ///WHERE IDFILIAL = @IDFILIAL AND I [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ProdutoFilialRecuperar {
             get {

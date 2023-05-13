@@ -24,7 +24,7 @@ namespace Informatiz.ControleEstoque.Relatorios.DataSet
                 drParametros.SALDOINICIAL = objFechamentoCaixa.SaldoInicialCaixa;
                 drParametros.SANGRIA = objFechamentoCaixa.ValorTotalSangria;
                 drParametros.SUPRIMENTO = objFechamentoCaixa.ValorTotalSuprimento;
-                
+
 
                 this.PARAMETROS.Rows.Add(drParametros);
 

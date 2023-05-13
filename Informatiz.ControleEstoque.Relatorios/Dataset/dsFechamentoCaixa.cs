@@ -119,7 +119,7 @@ namespace Informatiz.ControleEstoque.Relatorios.DataSet
                         drDetalhe.VALORDESCONTO = v.ValorDesconto != null ? (decimal)v.ValorDesconto : 0;
                         drDetalhe.VALORITEM = v.ValorItem;
                         drDetalhe.VALORTOTAL = v.ValorTotal;
-                        drDetalhe.IDAGRUPAMENTO = string.Format("{0}{1}", v.CodigoFormaPagamento,v.CodigoVenda);
+                        drDetalhe.IDAGRUPAMENTO = string.Format("{0}{1}", v.CodigoFormaPagamento, v.CodigoVenda);
                         this.VENDADETALHE.Rows.Add(drDetalhe);
 
                     }
